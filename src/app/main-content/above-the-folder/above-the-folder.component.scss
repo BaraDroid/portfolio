@@ -14,12 +14,6 @@ section {
     max-width: 1440px;
 }
 
-svg {
-    path {
-        fill: red;
-    }
-}
-
 .icons {
     display: flex;
     align-items: center;
@@ -39,6 +33,8 @@ svg {
     padding-right: 72px;
     height: calc(100vh - 88px);
     display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .atf_left {
@@ -48,6 +44,8 @@ svg {
     margin-top: 72px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap:16px;
     >.text {
         color: #F8F7E5;
         >span {
@@ -62,6 +60,37 @@ svg {
         }
     }
     >img {
-        
+        height: 144px;
     }
+}
+
+.scroll_ball {
+    margin-top: 24px;
+}
+
+.atf_right {
+    height: calc(100% - 88px);
+    width: 740px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sun {
+    position: absolute;
+    top: 350;
+    height: 350px;
+    z-index: 5;
+}
+.my_foto {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+.scroll_bar {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
 }

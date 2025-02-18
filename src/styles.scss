@@ -28,3 +28,19 @@
   .fontEckzar {
     font-family: 'Eczar';
   }
+
+  .btn {
+    background-color:rgba(103, 154, 172, 0);;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 12px 24px;
+    border: 1px solid #F8F7E5;
+    border-radius: 100px;
+    width: 155px;
+    height: 40px;
+    color: #F8F7E5;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
