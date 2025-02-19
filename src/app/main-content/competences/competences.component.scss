@@ -1,6 +1,84 @@
-p {
+section {
+    background-color: #1D1D1D;
     height: 100vh;
     width: 100%;
-    background-color: teal;
     scroll-snap-align: start;
+    color: #F8F7E5;
+}
+
+.navbar {
+    height: 88px;
+    padding: 24px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.menu {
+    display: flex;
+    width: 88px;
+    height: 40px;
+    gap: 16px;
+}
+
+.content {
+    max-width: 1440px;
+    height: calc(100vh - 88px);
+    padding-left: 112px;
+    padding-right: 72px;
+    height: calc(100vh - 88px);
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    margin-top: 72px;
+}
+
+.description {
+    background-color: #679AAC;
+    border-radius: 4px;
+    padding: 32px;
+    width: 600px;
+    height: 140px;
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+    gap: 40px;
+    align-items: flex-end;
+    margin-bottom: 88px;
+}
+
+.frontend_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animation {
+    position: absolute;
+    top: calc(200vh + 600px);
+    left: 112px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >img {
+        position: absolute;
+    }
+}
+
+.sun {
+    width: 100%;
 }
