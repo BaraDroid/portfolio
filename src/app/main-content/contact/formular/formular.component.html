@@ -2,24 +2,24 @@
     <div class="your_info">
         <div class="name_email">
             <span>What´s your name?</span>
-            <input type="text" placeholder="Your name goes here">
+            <input type="text" placeholder="Your name goes here" required name="name" [(ngModel)] = "myForm.name">
         </div>
         <div class="name_email">
             <span>What´s your email?</span>
-            <input type="text" placeholder="your email@email.com">
+            <input type="text" placeholder="your email@email.com" required name="email">
         </div>
     </div>
     <div class="message">
         <div class="name_email">
             <span>How can i help you?</span>
-            <input type="text" placeholder="Hello Barbora, I am interested in...">
+            <input type="text" placeholder="Hello Barbora, I am interested in..." required name="message">
         </div>
         <div class="checking">
-                <input class="checkmark" type="checkbox">
+                <input class="checkmark" type="checkbox" required>
                 <span class="legal_information">  I´ve read the <a href="data_protection">privacy policy</a> and agree to the processing of my data.</span>
         </div>
     </div>
-    <div class="drop_line"><button class="btn">Drop a line</button></div>
+    <div class="drop_line"><button (click)="sendEmail()" class="btn">Drop a line</button></div>
 </div>
     
 
