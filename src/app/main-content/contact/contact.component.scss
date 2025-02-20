@@ -30,8 +30,25 @@ section {
     height: calc(100vh - 88px);
     display: flex;
     flex-direction: row;
+    gap: 40px;
 }
 
 h2 {
+    color: #f9af41;
+}
+
+.content_left {
     margin-top: 72px;
+    width: 528px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.content_rigth {
+    width: 100%;
+}
+
+.formular {
+    margin-top: 275px;
 }

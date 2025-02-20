@@ -40,6 +40,7 @@
     height: 40px;
     color: #F8F7E5;
     font-size: 18px;
+    font-family: 'Quicksand';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +50,7 @@
 h2 {
   font-weight:700;
   font-size: 72px;
+  line-height: 72px;
 }
 
 .scroll_bar {
@@ -57,6 +59,7 @@ h2 {
   margin-bottom: auto;
 }
 
-.bold {
-  font-weight: 900;
+.font_bold {
+  font-weight: bold;
+  font-size: 26px;
 }

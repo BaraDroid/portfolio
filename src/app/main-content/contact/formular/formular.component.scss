@@ -1,0 +1,58 @@
+.formular {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.your_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name_email {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.checking {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-family: 'Quicksand';
+    color: #f8f7e5;
+    font-size: 16px;
+    background-color: #1d1d1d;
+    border: none;
+    border-bottom: 1px solid #f9af41;
+    padding: 16px;
+}
+
+.checkmark {
+    border: 1px solid #f9af41;
+    background-color: #1d1d1d;
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.legal_information {
+    font-size: 18px;
+}
+
+.drop_line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
