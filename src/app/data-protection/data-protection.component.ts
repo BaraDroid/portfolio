@@ -3,11 +3,11 @@ import { MainNavbarComponent } from '../shared/main-navbar/main-navbar.component
 import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
-  selector: 'app-impressum',
+  selector: 'app-data-protection',
   imports: [MainNavbarComponent, FooterComponent],
-  templateUrl: './impressum.component.html',
-  styleUrl: './impressum.component.scss'
+  templateUrl: './data-protection.component.html',
+  styleUrl: './data-protection.component.scss'
 })
-export class ImpressumComponent {
+export class DataProtectionComponent {
 
 }

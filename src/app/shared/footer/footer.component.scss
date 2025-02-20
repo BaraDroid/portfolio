@@ -29,23 +29,6 @@ a {
     font-family: 'Quicksand';
 }
 
-.animated_wheel {
-    position: relative;
-}
-
-.blue_sun {
-    position: absolute;
-    height: 263px;
-    top: calc(600vh - 263px);
-    left: 190px;
-    >path {
-        fill: #679aac !important;
-    }
-}
-
-.orange_sun {
-    position: absolute;
-    height: 144px;
-    top: calc(600vh - 144px);
-    left: 112px;
+.oneThird {
+    width: 33vw;
 }
