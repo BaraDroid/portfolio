@@ -1,28 +1,26 @@
 import { Component } from '@angular/core';
-
-interface ContactForm {
-  name: string;
-  email: string;
-  message: string;
-}
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-formular',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './formular.component.html',
   styleUrl: './formular.component.scss'
 })
 
 export class FormularComponent {
-  
-myForm: ContactForm = {
+
+contactData = {
   name: "",
   email: "",
   message: "",
 }
 
-sendEmail() {
-  console.log(this.myForm);
+onSubmit(ngForm: NgForm){
+  if(ngForm.valid && ngForm.submitted) {
+    console.log(this.contactData);
+  }
+  
 }
 
 }

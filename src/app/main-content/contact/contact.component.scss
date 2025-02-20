@@ -24,10 +24,9 @@ section {
 
 .content {
     max-width: 1440px;
-    height: calc(100vh - 88px - 173px);
+    height: calc(100vh - 88px - 88px);
     padding-left: 112px;
     padding-right: 72px;
-    height: calc(100vh - 88px);
     display: flex;
     flex-direction: row;
     gap: 40px;
