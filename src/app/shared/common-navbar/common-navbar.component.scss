@@ -1,0 +1,16 @@
+.navbar {
+    height: 88px;
+    padding: 24px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.menu {
+    display: flex;
+    width: 88px;
+    height: 40px;
+    gap: 16px;
+    >svg {cursor: pointer;}
+}

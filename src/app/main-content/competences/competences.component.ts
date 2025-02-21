@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
 
 @Component({
   selector: 'app-competences',
-  imports: [],
+  imports: [CommonNavbarComponent],
   templateUrl: './competences.component.html',
   styleUrl: './competences.component.scss'
 })

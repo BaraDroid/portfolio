@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormularComponent } from './formular/formular.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormularComponent, FooterComponent],
+  imports: [FormularComponent, FooterComponent, CommonNavbarComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
