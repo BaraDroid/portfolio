@@ -19,8 +19,20 @@
     width: 100%;
     text-align: end;
     padding: 8px;
+    font-size: 22px;
+    &:hover {
+        color: #ff824f;
+        cursor: pointer;
+    }
 }
 
 .name {
     font-size: 18px;
+}
+
+img {
+    position: absolute;
+    height: 32px;
+    right: 16px;
+    top: 16px;
 }

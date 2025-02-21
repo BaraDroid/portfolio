@@ -10,5 +10,5 @@ import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+isWhite: boolean = true;
 }

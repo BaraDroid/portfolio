@@ -12,5 +12,5 @@ import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.
   styleUrl: './reviews.component.scss'
 })
 export class ReviewsComponent {
-
+isWhite: boolean = true;
 }

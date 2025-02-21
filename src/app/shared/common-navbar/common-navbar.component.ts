@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-common-navbar',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './common-navbar.component.scss'
 })
 export class CommonNavbarComponent {
-
+  @Input()whiteColor: boolean = false;
 }

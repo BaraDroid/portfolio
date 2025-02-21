@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
 
 @Component({
@@ -8,6 +8,8 @@ import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.
   styleUrl: './competences.component.scss'
 })
 export class CompetencesComponent {
+isWhite: boolean = true;
+
 icons: {
   path: string;
   description: string;

@@ -59,9 +59,7 @@ h2 {
     height: 263px;
     bottom: 0;
     left: 190px;
-    >path {
-        fill: #679aac !important;
-    }
+    z-index: 10;
 }
 
 .orange_sun {
@@ -69,4 +67,10 @@ h2 {
     height: 144px;
     bottom: 0;
     left: 112px;
+}
+
+svg {
+    &:first-of-type {
+        height: 263px;
+    }
 }
