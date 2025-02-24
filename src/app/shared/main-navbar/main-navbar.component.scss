@@ -30,12 +30,14 @@
     left: 64px;
 }
 
-
-
 .menu {
     display: flex;
     width: 88px;
     height: 40px;
     gap: 16px;
     >svg {cursor: pointer;}
+}
+
+.personal_logo {
+        height: 50px;
 }

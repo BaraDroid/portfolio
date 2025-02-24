@@ -1,7 +1,11 @@
 <div class="navbar">
-    <div class="name">
-        <span>Lambeinova</span>
-    </div>
+    @if(whiteColor){
+        <a href="#portfolioStart"><img class="personal_logo" src="assets/logo/logo_white_nobg.png" alt="logo in black"></a>	
+    }
+    @else {
+        <a href="#portfolioStart"><img class="personal_logo" src="assets/logo/logo_black_nobg.png" alt="logo in white"></a>
+    }
+    	
     <div class="menu">
         @if(whiteColor) {
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

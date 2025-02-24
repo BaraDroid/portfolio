@@ -11,6 +11,6 @@ import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.
 
 
 export class AboutMeComponent {
-
+  isWhite: boolean = false;
 
 }
