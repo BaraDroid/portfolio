@@ -47,6 +47,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    &:hover {
+      background-color: #ff824e;
+    }
 }
 
 h2 {

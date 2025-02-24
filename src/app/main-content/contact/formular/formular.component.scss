@@ -14,6 +14,9 @@
 .name_email {
     display: flex;
     flex-direction: column;
+    &:hover {
+        color: #ff824e;
+    }
 }
 
 .message {
@@ -79,5 +82,8 @@ label {
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        &:hover {
+            background-color: #ff824e;
+        }
 }
 }

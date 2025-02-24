@@ -56,7 +56,9 @@ h2 {
 
 .blue_sun {
     position: absolute;
-    height: 263px;
+    >path {
+        height: 263px;
+    }
     bottom: 0;
     left: 190px;
     z-index: 10;
