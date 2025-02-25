@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CommonNavbarComponent {
   @Input()whiteColor: boolean = false;
+  menuHover: boolean = false;
+  languageHover: boolean = false;
 }

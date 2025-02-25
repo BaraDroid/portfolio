@@ -12,6 +12,8 @@ export class MainNavbarComponent {
   githubIconHover: boolean = false;
   linkedinIconHover:boolean = false;
   mailIconHover: boolean = false;
+  menuHover: boolean = false;
+  languageHover: boolean = false;
 
 
 }
