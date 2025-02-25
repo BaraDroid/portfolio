@@ -15,5 +15,20 @@ export class MainNavbarComponent {
   menuHover: boolean = false;
   languageHover: boolean = false;
 
+  xHover: boolean = false;
+  showWheelAbout: boolean = false;
+  showWheelSkills: boolean = false;
+  showWheelPortfolio: boolean = false;
+  showWheelRef: boolean = false;
+  showWheelContact: boolean = false;
 
+  menuOpen: boolean = false;
+
+  openMenuTab() {
+    this.menuOpen = true;
+  }
+
+  closeMenuTab() {
+    this.menuOpen = false;
+  }
 }

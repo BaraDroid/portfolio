@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-competences',
-  imports: [CommonNavbarComponent],
+  imports: [CommonNavbarComponent, CommonModule],
   templateUrl: './competences.component.html',
   styleUrl: './competences.component.scss'
 })
