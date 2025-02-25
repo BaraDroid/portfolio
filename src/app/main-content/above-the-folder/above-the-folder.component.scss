@@ -31,6 +31,7 @@ section {
 }
 
 .content {
+    width: 100%;
     max-width: 1440px;
     padding-left: 72px;
     padding-right: 72px;
@@ -82,9 +83,9 @@ section {
 
 .sun {
     position: absolute;
-    top: 190px;
-    right: 110px;
-    height: 350px;
+    top: 104px;
+    right: 77px;
+    height: 327px;
     z-index: 5;
 }
 .my_foto {
@@ -95,6 +96,93 @@ section {
     z-index: 10;
 }
 
-@media (max-width: 100px){
+@media (max-width: 1189px){
+    .sun {
+        right: 53px;
+    }
+    .my_foto {
+        right: 53px;
+    }
+}
 
+@media (max-width: 1130px) {
+    .atf_left .text h1 {line-height: 78px; font-size: 78px;}
+    .atf_left .text span {font-size: 30px;}
+}
+
+@media (max-width: 1010px) {
+    .sun{height: 270px; top: 175px;}
+    .my_foto {height: 90%;}
+    .atf_left .text h1 {line-height: 70px; font-size: 70px;}
+    .atf_left .text span {font-size: 25px;line-height: 30px;}
+}
+
+@media (max-width: 925px) {
+    .sun{right: 26px; top: 194px;}
+    .my_foto {right: 17px;}
+    .atf_left .text h1 {line-height: 60px; font-size: 60px;}
+}
+
+@media (max-width: 828px) {
+    .atf_left{gap: 50px; margin-left: 0;}
+    .atf_left img {height: 125px;}
+}
+
+@media (max-width: 788px) {
+    .my_foto{height: 76%;}
+    .sun {top: 297px; right: 23px; height: 181px;}
+    .atf_left .text h1 {font-size: 50px;}
+    .atf_left .text span {font-size: 22px;}
+}
+
+@media (max-width: 640px) {
+    .my_foto{height: 70%;}
+    .sun {top: 329px; right: 33px;}
+    .atf_left img {height: 110px;}
+}
+
+@media (max-width: 588px) {
+    .atf_left { margin-top: 0;}
+    .atf_left .text h1 {font-size: 70px; line-height: 70px;}
+    .atf_left .text span {font-size: 30px;}
+}
+
+@media (max-width: 555px) {
+    .btn {margin-top: 0;}
+    .atf_left {gap: 20px; height: 100%; width: 100%;}
+    .atf_left img {height: 99px;}
+}
+
+@media (max-width: 500px) {
+    .atf_left img {
+        position: absolute;
+        bottom: 5%;
+        z-index: 20;
+        background-color: #679aac;
+        border-radius: 100px;
+    }
+    .my_foto{height: 66%; right: 25px;}
+    .sun {top: 348px; height: 189px;}
+    .atf_left .text h1 {font-size: 60px; line-height: 60px;}
+    .atf_left .text span {font-size: 22px;}
+}
+
+@media (max-width: 455px) {
+    .atf_left .text h1 {font-size: 45px; line-height: 55px;}
+    .atf_left .text span {font-size: 18px; line-height: 25px;}
+    .content {height: calc(100vh - 72px);}
+    .my_foto {right: 0;}
+    .sun {top: 351px; right: 17px; height: 173px;}
+}
+
+@media (max-width: 450px) {
+    .content {padding-left: 16px; padding-right: 16px;}
+}
+
+@media (max-width: 360px) {
+    .my_foto {height: 60%;}
+}
+
+@media (max-width: 333px) {
+    .my_foto{height: 58%}
 }
