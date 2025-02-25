@@ -14,8 +14,8 @@
         </div>
         <div class="content_right fontQuicksand">
                 @for (icon of icons; track $index) {
-                    <div class="frontend_icons">
-                        <img src="{{ icon.path }}" alt="">
+                    <div class="frontend_icon">
+                        <img class="skillIcon" src="{{ icon.path }}" alt="">
                         <span>{{ icon.description }}</span>
                     </div>
                 }

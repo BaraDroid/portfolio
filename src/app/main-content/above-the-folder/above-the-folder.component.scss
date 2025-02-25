@@ -1,8 +1,11 @@
 section {
     background-color: #679aac;
-    height: 100vh;
-    width: 100%;
+    height: 100dvh;
+    width: 100dvw;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
@@ -90,4 +93,8 @@ section {
     right: 110px;
     height: 100%;
     z-index: 10;
+}
+
+@media (max-width: 100px){
+
 }

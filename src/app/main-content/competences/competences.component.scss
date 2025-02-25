@@ -1,9 +1,13 @@
 section {
     background-color: #1D1D1D;
-    height: 100vh;
-    width: 100%;
     scroll-snap-align: start;
     color: #F8F7E5;
+    height: 100dvh;
+    width: 100dvw;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
@@ -43,6 +47,7 @@ h2 {
     padding: 32px;
     width: 600px;
     height: 140px;
+    margin-top: 40px;
 }
 
 .content_left {
@@ -52,18 +57,18 @@ h2 {
 
 .content_right {
     display: flex;
-    flex-direction: row;
+    align-content: flex-end;
     flex-wrap: wrap;
-    width: 640px;
     gap: 40px;
-    align-items: flex-end;
+    width: 640px;
     margin-bottom: 88px;
 }
 
-.frontend_icons {
+.frontend_icon {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
 
 .animation {
@@ -82,4 +87,10 @@ h2 {
 
 .sun {
     width: 100%;
+}
+
+.skillIcon {
+    &:hover {
+        transform: scale(1.1);
+    }
 }
