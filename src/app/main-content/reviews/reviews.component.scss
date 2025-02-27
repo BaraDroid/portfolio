@@ -9,29 +9,12 @@ section {
     align-items: center;
 }
 
-.navbar {
-    height: 88px;
-    padding: 24px 72px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-}
-
-.menu {
-    display: flex;
-    width: 88px;
-    height: 40px;
-    gap: 16px;
-    >svg {cursor: pointer;}
-}
-
 .content {
     width: 100%;
+    height: 100%;
     max-width: 1440px;
     padding-left: 112px;
     padding-right: 72px;
-    height: calc(100vh - 88px);
     display: flex;
     color:#f8f7e5;
 }
@@ -39,7 +22,8 @@ section {
 .references {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 88px);
+    width: 100%;
+    height: 100%;
 }
 
 .content h2 {
@@ -75,10 +59,25 @@ section {
 @media (max-width: 988px) {
     .boxes {flex-direction: column; justify-content: space-evenly;}
     .content h2 {font-size: 48px; margin-top: 0;}
-    .content {padding-left: 72px; padding-right: 72px; justify-content: space-between; height: calc(100vh - 88px);}
+    .content {padding-left: 72px; padding-right: 72px; justify-content: space-between; gap: 16px;}
     .nr_one {align-self: center;}
     .nr_two {align-self: center;}
     .nr_three {align-self: center;}
-    .boxes {padding-right: 0; width: 90vw;}
-    //tady se to jeste sirkove a vyskove rozhasi
+    .boxes {padding-right: 0;}
+    app-first-review {width: 100%;}
+    app-second-review {width: 100%;}
+    app-third-review {width: 100%;}
+}
+
+@media (max-width: 754px) {
+    .content h2 {font-size: 36px; line-height: 40px;}
+}
+
+@media (max-width: 710px) {
+    .references {align-items: center;}
+    .boxes {gap: 16px;}
+}
+
+@media (max-width: 450px) {
+    .content {padding-right: 16px; padding-left: 16px;}
 }
