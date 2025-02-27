@@ -1,32 +1,17 @@
 section {
     background-color: #F8F7E5;
     scroll-snap-align: start;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.navbar {
-    height: 88px;
-    padding: 24px 72px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-}
-
-.menu {
-    display: flex;
-    width: 88px;
-    height: 40px;
-    gap: 16px;
-    >svg {cursor: pointer;}
-}
+app-common-navbar {width: 100%;}
 
 .content {
+    width: 100%;
     max-width: 1440px;
     padding-left: 72px;
     padding-right: 72px;
@@ -109,4 +94,12 @@ h2 {
     color:#1d1d1d;
     font-weight: 700;
     margin-top: 32px;
+}
+
+@media(max-width: 1189px) {
+    .slider {margin-left: 0;}
+}
+
+@media (max-width: 1140px) {
+
 }

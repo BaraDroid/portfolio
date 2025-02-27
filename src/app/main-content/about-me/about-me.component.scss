@@ -1,6 +1,6 @@
 section {
     background-color: #F8F7E5;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
@@ -9,11 +9,11 @@ section {
 }
 
 .content {
-    width: 100dvw;
+    width: 100%;
     max-width: 1440px;
     padding-left: 72px;
     padding-right: 72px;
-    height: calc(100vh - 88px);
+    height:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,7 +50,7 @@ h2 {
     width: 600px;
     height: 250px;
     position: absolute;
-    top: 490px;
+    top: 5200px;
     left: 500px;
     color: #F8F7E5;
 }
@@ -58,4 +58,84 @@ h2 {
 .interactive {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 1199px) {
+    .text_over {top: 523px; left: 407px;}
+    .left_side img {height: 720px; margin-left: 0;}
+}
+
+@media (max-width: 1110px) {
+    .text_over {padding: 16px; width: 560px;}
+}
+
+@media (max-width: 1070px) {
+    .text_over{left: 305px;}
+}
+
+@media (max-width: 1014px) {
+    h2 {line-height: 85px; font-size: 50px;}
+    .text_over {left: 249px;}
+}
+
+@media (max-width: 970px) {
+    .left_side img {height: 520px;}
+}
+
+@media (max-width: 918px) {
+    .text_over {left: 179px;}
+}
+
+@media(max-width: 843px) {
+    h2 {font-size: 40px;}
+    .text_over {left: 131px;}
+}
+
+@media (max-width: 814px) {
+    .right_side {gap:8px;}
+    h2 {margin-left: 117px;}
+    .text_over {height: 284px; width: 400px; top: 468px;}
+}
+
+@media (max-width: 798px) {
+    h2 {margin-left: 25px;}
+}
+
+@media (max-width: 717px) {
+    .text_over {width: 408px; height: 328px; top: 373px;}
+    .left_side img {height: 384px;}
+}
+
+@media (max-width: 642px) {
+    .text_over {width: 328px; height: 381px;}
+}
+
+@media (max-width: 563px) {
+    h2 {margin-left: 8px; font-size: 31px;}
+    .left_side img {height: 327px;}
+    .text_over {left: 92px; width: 300px; height: 396px; top: 311px;}
+}
+
+@media (max-width: 511px) {
+    .text_over {width: 270px; height: 424px;}
+    .right_side {gap: 0; flex-direction: column; align-items: flex-end;}
+}
+
+@media(max-width: 483px) {
+    h2 {font-size: 25px; margin-left: 8px;}
+}
+
+@media (max-width: 450px) {
+    .content {padding-right: 12px; padding-left: 12px;}
+    .scroll_bar {display: none;}
+}
+
+@media (max-width: 380px) {
+    .content {flex-direction: column-reverse; justify-content: start;}
+    .text_over {top: 357px; left: 68px; width: 250px;}
+}
+
+@media (max-width: 332px) {
+    h2 {line-height: 30px;}
+    .text_over {left: 52px;}
 }
