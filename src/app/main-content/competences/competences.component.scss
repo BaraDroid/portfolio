@@ -30,10 +30,14 @@ section {
 .content {
     width: 100%;
     max-width: 1440px;
-    height: calc(100vh - 88px);
     padding-left: 112px;
     padding-right: 72px;
     height: calc(100vh - 88px);
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper {
     display: flex;
     flex-direction: row;
 }
@@ -54,14 +58,13 @@ h2 {
 .content_left {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .content_right {
     display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
-    gap: 40px;
-    width: 640px;
     margin-bottom: 88px;
 }
 
@@ -70,28 +73,102 @@ h2 {
     flex-direction: column;
     align-items: center;
     height: fit-content;
+    width: 130px;
+    margin-top: 40px;
 }
 
-.animation {
+.learning_sun {
     position: absolute;
-    top: calc(200vh + 600px);
-    left: 112px;
     height: 120px;
     width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    >img {
-        position: absolute;
-    }
+    bottom: -300px;
+    left: 0;
+    z-index: 10;
 }
 
-.sun {
-    width: 100%;
+.learning_icon {
+    position: absolute;
+    left: 42px;
+    bottom: -262px;
+    z-index: 15;
 }
 
 .skillIcon {
     &:hover {
         transform: scale(1.1);
     }
+}
+
+@media (max-width: 1189px) {
+    .content {gap: 16px;}
+    .description {width: 500px;}
+    .content_left h2 {font-size: 62px;}
+}
+
+@media (max-width: 1120px) {
+    .content_right .frontend_icon {width: 110px;}
+    .content_right .frontend_icon .skillIcon {width: 55px;}
+    .content_right .frontend_icon span {font-size: 15px;}
+}
+
+@media (max-width: 1058px) {
+    .description {padding: 18px; width: 400px;}
+    .content_left h2 {font-size: 48px;}
+}
+
+@media (max-width: 965px) { //tady to zmenime na pod sebou
+    .content {
+        padding-left: 72px; 
+        padding-right: 72px;
+        height: calc(100dvh - 88px);
+        gap: 0;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .description {width: 90%;}
+    .content_left {height: fit-content;}
+    .learning_sun {
+        height: 100px;
+        width: 100px;
+        bottom: -410px;
+    }
+    .learning_icon {left: 32px; bottom: -380px;}
+    .content_left h2 {margin-top: 16px;}
+    .content_right {margin-bottom: 180px;}
+    .content_right .frontend_icon {width: 102px;}
+    .content_right .frontend_icon span {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 679px) {
+    .content_left h2 {
+        margin-top: 0;
+        font-size: 38px;
+    }
+    .description {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .learning_sun { bottom: -444px; height: 80px;}
+    .learning_icon {bottom: -425px;}
+}
+
+@media (max-width: 589px) {
+    .content_right {margin-bottom: 0;}
+    .content_right .frontend_icon {width: 80px; margin-top: 26px;}
+}
+
+@media (max-width: 477px) {
+    .content_left h2 {font-size: 32px;}
+    .content_right .frontend_icon {width: 66px;}
+}
+
+@media (max-width: 450px) {
+    .content {padding-left: 16px; padding-right: 16px;}
+    .description {width: 100%;}
 }
