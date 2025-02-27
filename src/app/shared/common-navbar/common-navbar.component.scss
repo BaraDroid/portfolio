@@ -79,3 +79,24 @@
         }
     }
 }
+
+@media (max-width: 830px) {
+    .personal_logo {
+        height: 35px;
+}
+}
+
+@media (max-width: 700px) {
+    .menu {>svg{height: 35px;}}
+}
+
+@media(max-width: 450px){
+    .navbar {
+        height: 72px;
+        padding: 24px 16px;
+    }
+    .menu_open {
+        right: 3px;
+        top: 0; 
+    }
+}

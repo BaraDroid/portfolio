@@ -1,8 +1,8 @@
 section {
     background-color: #679AAC;
     scroll-snap-align: start;
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100%;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@ section {
 }
 
 .content {
+    width: 100%;
     max-width: 1440px;
     padding-left: 112px;
     padding-right: 72px;
@@ -38,9 +39,10 @@ section {
 .references {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 88px);
 }
 
-h2 {
+.content h2 {
     line-height: 72px;
     margin-top: 92px;
 }
@@ -66,4 +68,17 @@ h2 {
     align-self: flex-end;
 }
 
+@media(max-width: 1108px) {
+    .content h2 {font-size: 60px; margin-top: 36px;}
+}
 
+@media (max-width: 988px) {
+    .boxes {flex-direction: column; justify-content: space-evenly;}
+    .content h2 {font-size: 48px; margin-top: 0;}
+    .content {padding-left: 72px; padding-right: 72px; justify-content: space-between; height: calc(100vh - 88px);}
+    .nr_one {align-self: center;}
+    .nr_two {align-self: center;}
+    .nr_three {align-self: center;}
+    .boxes {padding-right: 0; width: 90vw;}
+    //tady se to jeste sirkove a vyskove rozhasi
+}
