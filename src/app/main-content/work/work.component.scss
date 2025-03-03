@@ -101,5 +101,78 @@ h2 {
 }
 
 @media (max-width: 1140px) {
+    .headline {margin-top: 16px; width: 100%;}
+    .slider {gap: 16px;}
+    .text {width: 190px;}
+}
 
+@media (max-width: 964px) {
+    .text {padding: 16px; width: 440px;}
+}
+
+@media(max-width: 885px) {
+    .slider {flex-direction: column;}
+    .text {width: fit-content;}
+}
+
+@media (max-width: 850px) {
+    h2 {font-size: 50px;}
+    .arrows {margin-top: 16px;}
+    .screenshot {height: 90%;}
+}
+
+@media (max-width: 740px) {
+    .headline {margin-top: 0; gap: 16px;}
+    .slider {height: 80%;}
+}
+
+@media (max-width: 709px) {
+    h2 {font-size: 42px; line-height: 42px;}
+    .screenshot .project_image {height: 83%;}
+}
+
+@media (max-width: 669px) {
+    .headline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        height: fit-content;
+        margin-bottom: 8px;
+    }
+    .text .interactiv_btns {gap: 8px;}
+
+}
+
+@media(max-width: 570px) {
+    .screenshot {width: 100%;}
+    .main {margin-right: 16px;}
+}
+
+@media (max-width: 519px) {
+    .main {margin-right: 8px;}
+    .text .interactiv_btns {justify-content: center;}
+    .btn {margin-bottom: 8px; width: 130px;}
+}
+
+@media (max-width: 476px) {
+    h2 {font-size: 36px; line-height: 36px;}
+    .arrows {font-size: 14px;}
+}
+
+@media (max-width: 450px) {
+    .content {padding-right: 16px; padding-left: 16px;}
+    .scroll_bar {display: none;}
+    .arrows {font-size: 16px;}
+}
+
+@media (max-width: 350px) {
+    .screenshot {height: 270px;}
+    .btn {
+        width: 122px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .headline span {font-size: 14px;}
+    .text {font-size: 14px;}
+    .arrows {font-size: 14px;}
 }

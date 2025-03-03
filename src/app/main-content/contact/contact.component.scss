@@ -10,28 +10,18 @@ section {
     align-items: center;
 }
 
-.navbar {
-    height: 88px;
-    padding: 24px 72px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-}
-
-.menu {
-    display: flex;
-    width: 88px;
-    height: 40px;
-    gap: 16px;
-    >svg {cursor: pointer;}
-}
-
 .content {
+    width: 100%;
     max-width: 1440px;
     height: calc(100vh - 88px - 88px);
     padding-left: 112px;
     padding-right: 72px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.main {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -60,9 +50,6 @@ h2 {
 
 .blue_sun {
     position: absolute;
-    >path {
-        height: 263px;
-    }
     bottom: 0;
     left: 190px;
     z-index: 10;
@@ -79,4 +66,62 @@ svg {
     &:first-of-type {
         height: 263px;
     }
+}
+
+app-footer {width: 100%;}
+
+@media(max-width: 1195px) {
+    .checking {align-items: flex-start;}
+    .legal_information {font-size: 16px;}
+    input [type=checkbox] {margin-top: 4px; margin-left: 8px;}
+}
+
+@media (max-width: 1171px) {
+    app-formular {height: 100%;}
+    .formular {margin-top: 86px;}
+}
+
+@media (max-width: 1128px) {
+    h2 {font-size: 55px; line-height: 55px;}
+}
+
+@media (max-width: 1020px) {
+    .content {padding-left: 72px; gap: 16px;}
+    .main {gap: 16px;}
+}
+
+@media (max-width: 940px) {
+    h2 {font-size: 39px; line-height: 39px;}
+    .content_left {width: 380px;}
+}
+
+@media (max-width: 710px) {
+    h2 {font-size: 36px; line-height: 36px;}
+}
+
+@media (max-width: 785px) {
+    .content_left {margin-top: 0; gap: 16px; width: 100%;}
+    .main {flex-direction: column;}
+    .formular {margin-top: 16px;}
+    .orange_sun {left: 36px;}
+    .blue_sun {left: 127px;}
+    svg {
+        &:first-of-type {
+            height: 190px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    svg {display: none;}
+}
+
+@media (max-width: 520px) {
+    h2 {font-size: 26px; line-height: 26px;}
+}
+
+@media (max-width: 450px) {
+    .scroll_bar {display: none;}
+    .content {padding-left: 16px; padding-right: 16px;}
+    .colorize {color:#f9af41; font-weight: bold;}
 }

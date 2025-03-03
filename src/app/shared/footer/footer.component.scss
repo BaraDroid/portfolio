@@ -35,3 +35,23 @@ a {
 .oneThird {
     width: 33vw;
 }
+
+@media (max-width: 785px) {
+    .portfolio_footer {
+        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    .oneThird {width: 100%};
+}
+
+@media (max-width: 520px) {
+    input[type=text] {padding: 8px;}
+}
+
+@media (ax-width: 450px) {
+    .oneThird {justify-content: space-between;}
+}
