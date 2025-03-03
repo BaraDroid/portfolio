@@ -24,11 +24,18 @@ export class MainNavbarComponent {
 
   menuOpen: boolean = false;
 
+  englishText: boolean = false;
+  germanText: boolean = true;
+
   openMenuTab() {
     this.menuOpen = true;
   }
 
   closeMenuTab() {
     this.menuOpen = false;
+  }
+
+  changeLanguage() {
+
   }
 }
