@@ -47,7 +47,11 @@
     flex-direction: column;
     gap: 16px;
     display: none;
-    
+}
+
+.menu_tab .links_list {
+    box-sizing: border-box;
+    >a {padding: 1px;}
 }
 
 .menu_open {

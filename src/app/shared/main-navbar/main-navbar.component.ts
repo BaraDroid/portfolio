@@ -41,10 +41,12 @@ export class MainNavbarComponent {
   changeToGerman() {
     this.translate.use('de');
     this.germanText = true;
+    this.englishText = false;
   }
 
   changeToEnglish() {
     this.translate.use('en');
     this.englishText = true;
+    this.germanText = false;
   }
 }

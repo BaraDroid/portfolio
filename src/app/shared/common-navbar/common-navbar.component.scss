@@ -10,6 +10,8 @@
 
 .menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 88px;
     height: 40px;
     gap: 16px;
@@ -37,6 +39,11 @@
     display: none;
 }
 
+.menu_tab .links_list {
+    box-sizing: border-box;
+    >a {padding: 1px;}
+}
+
 .menu_open {
     display: flex;
     flex-direction: column;
@@ -45,6 +52,7 @@
     top: 12px;
     right: 50px;
     z-index: 15;
+    box-sizing: border-box;
 }
 
 .heading {
@@ -71,11 +79,12 @@
         align-items: center;
         text-decoration: none;
         color: #1d1d1d;
+        box-sizing: border-box;
         &:hover {
             color: #679aac;
         }
         >img {
-            height: 22px;
+            height: 20px;
         }
     }
 }

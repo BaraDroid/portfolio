@@ -103,7 +103,6 @@ h2 {
 @media (max-width: 1140px) {
     .headline {margin-top: 16px; width: 100%;}
     .slider {gap: 16px;}
-    .text {width: 190px;}
 }
 
 @media (max-width: 964px) {
@@ -128,7 +127,6 @@ h2 {
 
 @media (max-width: 709px) {
     h2 {font-size: 42px; line-height: 42px;}
-    .screenshot .project_image {height: 83%;}
 }
 
 @media (max-width: 669px) {
@@ -152,17 +150,17 @@ h2 {
     .main {margin-right: 8px;}
     .text .interactiv_btns {justify-content: center;}
     .btn {margin-bottom: 8px; width: 130px;}
+    .arrows {font-size: 14px;}
 }
 
 @media (max-width: 476px) {
     h2 {font-size: 36px; line-height: 36px;}
-    .arrows {font-size: 14px;}
 }
 
 @media (max-width: 450px) {
     .content {padding-right: 16px; padding-left: 16px;}
     .scroll_bar {display: none;}
-    .arrows {font-size: 16px;}
+    .arrows {font-size: 15px;}
 }
 
 @media (max-width: 350px) {

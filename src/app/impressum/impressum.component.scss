@@ -10,3 +10,12 @@ section {
     padding-left: 112px;
     padding-right: 112px;
 }
+
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+@media (max-width: 450px) {
+    .content {padding-left: 16px; padding-right: 16px; text-align: center;}
+}
