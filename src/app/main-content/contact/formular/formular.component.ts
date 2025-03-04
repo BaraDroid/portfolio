@@ -17,9 +17,10 @@ contactData = {
   name: "",
   email: "",
   message: "",
+  checkboxField: "",
 }
 
-mailTest = true;
+ mailTest = true;
 
 post = {
   endPoint: 'https://barbora-lambeinova.de/sendMail.php',
@@ -50,5 +51,4 @@ onSubmit(ngForm: NgForm) {
     ngForm.resetForm();
   }
 }
-
-}
+  }

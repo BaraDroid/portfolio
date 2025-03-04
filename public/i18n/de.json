@@ -1,5 +1,40 @@
 {
+  "app" : {
     "above_the_folder": {
-      "headline1.part": "Hallo, ich bin"
+      "headline1_part": "Hallo, ich bin"
+    },
+    "about_me": {
+      "h2": "Über mich",
+      "text": "Hallo, ich bin Barbora Lambeinova. Am Programmieren mag ich am meisten die dabei freigegebene Kreativität."
+    },
+    "competencen": {
+      "h2": "Core Kompetenzen",
+      "text": "Ich habe vieles benutzt, eine Auswahl finden Sie in dem Überblick nebenan."
+    },
+    "work": {
+      "h2": "Projekte",
+      "text": "Schauen Sie sich die Auswahl an meinen Projekten an:",
+      "description": "Pokedex. Ein kleines Projekt als Arbeit mit einer API."
+    },
+    "reviews": {
+      "h2": "Was andere über mich sagen:",
+      "review1": "",
+      "review2": "",
+      "review3": ""
+    },
+    "contact": {
+      "h2": "Lass und zusammen ein tolles Projekt starten!",
+      "text1": "Haben Sie ein Problem zu lösen?",
+      "text2": "Kontaktieren Sie mir gerne mit diesem Kontakt Formular. Ich freue mich auf euere Angebote!"
+    },
+    "formular": {
+      "name": "Wie lautet Ihr Name?",
+      "name_placeholder": "Schreiben Sie Ihr Name hier.",
+      "email": "Was ist Ihre E-Mail Adresse?",
+      "email_placeholder": "email@email.com",
+      "message": "Wie kann ich Ihnen helfen?",
+      "message_placeholder": "Hallo Barbora, ich bin interessiert an...",
+      "checkbox_text": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu."
     }
+  }
   }

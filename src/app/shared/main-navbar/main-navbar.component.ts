@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-navbar',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './main-navbar.component.html',
   styleUrl: './main-navbar.component.scss'
 })
@@ -35,7 +36,15 @@ export class MainNavbarComponent {
     this.menuOpen = false;
   }
 
-  changeLanguage() {
+  constructor(private translate: TranslateService) {}
 
+  changeToGerman() {
+    this.translate.use('de');
+    this.germanText = true;
+  }
+
+  changeToEnglish() {
+    this.translate.use('en');
+    this.englishText = true;
   }
 }

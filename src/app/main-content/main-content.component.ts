@@ -19,8 +19,5 @@ export class MainContentComponent {
 
   constructor(private translate: TranslateService) {}
 
- changeLanguage() {
-  console.log('language changed');
- }
 
 }
