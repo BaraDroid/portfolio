@@ -1,31 +1,31 @@
 <form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="your_info">
         <div class="name_email">
-            <label for="name">What´s your name?</label>
-            <input #name="ngModel" minLength="4" [(ngModel)]="contactData.name" type="text" placeholder="Your name goes here" required name="name" >
+            <label for="name">{{ 'formular.name' | translate }}</label>
+            <input #name="ngModel" minLength="4" [(ngModel)]="contactData.name" type="text" placeholder="{{ 'formular.name_placeholder' | translate }}" required name="name" >
             @if(!name.valid && name.touched) {
-                <span>Please enter your name</span>
+                <span>{{ 'formular.notification_name' | translate }}</span>
             }
         </div>
         <div class="name_email">
-            <label for="email">What´s your email?</label>
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="text" placeholder="your email@email.com" required name="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            <label for="email">{{ 'formular.email' | translate }}</label>
+            <input #email="ngModel" [(ngModel)]="contactData.email" type="text" placeholder="{{ 'formular.email_placeholder' | translate }}" required name="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             @if(!email.valid && email.touched){
-                <span>Please enter your email</span>
+                <span>{{ 'formular.notification_email' | translate }}</span>
             }
         </div>
     </div>
     <div class="message">
         <div class="name_email">
-            <label for="message">How can i help you?</label>
-            <textarea #message="ngModel" minLength="4" [(ngModel)]="contactData.message" name="message" placeholder="Hello Barbora, I am interested in..." required id="message"></textarea>
+            <label for="message">{{ 'formular.message' | translate }}</label>
+            <textarea #message="ngModel" minLength="4" [(ngModel)]="contactData.message" name="message" placeholder="{{ 'formular.message_placeholder' | translate }}" required id="message"></textarea>
             @if(!message.valid && message.touched){
-                <span>Please enter a message</span>
+                <span>{{ 'formular.notification_message' | translate }}</span>
             }
         </div>
         <div class="checking">
                 <input type="checkbox" [(ngModel)]="contactData.checkboxField" name="checkboxField" required>
-                <span class="legal_information">  I´ve read the <a href="data_protection">privacy policy</a> and agree to the processing of my data.</span>
+                <span class="legal_information">{{ 'formular.checkbox_text_part1' | translate }}<a href="data_protection"> {{ 'formular.checkbox_link' | translate }}</a> {{ 'formular.checkbox_text_part2' | translate }}</span>
         </div>
     </div>
     <div class="drop_line"><input type="submit" value="Drop a line"></div>

@@ -28,6 +28,9 @@
 .checking {
     display: flex;
     align-items: center;
+    >span {
+        >a {color:#f9af41;}
+    }
 }
 
 textarea {

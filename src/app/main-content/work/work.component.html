@@ -4,8 +4,8 @@
     <div class="content">
         <div class="main">
             <div class="headline">
-                <h2 class="fontEckzar">My work</h2>
-                <span class="fontQuicksand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium ratione dicta id mollitia minus.</span>
+                <h2 class="fontEckzar">{{ 'work.h2' | translate }}</h2>
+                <span class="fontQuicksand">{{ 'work.text' | translate }}</span>
             </div>
             <div class="slider">
                 <div class="screenshot">
@@ -14,15 +14,15 @@
                 </div>
                 <div class="description fontQuicksand">
                     <div class="text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore similique nam blanditiis voluptates molestias accusamus eveniet laudantium accusantium, quod ad! Eius quibusdam at amet laudantium.
+                        {{ 'work.description' | translate }}
                         <div class="interactiv_btns">
                             <button class="btn">Git Hub</button>
                             <button class="btn">Live Test</button>
                         </div>
                     </div>
                     <div class="arrows">
-                        <span><< Vorheriger Projekt</span>
-                        <span>Nächster Projekt >></span>
+                        <span><< {{ 'work.arrow_left' | translate }}</span>
+                        <span>{{ 'work.arrow_right' | translate }} >></span>
                     </div>
                 </div>
             </div>

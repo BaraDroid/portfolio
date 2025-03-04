@@ -1,11 +1,12 @@
 {
     "above_the_folder": {
       "headline1_part": "Hello, I´m",
-      "job": "Developerin"
+      "job": "Developer"
     },
     "about_me": {
       "h2": "About me",
-      "text": "Hello, I´m Barbora Lambeinova. What I love about coding is the creativity of solutions and almost endless possibilities."
+      "text1": "Hello, I´m Barbora Lambeinova. What I love about coding is the creativity of solutions and almost endless possibilities.",
+      "text2": "Let´s connect and create something amazing together!"
     },
     "competencen": {
       "h2": "Core Competencies",
@@ -14,26 +15,36 @@
     "work": {
       "h2": "My work",
       "text": "Explore the selection of my work here - interact with the projects to see my skills in action.",
-      "description": "Pokedex. A little project to see my work with APIs."
+      "description": "Pokedex. A little project to see my work with APIs.",
+      "arrow_left": "Previous Project",
+      "arrow_right": "Next Project"
     },
     "reviews": {
       "h2": "What my colleagues say about me:",
       "review1": "",
       "review2": "",
-      "review3": ""
+      "review3": "",
+      "link": "To the Linkedin Profile"
     },
     "contact": {
-      "h2": "Let´s build something cool together!",
+      "h2_part1": "Let´s build",
+      "h2_part2": "something Cool",
+      "h2_part3": "together!",
       "text1": "Got a problem to solve?",
       "text2": "If I catch your attention, don´t hesitate to contact me with this formular. I would be happy to hear from you!"
     },
     "formular": {
       "name": "What´s your name?",
       "name_placeholder": "Your name goes here.",
+      "notification_name": "Please enter your name",
       "email": "What´s your email?",
       "email_placeholder": "your email@email.com",
+      "notification_email": "Please enter your email",
       "message": "How can I help you?",
       "message_placeholder": "Hello Barbora, I am interested in...",
-      "checkbox_text": "I´ve read the privacy policy and agree to the processing of my data."
+      "notification_message": "Please enter your message",
+      "checkbox_text_part1": "I´ve read the",
+      "checkbox_link": "privacy policy",
+      "checkbox_text_part2": "and agree to the processing of my data."
     }
 }

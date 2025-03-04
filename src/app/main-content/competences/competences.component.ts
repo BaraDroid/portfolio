@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
 import { CommonModule } from '@angular/common';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-competences',
-  imports: [CommonNavbarComponent, CommonModule],
+  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './competences.component.html',
   styleUrl: './competences.component.scss'
 })

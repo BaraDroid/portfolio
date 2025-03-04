@@ -5,35 +5,46 @@
     },
     "about_me": {
       "h2": "Über mich",
-      "text": "Hallo, ich bin Barbora Lambeinova. Am Programmieren mag ich am meisten die dabei freigegebene Kreativität."
+      "text1": "Hallo, ich bin Barbora Lambeinova. Am Programmieren mag ich am meisten die dabei freigegebene Kreativität.",
+      "text2": "Lass uns verbinden und gemeinsam etwas Erstaunliches erschaffen!"
     },
     "competencen": {
       "h2": "Core Kompetenzen",
-      "text": "Ich habe vieles benutzt, eine Auswahl finden Sie in dem Überblick nebenan."
+      "text": "Ich habe viele Technologien benutzt, eine Auswahl finden Sie in dem Überblick nebenan."
     },
     "work": {
       "h2": "Projekte",
       "text": "Schauen Sie sich die Auswahl an meinen Projekten an:",
-      "description": "Pokedex. Ein kleines Projekt als Arbeit mit einer API."
+      "description": "Pokedex. Ein kleines Projekt als Arbeit mit einer API.",
+      "arrow_left": "Vorheriges Projekt",
+      "arrow_right": "Nächstes Projekt"
     },
     "reviews": {
       "h2": "Was andere über mich sagen:",
       "review1": "",
       "review2": "",
-      "review3": ""
+      "review3": "",
+      "link": "Zum Linkedin Profile"
     },
     "contact": {
-      "h2": "Lass und zusammen ein tolles Projekt starten!",
+      "h2_part1": "Lass uns zusammen",
+      "h2_part2": "ein tolles Projekt",
+      "h2_part3": "starten!",
       "text1": "Haben Sie ein Problem zu lösen?",
       "text2": "Kontaktieren Sie mir gerne mit diesem Kontakt Formular. Ich freue mich auf euere Angebote!"
     },
     "formular": {
       "name": "Wie lautet Ihr Name?",
       "name_placeholder": "Schreiben Sie Ihr Name hier.",
+      "notification_name": "Bitte geben Sie Ihren Namen an",
       "email": "Was ist Ihre E-Mail Adresse?",
       "email_placeholder": "email@email.com",
+      "notification_email": "Bitte geben Sie Ihre E-Mail-Adresse ein",
       "message": "Wie kann ich Ihnen helfen?",
       "message_placeholder": "Hallo Barbora, ich bin interessiert an...",
-      "checkbox_text": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu."
+      "notification_message": "Bitte geben Sie eine Nachricht ein",
+      "checkbox_text_part1": "Ich habe die",
+      "checkbox_link": "Datenschutzerklärung",
+      "checkbox_text_part2": "gelesen und stimme der Verarbeitung meiner Daten zu."
     }
 }

@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-third-review',
-  imports: [CommonModule],
+  imports: [CommonModule,TranslatePipe, TranslateDirective],
   templateUrl: './third-review.component.html',
   styleUrl: './third-review.component.scss'
 })
