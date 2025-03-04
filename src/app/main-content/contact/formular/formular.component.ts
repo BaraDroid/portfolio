@@ -11,7 +11,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 
 export class FormularComponent {
 
-  http = inject(HttpClient);
+http = inject(HttpClient);
 
 contactData = {
   name: "",
@@ -20,7 +20,7 @@ contactData = {
   checkboxField: "",
 }
 
- mailTest = true;
+mailTest = false;
 
 post = {
   endPoint: 'https://barbora-lambeinova.de/sendMail.php',
@@ -38,7 +38,7 @@ onSubmit(ngForm: NgForm) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
-
+          console.log('response next');
           ngForm.resetForm();
         },
         error: (error) => {
@@ -47,7 +47,6 @@ onSubmit(ngForm: NgForm) {
         complete: () => console.info('send post complete'),
       });
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
     ngForm.resetForm();
   }
 }

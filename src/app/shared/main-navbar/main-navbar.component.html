@@ -23,7 +23,7 @@
 		</a>
 		<a (mouseover)="linkedinIconHover = true"
 			(mouseleave)="linkedinIconHover = false"
-			href="www.linkedin.com/in/barbora-lambeinova-11b398352"
+			href="https://www.linkedin.com/in/barbora-lambeinova/"
 			target="_blank">
 			@if(!linkedinIconHover){
 				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
 		}
 		@else {
 			<svg (mouseover)="languageHover = true"
-			(mouseleave)="languageHover = false" width="40"
+			(mouseleave)="languageHover = false" (click)="changeToEnglish()" width="40"
 			height="40"
 			viewBox="0 0 40 40"
 			fill="none"
