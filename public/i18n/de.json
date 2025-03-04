@@ -1,7 +1,7 @@
 {
-  "app" : {
     "above_the_folder": {
-      "headline1_part": "Hallo, ich bin"
+      "headline1_part": "Hallo, ich bin",
+      "job": "Developerin"
     },
     "about_me": {
       "h2": "Über mich",
@@ -36,5 +36,4 @@
       "message_placeholder": "Hallo Barbora, ich bin interessiert an...",
       "checkbox_text": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu."
     }
-  }
-  }
+}

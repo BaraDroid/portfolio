@@ -19,5 +19,7 @@ export class MainContentComponent {
 
   constructor(private translate: TranslateService) {}
 
+  
+
 
 }
