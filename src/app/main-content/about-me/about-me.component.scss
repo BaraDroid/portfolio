@@ -35,11 +35,11 @@ section {
 }
 
 h2 {
-    line-height: 72px;
+    line-height: 107px;
     font-size: 72px;
     font-weight: 700;
     color: #1D1D1D;
-    margin-left: calc(100% - 313px);
+    margin-left: calc(100% - 349px);
     white-space: nowrap;
 }
 
@@ -47,11 +47,11 @@ h2 {
     background-color: #1D1D1D;
     border-radius: 4px;
     padding: 32px;
-    width: 600px;
-    height: 250px;
+    width: 662px;
+    height: 42%;
     position: absolute;
-    top: 520px;
-    left: 500px;
+    top: 45%;
+    left: 38%;
     color: #F8F7E5;
 }
 
@@ -59,6 +59,13 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+
+.description {
+    text-align: justify;
+	text-align-last: none;
+}
+
+.btn {margin-bottom: 0;}
 
 @media (max-width: 1199px) {
     .text_over {top: 523px; left: 407px;}

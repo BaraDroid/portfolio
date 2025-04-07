@@ -5,8 +5,9 @@
     },
     "about_me": {
       "h2": "About me",
-      "text1": "Hello, I´m Barbora Lambeinova. What I love about coding is the creativity of solutions and almost endless possibilities.",
-      "text2": "Let´s connect and create something amazing together!"
+      "text1": "I am a motivated Frontend Developer with a creative, interdisciplinary background. After years of working in various fields, I found my calling for IT in 2024. With a foundation in JavaScript, HTML, CSS, and UX/UI design, I strive to create functional and aesthetically pleasing websites that offer an experience for the user.",
+      "text2": "What fascinates me most about working as a developer is the creative aspect and the playful element in the code itself.",
+      "text3": "Let's connect and create something amazing together!"
     },
     "competencen": {
       "h2": "Core Competencies",

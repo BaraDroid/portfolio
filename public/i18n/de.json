@@ -5,8 +5,9 @@
     },
     "about_me": {
       "h2": "Über mich",
-      "text1": "Hallo, ich bin Barbora Lambeinova. Am Programmieren schätze ich besonders, wie es meine Kreativität entfaltet.",
-      "text2": "Lass uns verbinden und gemeinsam etwas Erstaunliches erschaffen!"
+      "text1": "Ich bin motivierte Frontend Entwicklerin mit kreativem, interdisziplinärem Hintergrund.  Nach Jahren der Arbeit in verschiedenen Bereichen habe ich 2024 meine Berufung in der IT gefunden. Mit einem starken Fundament in den Bereichen JavaScript, HTML, CSS, und UX/UI Design strebe ich danach, funktionale und ästhetisch ansprechende Websites zu gestalten, die den Nutzern ein Erlebnis bieten.",
+      "text2": "Was mich an der Arbeit als Entwickler:in besonders fasziniert, ist die kreative Freiheit und das verspielte Element, das in dem Code selbst steckt.",
+      "text3": "Lass uns verbinden und gemeinsam etwas Erstaunliches erschaffen!"
     },
     "competencen": {
       "h2": "Core Kompetenzen",
