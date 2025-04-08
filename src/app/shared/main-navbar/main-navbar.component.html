@@ -115,8 +115,9 @@
 				}
 			}
 		
-		
-		@if (menuHover) {
+		<img id="burgerMenu" (click)="openMenuTab($event); $event.stopPropagation()" src="./assets/menu_icons/menu_default.svg" alt="burger menu icon">
+		<!-- @if (menuHover) {
+			
 			<svg (click)="openMenuTab($event); $event.stopPropagation()" (mouseover)="menuHover = true"
 			(mouseleave)="menuHover = false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<mask id="mask0_2207_324" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
@@ -150,14 +151,14 @@
 					fill="#F8F7E5"></path>
 			</g>
 		</svg>
-		}
+		} -->
 		
 	</div>
 
 	<div class="menu_tab fontQuicksand font_bold" [ngClass]="{ 'menu_open': menuOpen }">
         <div class="heading">
             <span>Menu</span>
-			<img (click)="closeMenuTab()" id="testHover"
+			<img (click)="closeMenuTab()" id="menuClose"
 			(mouseleave)="xHover = false" src="./assets/menu_icons/close.svg" alt="x for closing menu">
             <!-- @if (!xHover) {
                 <svg (mouseover)="xHover = true" 

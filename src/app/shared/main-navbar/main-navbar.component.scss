@@ -83,8 +83,12 @@
     }
 }
 
-#testHover:hover {
+#menuClose:hover {
     content: url(./../../../../public/assets/menu_icons/close_hover.svg);
+}
+
+#burgerMenu:hover {
+    content: url(./../../../../public/assets/menu_icons/menu_hover.svg);
 }
 
 .links_list {
