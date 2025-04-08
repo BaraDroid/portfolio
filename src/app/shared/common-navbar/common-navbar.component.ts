@@ -6,16 +6,13 @@ import { MenuService } from '../../menu.service';
 
 @Component({
   selector: 'app-common-navbar',
-  imports: [CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule],
   templateUrl: './common-navbar.component.html',
   styleUrl: './common-navbar.component.scss'
 })
 export class CommonNavbarComponent {
   @Input()whiteColor: boolean = false;
 
-  //menuHover: boolean = false;
-  //languageHover: boolean = false;
-  //xHover: boolean = false;
   showWheelAbout: boolean = false;
   showWheelSkills: boolean = false;
   showWheelPortfolio: boolean = false;

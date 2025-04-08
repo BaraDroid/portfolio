@@ -6,7 +6,7 @@ import { MenuService } from '../../menu.service';
 
 @Component({
   selector: 'app-above-the-folder',
-  imports: [MainNavbarComponent, CommonModule, TranslatePipe, TranslateDirective],
+  imports: [MainNavbarComponent, CommonModule, TranslatePipe],
   templateUrl: './above-the-folder.component.html',
   styleUrl: './above-the-folder.component.scss'
 })
