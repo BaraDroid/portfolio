@@ -6,6 +6,8 @@ import { WorkComponent } from './work/work.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ContactComponent } from './contact/contact.component';
 import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
+import { NavigationEnd, Router } from '@angular/router';
+import { filter, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-main-content',
@@ -18,7 +20,6 @@ import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translat
 export class MainContentComponent {
 
   constructor(private translate: TranslateService) {}
-
   
 
 

@@ -14,7 +14,7 @@
     gap: 32px;
     >a {
         cursor: pointer;
-        >svg {
+        >img {
             cursor: pointer;
         }
     }
@@ -90,6 +90,15 @@
 #burgerMenu:hover {
     content: url(./../../../../public/assets/menu_icons/menu_hover.svg);
 }
+
+#gitHubIcon:hover {
+    content: url(./../../../../public/assets/social_icons/github_hover.svg);
+}
+
+#envelopeIcon:hover {
+    content: url(./../../../../public/assets/social_icons/mail_hover.svg);
+}
+
 
 .links_list {
     display: flex;
