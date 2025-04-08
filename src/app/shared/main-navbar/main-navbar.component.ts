@@ -15,7 +15,7 @@ export class MainNavbarComponent {
   linkedinIconHover:boolean = false;
   //mailIconHover: boolean = false;
   //menuHover: boolean = false;
-  languageHover: boolean = false;
+  //languageHover: boolean = false;
 
   //xHover: boolean = false;
   showWheelAbout: boolean = false;

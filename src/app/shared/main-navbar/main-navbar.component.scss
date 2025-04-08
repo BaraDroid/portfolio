@@ -27,7 +27,7 @@
     width: 88px;
     height: 40px;
     gap: 16px;
-    >svg {cursor: pointer;}
+    >img {cursor: pointer;}
 }
 
 .personal_logo {
@@ -99,6 +99,13 @@
     content: url(./../../../../public/assets/social_icons/mail_hover.svg);
 }
 
+#enIcon:hover {
+    content: url(./../../../../public/assets/languages/hover_en.svg);
+}
+
+#deIcon:hover {
+    content: url(./../../../../public/assets/languages/white_de_hover.svg);
+}
 
 .links_list {
     display: flex;
@@ -134,7 +141,7 @@
 }
 
 @media (max-width: 700px) {
-    .menu {>svg{height: 35px;}}
+    .menu {>img{height: 35px;}}
     .icons {>svg{height: 27px;}}
 }
 
