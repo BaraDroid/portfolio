@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
 import { CommonModule } from '@angular/common';
 import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { MenuService } from '../../menu.service';
 
 
 @Component({
@@ -15,6 +16,13 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 export class AboutMeComponent {
   isWhite: boolean = false;
 
+  //menu.service
+constructor(private menuService: MenuService) {}
+
+// Methode, die aufgerufen wird, wenn das Menü geschlossen werden soll (z.B. durch einen Button-Klick)
+closeTheMenu(): void {
+  this.menuService.closeMenu();
+}
 
 
 }

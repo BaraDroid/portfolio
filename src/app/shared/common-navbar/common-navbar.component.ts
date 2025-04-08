@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
+import { MenuService } from '../../menu.service';
 
 @Component({
   selector: 'app-common-navbar',
@@ -10,9 +12,10 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
 })
 export class CommonNavbarComponent {
   @Input()whiteColor: boolean = false;
-  menuHover: boolean = false;
-  languageHover: boolean = false;
-  xHover: boolean = false;
+
+  //menuHover: boolean = false;
+  //languageHover: boolean = false;
+  //xHover: boolean = false;
   showWheelAbout: boolean = false;
   showWheelSkills: boolean = false;
   showWheelPortfolio: boolean = false;
@@ -24,6 +27,23 @@ export class CommonNavbarComponent {
   germanText: boolean = true;
   englishText: boolean = false;
 
+    //menu.service
+    private closeMenuSubscription: Subscription | undefined;
+    constructor(private translate: TranslateService, private menuService: MenuService) {}
+
+  //menu.service
+  ngOnInit(): void {
+    this.closeMenuSubscription = this.menuService.closeMenu$.subscribe(() => {
+      this.menuOpen = false; // Schließe das Menü, wenn das Ereignis empfangen wird
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (this.closeMenuSubscription) {
+      this.closeMenuSubscription.unsubscribe();
+    }
+  }
+
   openMenuTab(event: MouseEvent) {
     this.menuOpen = true;
   }
@@ -31,8 +51,6 @@ export class CommonNavbarComponent {
   closeMenuTab() {
     this.menuOpen = false;
   }
-
-  constructor(private translate: TranslateService) {}
 
   changeToGerman() {
     this.translate.use('de');

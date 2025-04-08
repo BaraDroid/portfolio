@@ -109,6 +109,10 @@
     content: url(./../../../../public/assets/languages/white_de_hover.svg);
 }
 
+#menuClosed:hover {
+    content: url(./../../../../public/assets/menu_icons/close_hover.svg)
+}
+
 
 
 @media (max-width: 830px) {
