@@ -2,22 +2,22 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
+import { MenuService } from '../../menu.service';
 
 @Component({
   selector: 'app-main-navbar',
-  imports: [CommonModule, TranslatePipe, TranslateDirective, RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './main-navbar.component.html',
   styleUrl: './main-navbar.component.scss'
 })
 export class MainNavbarComponent {
+  //menu.service
+  private closeMenuSubscription: Subscription | undefined;
+  constructor(private translate: TranslateService, private menuService: MenuService) {}
 
-  //githubIconHover: boolean = false;
   linkedinIconHover:boolean = false;
-  //mailIconHover: boolean = false;
-  //menuHover: boolean = false;
-  //languageHover: boolean = false;
 
-  //xHover: boolean = false;
   showWheelAbout: boolean = false;
   showWheelSkills: boolean = false;
   showWheelPortfolio: boolean = false;
@@ -29,6 +29,19 @@ export class MainNavbarComponent {
   englishText: boolean = false;
   germanText: boolean = true;
 
+  //menu.service
+  ngOnInit(): void {
+    this.closeMenuSubscription = this.menuService.closeMenu$.subscribe(() => {
+      this.menuOpen = false; // Schließe das Menü, wenn das Ereignis empfangen wird
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (this.closeMenuSubscription) {
+      this.closeMenuSubscription.unsubscribe();
+    }
+  }
+
   openMenuTab(event: MouseEvent) {
     this.menuOpen = true;
   }
@@ -36,8 +49,6 @@ export class MainNavbarComponent {
   closeMenuTab() {
     this.menuOpen = false;
   }
-
-  constructor(private translate: TranslateService) {}
 
   changeToGerman() {
     this.translate.use('de');
