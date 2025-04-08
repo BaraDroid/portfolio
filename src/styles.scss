@@ -74,3 +74,21 @@ a {
 app-common-navbar {
   width: 100%;
 }
+
+@keyframes jumping_icon {
+  from {transform: translateY(2);}
+  to {transform: translateY(-8px);}
+}
+
+.jumping_icon {
+  animation: jumping_icon 0.9s linear infinite alternate;
+}
+
+@keyframes rotate_wheel {
+  from {rotate: 0deg;}
+  to {rotate: 360deg;}
+}
+
+.rotating {
+  animation: rotate_wheel 3s linear infinite;
+}
