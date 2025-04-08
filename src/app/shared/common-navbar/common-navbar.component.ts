@@ -24,7 +24,7 @@ export class CommonNavbarComponent {
   germanText: boolean = true;
   englishText: boolean = false;
 
-  openMenuTab() {
+  openMenuTab(event: MouseEvent) {
     this.menuOpen = true;
   }
 

@@ -15,7 +15,7 @@
     width: 88px;
     height: 40px;
     gap: 16px;
-    >svg {cursor: pointer;}
+    >img {cursor: pointer;}
 }
 
 .personal_logo {
@@ -63,7 +63,7 @@
         font-weight: bold;
         font-size: 22px;
     }
-    >svg {
+    >img {
         &:hover {
             cursor: pointer;
         }
@@ -88,6 +88,28 @@
         }
     }
 }
+
+#blackEnIcon:hover {
+    content: url(./../../../../public/assets/languages/black_en_hover.svg);
+}
+
+#blackDeIcon:hover {
+    content: url(./../../../../public/assets/languages/black_de_hover.svg);
+}
+
+.burger_menu:hover {
+    content: url(./../../../../public/assets/menu_icons/menu_hover.svg);
+}
+
+#defaultEnIcon:hover {
+    content: url(./../../../../public/assets/languages/hover_en.svg);
+}
+
+#defaultDeIcon:hover {
+    content: url(./../../../../public/assets/languages/white_de_hover.svg);
+}
+
+
 
 @media (max-width: 830px) {
     .personal_logo {
