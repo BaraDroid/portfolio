@@ -47,12 +47,14 @@ app-main-navbar {
     }
     >img {
         height: 144px;
-        &:hover {
-            transform: rotate(360deg);
-            transition-duration: 4000ms;
-            transition-timing-function: linear;
-        }
     }
+}
+
+.arrow {
+    position: relative;
+    z-index: 20;
+    left: 51px;
+    bottom: 112px;
 }
 
 .atf_right {
