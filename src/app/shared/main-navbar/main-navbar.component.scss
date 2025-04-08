@@ -14,6 +14,9 @@
     gap: 32px;
     >a {
         cursor: pointer;
+        >svg {
+            cursor: pointer;
+        }
     }
 }
 
@@ -73,11 +76,15 @@
         font-weight: bold;
         font-size: 22px;
     }
-    >svg {
+    >img {
         &:hover {
             cursor: pointer;
         }
     }
+}
+
+#testHover:hover {
+    content: url(./../../../../public/assets/menu_icons/close_hover.svg);
 }
 
 .links_list {
