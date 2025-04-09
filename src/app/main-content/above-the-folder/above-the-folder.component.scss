@@ -12,6 +12,17 @@ app-main-navbar {
     width: 100%;
 }
 
+app-navdots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    >a{
+        >img{height: 8px; width: 8px;}
+    }
+  }
+
 .content {
     width: 100%;
     max-width: 1440px;

@@ -3,11 +3,12 @@ import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.
 import { CommonModule } from '@angular/common';
 import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 import { MenuService } from '../../menu.service';
+import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 
 @Component({
   selector: 'app-about-me',
-  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, TranslateDirective, NavdotsComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })

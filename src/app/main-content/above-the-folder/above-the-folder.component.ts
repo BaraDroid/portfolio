@@ -3,10 +3,11 @@ import { MainNavbarComponent } from '../../shared/main-navbar/main-navbar.compon
 import { CommonModule } from '@angular/common';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { MenuService } from '../../menu.service';
+import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 @Component({
   selector: 'app-above-the-folder',
-  imports: [MainNavbarComponent, CommonModule, TranslatePipe],
+  imports: [MainNavbarComponent, CommonModule, TranslatePipe, NavdotsComponent],
   templateUrl: './above-the-folder.component.html',
   styleUrl: './above-the-folder.component.scss'
 })

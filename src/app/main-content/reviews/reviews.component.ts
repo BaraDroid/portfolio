@@ -5,11 +5,12 @@ import { ThirdReviewComponent } from './third-review/third-review.component';
 import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.component';
 import { CommonModule } from '@angular/common';
 import { MenuService } from '../../menu.service';
+import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 
 @Component({
   selector: 'app-reviews',
-  imports: [FirstReviewComponent, SecondReviewComponent, ThirdReviewComponent, CommonNavbarComponent, CommonModule],
+  imports: [FirstReviewComponent, SecondReviewComponent, ThirdReviewComponent, CommonNavbarComponent, CommonModule, NavdotsComponent],
   templateUrl: './reviews.component.html',
   styleUrl: './reviews.component.scss'
 })

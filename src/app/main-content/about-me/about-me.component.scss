@@ -68,6 +68,17 @@ h2 {
 
 .btn {margin-bottom: 0;}
 
+app-navdots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    >a{
+        >img{height: 8px; width: 8px;}
+    }
+  }
+
 @media (max-width: 1199px) {
     .text_over {top: 523px; left: 407px;}
     .left_side img {height: 720px; margin-left: 0;}

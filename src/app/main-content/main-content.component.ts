@@ -8,12 +8,12 @@ import { ContactComponent } from './contact/contact.component';
 import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
 import { NavigationEnd, Router } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
+import { NavdotsComponent } from "../shared/navdots/navdots.component";
 
 @Component({
   selector: 'app-main-content',
   imports: [AboveTheFolderComponent, AboutMeComponent, CompetencesComponent, WorkComponent, ReviewsComponent, ContactComponent,
-    TranslatePipe, TranslateDirective
-  ],
+    TranslatePipe, TranslateDirective, NavdotsComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

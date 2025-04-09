@@ -1,0 +1,10 @@
+<!-- <a href=""><img src="./assets/sidebar/dot_white.svg" alt="go to hero section"></a>
+<img src="./assets/sidebar/dot_white.svg" alt="go to about me section">
+<img src="./assets/sidebar/dot_white.svg" alt="go to skills section">
+<img src="./assets/sidebar/dot_white.svg" alt="go to my work section">
+<img src="./assets/sidebar/dot_white.svg" alt="go to section with references">
+<img src="./assets/sidebar/dot_white.svg" alt="go to contact section"> -->
+
+<ng-container *ngFor="let id of allIds, track $index" >
+    <a href="#{{ id.id }}"><img src="{{ dotSrc }}" alt="{{ id.name }}"></a>
+</ng-container>

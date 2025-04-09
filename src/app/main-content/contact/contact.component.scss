@@ -70,6 +70,17 @@ svg {
 
 app-footer {width: 100%;}
 
+app-navdots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    >a{
+        >img{height: 8px; width: 8px;}
+    }
+  }
+
 @media(max-width: 1195px) {
     .checking {align-items: flex-start;}
     .legal_information {font-size: 16px;}

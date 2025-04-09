@@ -99,6 +99,17 @@ h2 {
     }
 }
 
+app-navdots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    >a{
+        >img{height: 8px; width: 8px;}
+    }
+  }
+
 @media (max-width: 1189px) {
     .content {gap: 16px;}
     .description {width: 500px;}
