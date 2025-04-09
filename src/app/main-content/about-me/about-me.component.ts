@@ -8,7 +8,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 @Component({
   selector: 'app-about-me',
-  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, TranslateDirective, NavdotsComponent],
+  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, NavdotsComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
@@ -16,6 +16,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 export class AboutMeComponent {
   isWhite: boolean = false;
+  indexOfThisSection: number = 1;
 
   //menu.service
 constructor(private menuService: MenuService) {}

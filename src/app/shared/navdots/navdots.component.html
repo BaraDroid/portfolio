@@ -1,13 +1,16 @@
-
-
-<ng-container *ngFor="let id of allIds; let i = index; track $index" >
+<ng-container *ngFor="let id of allIds; let i = index; track $index">
         <a href="#{{ id.id }}">
-        
-                <img *ngIf="whiteColor" [src]="i === sectionIndex ? dotOrangePlainSrc : whiteDotSrc" alt="{{ id.name }}">
-        
-       
-                <img *ngIf="!whiteColor" [src]="i === sectionIndex ? dotOrangePlainSrc : blackDotSrc" alt="{{ id.name }}">
-       
+                @if(sectionIndex == 1) {
+                <img [src]="i === sectionIndex ? dotAboutAndContactSrc : blackDotSrc" alt="{{ id.name }}">
+                }
+                @else if (sectionIndex == 5) {
+                <img [src]="i === sectionIndex ? dotAboutAndContactSrc : whiteDotSrc" alt="{{ id.name }}">
+                }
+                @else {
+                <img *ngIf="whiteColor" [src]="i === sectionIndex ? dotOrangePlainSrc : whiteDotSrc"
+                        alt="{{ id.name }}">
+                <img *ngIf="!whiteColor" [src]="i === sectionIndex ? dotOrangePlainSrc : blackDotSrc"
+                        alt="{{ id.name }}">
+                }
         </a>
-        
 </ng-container>

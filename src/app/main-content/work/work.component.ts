@@ -13,6 +13,8 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 })
 export class WorkComponent {
   isWhite: boolean = false;
+  indexOfThisSection: number = 3;
+
   //menu.service
 constructor(private menuService: MenuService) {}
 

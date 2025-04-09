@@ -13,6 +13,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 })
 export class AboveTheFolderComponent {
   isWhite: boolean = true;
+  indexOfThisSection: number = 0;
 
 //menu.service
 constructor(private menuService: MenuService) {}

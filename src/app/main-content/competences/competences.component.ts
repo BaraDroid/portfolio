@@ -7,12 +7,13 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 @Component({
   selector: 'app-competences',
-  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, TranslateDirective, NavdotsComponent],
+  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, NavdotsComponent],
   templateUrl: './competences.component.html',
   styleUrl: './competences.component.scss'
 })
 export class CompetencesComponent {
 isWhite: boolean = true;
+indexOfThisSection: number = 2;
 
 icons: {
   path: string;

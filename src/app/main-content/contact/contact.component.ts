@@ -15,6 +15,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 })
 export class ContactComponent {
 isWhite: boolean = true;
+indexOfThisSection: number = 5;
 
 //menu.service
 constructor(private menuService: MenuService) {}

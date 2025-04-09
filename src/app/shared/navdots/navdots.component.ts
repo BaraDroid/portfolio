@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs';
 })
 export class NavdotsComponent {
   @Input()whiteColor: boolean = false;
-  isWhitePlaceholder: boolean = false; //prozatimni placeholder
-  sectionIndex: number = -1;
+  @Input()sectionIndex: number = -1;
+
   dotSrc: string = '';
   whiteDotSrc: string = './assets/sidebar/dot_white.svg';
   blackDotSrc:string = './assets/sidebar/dot_black.svg'

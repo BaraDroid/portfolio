@@ -16,6 +16,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 })
 export class ReviewsComponent {
 isWhite: boolean = true;
+indexOfThisSection: number = 4;
 
 //menu.service
 constructor(private menuService: MenuService) {}
