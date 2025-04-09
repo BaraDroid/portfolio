@@ -12,6 +12,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
   styleUrl: './work.component.scss'
 })
 export class WorkComponent {
+  isWhite: boolean = false;
   //menu.service
 constructor(private menuService: MenuService) {}
 

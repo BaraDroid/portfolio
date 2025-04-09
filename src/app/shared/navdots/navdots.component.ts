@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navdots',
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './navdots.component.scss'
 })
 export class NavdotsComponent {
+  @Input()whiteColor: boolean = false;
+  isWhitePlaceholder: boolean = false; //prozatimni placeholder
+  sectionIndex: number = -1;
   dotSrc: string = '';
   whiteDotSrc: string = './assets/sidebar/dot_white.svg';
   blackDotSrc:string = './assets/sidebar/dot_black.svg'
@@ -24,12 +28,13 @@ export class NavdotsComponent {
   ];
 
   //funguje, ale jen na milisekundu pri refresnuti. Proste musim ty flags implementovat.
-  ngOnInit() {
-    this.dotSrc = this.dotOrangePlainSrc;
+  // ngOnInit() {
+  //   this.dotSrc = this.whiteDotSrc;
+
     //tohle musim napsat primo do html:
     //a klidne tam jeste muzu udelat if sectionflag ==id.id, tak id s tim stejnym indexem zmeni na:orangePlain atd.
     //nebo hardcode:
     // if(inWork && isWhite) {id[$index].dotSrc = this.dotOrangePlainSrc}
-  }
+  //}
 
 }

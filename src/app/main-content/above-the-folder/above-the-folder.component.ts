@@ -12,6 +12,8 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
   styleUrl: './above-the-folder.component.scss'
 })
 export class AboveTheFolderComponent {
+  isWhite: boolean = true;
+
 //menu.service
 constructor(private menuService: MenuService) {}
 
