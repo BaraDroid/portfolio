@@ -31,7 +31,6 @@ app-navdots {
     height: calc(100vh - 88px);
     display: flex;
     flex-direction: row;
-    position: relative;
 }
 
 .atf_left {
@@ -62,7 +61,6 @@ app-navdots {
 }
 
 .arrow {
-    position: relative;
     z-index: 20;
     left: 51px;
     bottom: 112px;
@@ -71,7 +69,6 @@ app-navdots {
 .atf_right {
     height: 100%;
     width: 740px;
-    position: relative;
     display: flex;
     justify-content: flex-end;
 }
@@ -86,99 +83,307 @@ app-navdots {
 .my_foto {
     position: absolute;
     bottom: 0;
-    right: 110px;
+    left: -50px;
     height: 100%;
     z-index: 10;
 }
 
+.scroll_bar {
+    padding-left: 57px;
+}
+
+.rotating {margin-top: 50px;}
+
 @media (max-width: 1189px){
-    .sun {
-        right: 53px;
-    }
-    .my_foto {
-        right: 53px;
-    }
+    .sun {right: -37px;}
+}
+
+@media (max-width: 1155px) {
+    .sun {height: 300px;}
 }
 
 @media (max-width: 1130px) {
     .atf_left .text h1 {line-height: 78px; font-size: 78px;}
     .atf_left .text span {font-size: 30px;}
+    .my_foto {left: -84px;}
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1086px) {
+    .my_foto{left: -140px;}
+    .sun {top: 123px;}
+}
+
+@media (max-width: 1018px) {
     .sun{height: 270px; top: 175px;}
-    .my_foto {height: 90%;}
+
     .atf_left .text h1 {line-height: 70px; font-size: 70px;}
     .atf_left .text span {font-size: 25px;line-height: 30px;}
 }
 
+@media(max-width: 1000px) {
+    .my_foto {left: -150px;}
+    .sun{top: 156px; right: -44px;}
+    .atf_left .text span {font-size: 30px;line-height: 50px;}
+    .atf_left{>img{margin-top: 56px;}}
+    .arrow{bottom: 168px;}
+}
+
+@media (max-width: 981px) {
+    .sun {top: 114px;}
+}
+
+@media (max-width: 965px) {
+    .my_foto {left: -163px;}
+}
+
+@media(max-width: 940px) {
+    .atf_left {margin-left: 0;}
+}
+
 @media (max-width: 925px) {
-    .sun{right: 26px; top: 194px;}
-    .my_foto {right: 17px;}
+    .sun{right: -21px; top: 142px;}
     .atf_left .text h1 {line-height: 60px; font-size: 60px;}
+}
+
+@media (max-width: 900px) {
+    app-navdots {display: none;}
+    .scroll_bar {display: none;}
+    .my_foto {left: -130px;}
+    .sun {right: 0;}
+}
+
+@media (max-width: 885px) {
+    .sun {height: 242px; top: 158px; right: -13px;}
+}
+
+@media (max-width: 850px) {
+    .my_foto {left: -150px;}
 }
 
 @media (max-width: 828px) {
     .atf_left{gap: 50px; margin-left: 0;}
     .atf_left img {height: 125px;}
+    .arrow {bottom: 186px; width: 30px; left: 48px;}
+    .my_foto{height: 97%;}
 }
 
-@media (max-width: 788px) {
-    .my_foto{height: 76%;}
-    .sun {top: 297px; right: 23px; height: 181px;}
-    .atf_left .text h1 {font-size: 50px;}
-    .atf_left .text span {font-size: 22px;}
+@media (max-width: 810px) {
+    .sun {top: 166px; right: -30px;}
+    .atf_left .text h1 {font-size: 50px; line-height: 52px;}
+    .atf_left .text span {font-size: 26px; line-height: 34px;}
+    .my_foto{left: -125px;}
+}
+
+@media (max-width: 775px) {
+    .my_foto{height: 93%;}
+    .arrow {left: 43px; bottom: 192px; width: 34px;}
+}
+
+@media(max-width: 759px) {
+    .my_foto{left: -153px;}
+    .sun{top: 179px;}
+}
+
+@media(max-width: 705px) {
+    .atf_left {margin-top: 36px;}
+    .my_foto {height: 90%; left: -166px;}
+}
+
+@media (max-width: 700px) {
+    .content {padding-left: 16px; padding-right: 16px;}
+    .my_foto {left: -140px;}
+    .sun {right: 17px;}
+}
+
+@media (max-width: 650px) {
+    .atf_left{gap: 75px;}
+    .arrow {bottom: 215px; left: 45px;}
 }
 
 @media (max-width: 640px) {
-    .my_foto{height: 70%;}
-    .sun {top: 329px; right: 33px;}
-    .atf_left img {height: 110px;}
+    .my_foto {left: -159px;}
 }
 
-@media (max-width: 588px) {
-    .atf_left { margin-top: 0;}
-    .atf_left .text h1 {font-size: 70px; line-height: 70px;}
-    .atf_left .text span {font-size: 30px;}
+@media (max-width: 625px) {
+    .my_foto {left: -170px;}
 }
 
-@media (max-width: 555px) {
-    .btn {margin-top: 0;}
-    .atf_left {gap: 20px; height: 100%; width: 100%;}
-    .atf_left img {height: 99px;}
+
+@media (max-width: 610px) {
+    .my_foto {height: 85%;}
 }
 
-@media (max-width: 500px) {
-    .atf_left img {
-        position: absolute;
-        bottom: 5%;
-        z-index: 20;
-        background-color: #679aac;
-        border-radius: 100px;
+@media (max-width: 590px) {
+    .my_foto {height: 80%;}
+}
+
+@media(max-width: 580px) {
+    .atf_left .text span{line-height: 32px;}
+    .atf_left .text h1 {
+        font-size: 56px;
+        line-height: 56px;
     }
-    .my_foto{height: 66%; right: 25px;}
-    .sun {top: 348px; height: 189px;}
-    .atf_left .text h1 {font-size: 60px; line-height: 60px;}
-    .atf_left .text span {font-size: 22px;}
+    .rotating {margin-top: 142px;}
+    .atf_left >img {margin-top: 142px;}
+    .arrow{
+        left: 47px;
+        bottom: 231px;
+        width: 30px;
+    }
+    .my_foto {height: 82%; left: -199px;}
+    .sun {right: 136px; top: 223px;}
+    .atf_left {gap: 8px;}
 }
 
-@media (max-width: 455px) {
-    .atf_left .text h1 {font-size: 45px; line-height: 55px;}
-    .atf_left .text span {font-size: 18px; line-height: 25px;}
-    .content {height: calc(100vh - 72px);}
-    .my_foto {right: 0;}
-    .sun {top: 351px; right: 17px; height: 173px;}
+//FERTIGkontrola
+@media(max-width: 568px) {
+    .sun{height: 238px; top: 247px;}
+    .my_foto {height: 80%;}
+}
+
+@media(max-width: 560px) {
+    .sun{right: 126px;}
+}
+
+@media(max-width: 545px) {
+    .sun{right: 108px;}
+}
+
+@media(max-width: 541px) {
+    .my_foto {left: -210px;}
+}
+
+
+@media(max-width: 535px) {
+    .sun {top: 258px;
+        height: 191px;}
+    .my_foto {height: 77%;}
+}
+
+//kontrola, dal jsem nedelala, protoze jsem zacla od velky obrazovky
+@media(max-width: 515px) {
+    .sun {right: 46px;}
+    .my_foto {left: -230px;}
+}
+
+@media(max-width: 507px) {
+    .sun {right: -55px;}
+    .my_foto {left:-266px;}
+}
+
+@media(max-width: 485px) {
+    .my_foto {height: 73%;}
+    .rotating {
+        margin-top: -21px;
+    }
+    .arrow {bottom: 103px;}
+}
+
+@media (max-width: 460px) {
+    .my_foto {left: -296px;}
+    .sun {top: 275px;}
+    .btn {margin-top: 0;}
 }
 
 @media (max-width: 450px) {
-    .content {padding-left: 16px; padding-right: 16px;}
-    .scroll_bar {display: none;}
+    .my_foto {bottom: -16px;}
 }
 
-@media (max-width: 360px) {
-    .my_foto {height: 60%;}
+@media (max-width: 420px) {
+    .atf_left {gap: 30px;}
+    .my_foto {left: -346px;}
+    .sun {top: 304px; right: -36px;}
+    .rotating {
+        margin-top: 0;
+        z-index: 20;
+    }
+    .atf_left >img {margin-top: 299px;}
+    .arrow {margin-top: 0; bottom: 402px;}
 }
 
-@media (max-width: 333px) {
-    .my_foto{height: 58%}
+@media (max-width: 400px) {
+    .sun {right: -11px;}
 }
+
+@media (max-width: 385px) {
+    .my_foto {height: 72%;}
+    .sun {right: 0; top: 322px;}
+}
+
+@media (max-width: 380px) {
+    .my_foto {height: 71%;}
+}
+
+@media (max-width: 375px) {
+    section {overflow-x: hidden;}
+}
+
+@media (max-width: 369px) {
+    .my_foto {left: -336px;}
+    .sun {right: 20px;}
+    .atf_left .text span {
+        font-size: 26px;
+    }
+    .atf_left .text h1 {
+        font-size: 53px;
+    }
+}
+
+@media (max-width: 356px) {
+    .atf_left .text h1 {
+        font-size: 46px;
+    }
+    .my_foto {left: -295px;}
+    .sun {top:297px; right: 101px; height: 205px;}
+}
+
+@media (max-width: 343px) {
+    .my_foto {left: -299px;}
+    .sun {right: 79px;}
+}
+
+@media (max-width: 340px) {
+    .my_foto {height: 67%;}
+    .sun {height: 196px; top: 323px;}
+}
+
+// @media (max-width: 555px) {
+//     .btn {margin-top: 0;}
+//     .atf_left {gap: 20px; height: 100%; width: 100%;}
+//     .atf_left img {height: 99px;}
+// }
+
+// @media (max-width: 500px) {
+//     .atf_left img {
+//         position: absolute;
+//         bottom: 5%;
+//         z-index: 20;
+//         background-color: #679aac;
+//         border-radius: 100px;
+//     }
+//     .my_foto{height: 66%; right: 25px;}
+//     .sun {top: 348px; height: 189px;}
+//     .atf_left .text h1 {font-size: 60px; line-height: 60px;}
+//     .atf_left .text span {font-size: 22px;}
+// }
+
+// @media (max-width: 455px) {
+//     .atf_left .text h1 {font-size: 45px; line-height: 55px;}
+//     .atf_left .text span {font-size: 18px; line-height: 25px;}
+//     .content {height: calc(100vh - 72px);}
+//     .my_foto {right: 0;}
+//     .sun {top: 351px; right: 17px; height: 173px;}
+// }
+
+// @media (max-width: 450px) {
+//     .content {padding-left: 16px; padding-right: 16px;}
+//     .scroll_bar {display: none;}
+// }
+
+// @media (max-width: 360px) {
+//     .my_foto {height: 60%;}
+// }
+
+// @media (max-width: 333px) {
+//     .my_foto{height: 58%}
+// }

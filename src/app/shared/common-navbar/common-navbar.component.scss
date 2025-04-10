@@ -23,9 +23,9 @@
 }
 
 .menu_tab {
-    position: absolute;
+    position: fixed;
     top: 12px;
-    right: -3000px;
+    right: -250px;
     z-index: 15;
     height: 222px;
     width: 208px;
@@ -36,7 +36,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    display: none;
 }
 
 .menu_tab .links_list {
@@ -47,10 +46,10 @@
 .menu_open {
     display: flex;
     flex-direction: column;
-    transition: 0.4s;
+    transition: right 0.4s ease-out;
     position: absolute;
     top: 12px;
-    right: 50px;
+    right: 55px;
     z-index: 15;
     box-sizing: border-box;
 }
