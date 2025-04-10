@@ -27,14 +27,4 @@ export class NavdotsComponent {
     { name: 'contact', id: 'contact' }
   ];
 
-  //funguje, ale jen na milisekundu pri refresnuti. Proste musim ty flags implementovat.
-  // ngOnInit() {
-  //   this.dotSrc = this.whiteDotSrc;
-
-    //tohle musim napsat primo do html:
-    //a klidne tam jeste muzu udelat if sectionflag ==id.id, tak id s tim stejnym indexem zmeni na:orangePlain atd.
-    //nebo hardcode:
-    // if(inWork && isWhite) {id[$index].dotSrc = this.dotOrangePlainSrc}
-  //}
-
 }
