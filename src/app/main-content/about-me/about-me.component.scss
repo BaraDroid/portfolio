@@ -20,18 +20,19 @@ section {
 }
 
 .left_side {
+    display: flex;
     >img {
         margin-left: 40px;
         object-fit: contain;
         height: 100%;
-        border-radius: 4px;
+        border-radius: 4px 4px 0 0;
+        align-self: flex-end;
     }
 }
 
 .right_side {
     display: flex;
     flex-direction: column;
-    //width: 100%;
 }
 
 h2 {
@@ -66,6 +67,31 @@ h2 {
 }
 
 .btn {margin-bottom: 0;}
+
+.info_slide_up {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 32px;
+    display: flex;
+    z-index: 100; //jinak to zmizi pod nasledujici sekci
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    background-color: #679aac;
+    color: #f8f7e5;
+    font-family: 'Quicksand';
+    >h5 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    >div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+}
 
 app-navdots {
     display: flex;

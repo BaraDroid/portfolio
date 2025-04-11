@@ -24,4 +24,14 @@
         </div>
     </div>
     
+    <div class="info_slide_up">
+        <h5>More about me</h5>
+            @for (text of 'about_me.slide_up_info' | translate ; track $index) {
+                <div>
+                    <img src="./assets/menu_icons/check_circle.svg" alt="check circle">
+                    <span>{{ text }}</span>
+                </div>
+            }
+    </div>
+
 </section>

@@ -77,11 +77,16 @@ app-common-navbar {
 
 @keyframes jumping_icon {
   from {transform: translateY(2);}
-  to {transform: translateY(-8px);}
+  to {transform: translateY(-10px);}
 }
 
 .jumping_icon {
   animation: jumping_icon 0.9s linear infinite alternate;
+}
+
+.jumping_icon:hover {
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 @keyframes rotate_wheel {
