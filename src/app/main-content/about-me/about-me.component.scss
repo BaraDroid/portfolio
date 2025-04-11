@@ -50,7 +50,7 @@ h2 {
     border-radius: 4px;
     padding: 32px;
     width: 662px;
-    z-index: 100;
+    z-index: 2;
     margin-top: -457px;
     margin-left: 24%;
     color: #F8F7E5;
@@ -73,13 +73,16 @@ h2 {
     border: 1px solid black;
     padding: 32px;
     display: none;
-    z-index: 100; //jinak to zmizi pod nasledujici sekci
+    transform: translateY(-100%);
     flex-direction: column;
     justify-content: center;
     gap: 16px;
     background-color: #679aac;
     color: #f8f7e5;
     font-family: 'Quicksand';
+    align-self: flex-end;
+    margin-right: 16%;
+    transition: transform 0.4s ease-out;
     >div {
         display: flex;
         align-items: center;
@@ -87,6 +90,13 @@ h2 {
         font-size: 16px;
         font-weight: 400px;
     }
+}
+
+.show_info_slider {
+    display: flex;
+    background-color: red;
+    transform: translateY(-77%);
+    z-index: 3;
 }
 
 h5 {
@@ -98,12 +108,6 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.jumping_icon:hover {
-    ~.info_slide_up {
-        display: flex;
-    }
 }
 
 app-navdots {

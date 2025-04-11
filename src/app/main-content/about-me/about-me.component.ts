@@ -17,6 +17,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 export class AboutMeComponent {
   isWhite: boolean = false;
   indexOfThisSection: number = 1;
+  infoSliderVisible: boolean = false;
 
   //menu.service
 constructor(private menuService: MenuService) {}
@@ -26,5 +27,8 @@ closeTheMenu(): void {
   this.menuService.closeMenu();
 }
 
+toggleInfoSlider() {
+  this.infoSliderVisible = !this.infoSliderVisible;
+}
 
 }

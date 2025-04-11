@@ -19,13 +19,15 @@
             <p class="vanishable">{{ 'about_me.text2' | translate }}</p>
             <div class="interactive">
                <a href="#contact"><button class="btn fontQuicksand">Let´s Talk</button></a>
-                <img class="jumping_icon" src="./assets/emojis/secret.svg" alt="">
+                <img class="jumping_icon"
+                (mouseover)="toggleInfoSlider()"
+                (mouseleave)="toggleInfoSlider()" src="./assets/emojis/secret.svg" alt="">
             </div>
             
         </div>
     </div>
     
-    <div class="info_slide_up">
+    <div class="info_slide_up" [ngClass]="{'show_info_slider': infoSliderVisible}">
         <div class="menu_title">
             <h5>More about me</h5>
             <img src="./assets/menu_icons/close_white.svg" alt="x icon">
