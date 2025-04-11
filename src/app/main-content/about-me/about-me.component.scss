@@ -140,6 +140,8 @@ app-navdots {
         font-size: 16px;
         margin-left: 10%;
     }
+    .info_slide_up {padding: 16px; gap: 8px;}
+    .info_slide_up >h5 {font-size: 20px;}
 }
 
 @media (max-width: 900px) {
@@ -180,7 +182,12 @@ app-navdots {
     .text_over {
         margin-left: 9%;
         margin-top: -100px;
+        width: 72%;
     }
     .mobile_view_text {display: block;}
     .normal_view_text {display: none;}
+}
+
+@media (max-width: 350px) {
+    .btn {padding: 8px 16px; width: 124px;}
 }
