@@ -7,6 +7,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative
 }
 app-common-navbar {width: 100%;}
 
@@ -113,27 +114,33 @@ h5 {
 .project_icon {
     height: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .my_contribution {
     border-radius: 4px;
     border: 1px solid #f8f7e5;
     padding: 32px;
-    //display: none;
-    //opacity: 0;
-    justify-content: center;
+    width: 47vw;
+    position: absolute;
+    transform: translateY(15vh);
+    right: 3vw;
+    z-index: 2;
     align-items: center;
     background-color: #679aac;
     color: #f8f7e5;
     font-family: 'Quicksand';
     align-self: flex-end;
-    transition: opacity 0.4s ease-out;
+    //opacity: 0;
+    // transition: opacity 10.4s ease-out;
 }
 
-.my_contribution_visible {
-    display: flex;
-    opacity: 100
-}
+// TO DO to pridani tridy funguje, ale ta opacity se nemeni postupne
+//musim pak pridat do html  [ngClass]="{'visible': showContribution}"
+// .visible {
+//     opacity: 1 !important; 
+//         transition: opacity 10.4s ease-out;
+//  }
 
 .technologies {
     font-family: 'Karla';
@@ -150,6 +157,15 @@ h5 {
     font-weight: 700;
     margin-top: 32px;
 }
+
+.btn {
+    gap: 4px;
+    &:hover {
+        >img {rotate: -45deg;}
+    }
+}
+
+.slide_btn {cursor: pointer;}
 
 @media(max-width: 1189px) {
     .slider {margin-left: 0;}

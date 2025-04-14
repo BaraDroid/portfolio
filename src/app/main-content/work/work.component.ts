@@ -14,6 +14,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 export class WorkComponent {
   isWhite: boolean = false;
   indexOfThisSection: number = 3;
+  showContribution: boolean = false;
 
   //menu.service
 constructor(private menuService: MenuService) {}
@@ -21,6 +22,11 @@ constructor(private menuService: MenuService) {}
 // Methode, die aufgerufen wird, wenn das Menü geschlossen werden soll (z.B. durch einen Button-Klick)
 closeTheMenu(): void {
   this.menuService.closeMenu();
+}
+
+//ja pak predavam url jako parametr, abych mohla pracovat pouze s jednou funkci pro vsechno
+goToUrl(givenUrl: string) {
+  window.open(givenUrl, "_blank");
 }
 
 }
