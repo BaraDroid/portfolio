@@ -10,4 +10,8 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 })
 export class ThirdReviewComponent {
 showWheel = false;
+
+goToLinkedInUrl() {
+  window.open('https://www.linkedin.com/in/albina-januzi/', "_blank");
+}
 }

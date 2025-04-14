@@ -10,4 +10,8 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 })
 export class SecondReviewComponent {
 showWheel = false;
+
+goToLinkedInUrl() {
+  window.open('https://www.linkedin.com/in/catalina-acosta-rivera/', "_blank");
+}
 }

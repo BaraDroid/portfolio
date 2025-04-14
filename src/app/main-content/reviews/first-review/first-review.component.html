@@ -1,9 +1,9 @@
 <div class="box">
     <div class="border" (mouseenter)="showWheel = true" (mouseleave)="showWheel = false">
-        <div class="name font_bold">Anna Mustermann</div>
-        <div class="description_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, maxime.</div>
+        <div class="name font_bold">Caryen Song</div>
+        <div class="description_text">{{ 'reviews.review1' | translate }}</div>
         <div class="font_bold">Frontend Developerin</div>
         <img *ngIf="showWheel" class="hover_wheel" src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">
     </div>
-    <span class="link font_bold">{{ 'reviews.link' | translate }} >></span>
+    <span (click)="goToLinkedInLink()" class="link font_bold">{{ 'reviews.link' | translate }} >></span>
 </div>

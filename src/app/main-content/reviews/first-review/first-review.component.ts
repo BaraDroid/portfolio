@@ -4,10 +4,14 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-first-review',
-  imports: [CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './first-review.component.html',
   styleUrl: './first-review.component.scss'
 })
 export class FirstReviewComponent {
   showWheel = false;
+
+  goToLinkedInLink() {
+    window.open('https://www.linkedin.com/in/caryen-song-b6b913317/', "_blank");
+  }
 }

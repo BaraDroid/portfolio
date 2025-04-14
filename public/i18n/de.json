@@ -43,9 +43,9 @@
     },
     "reviews": {
       "h2": "Was andere über mich sagen:",
-      "review1": "",
-      "review2": "",
-      "review3": "",
+      "review1": "Die Zusammenarbeit mit Barbora ist äußerst angenehm. Sie versteht nicht nur schnell ihre Aufgaben, sondern setzt diese auch immer mit höchster Präzision und Sorgfalt um. Ihre Arbeitsweise ist stets strukturiert und effizient, was die Teamarbeit mit ihr besonders produktiv und angenehm macht. Barbora bringt eine stets positive und motivierte Einstellung ins Team und ihre Zuverlässigkeit trägt entscheidend zum Erfolg unserer gemeinsamen Projekte bei. Es ist eine wahre Freude, mit ihr zusammenzuarbeiten!",
+      "review2": "Die Zusammenarbeit mit Barbora war eine großartige Erfahrung. Sie zeigte stets die Bereitschaft, neue Herausforderungen anzunehmen und Bugs zu beheben. In unserem Angular-Projekt Join entwickelte sie vollständige Features – darunter zum Beispiel den Add-Task-Section. Ihre Entschlossenheit war beeindruckend, und ihre Offenheit im Geben und Annehmen von Feedback machte unsere Zusammenarbeit nicht nur produktiv, sondern auch wirklich angenehm. Ich würde jederzeit gerne wieder mit ihr zusammenarbeiten.",
+      "review3": "Barbora ist eine verlässliche und professionelle Teamplayerin. Sie hat sich intensiv um das Hinzufügen und die Strukturierung der Tasks gekümmert und darüber hinaus auch gestalterische Aufgaben übernommen. Ihr Gespür für Design und ihre strukturierte Arbeitsweise haben dem Projekt sowohl inhaltlich als auch visuell einen klaren Mehrwert gebracht.",
       "link": "Zum Linkedin Profile"
     },
     "contact": {
