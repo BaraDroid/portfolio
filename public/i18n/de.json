@@ -23,10 +23,21 @@
     "work": {
       "h2": "Projekte",
       "text": "Hier präsentiere ich eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
-      "Pokedex": {
+      "pokedex":
+        {
           "description": "Mein Pokedex-Projekt zeigt auf unterhaltsame Art und Weise meine Fähigkeiten in der Integration von REST-APIs. Erkunde alle Pokémon-Details, die ich mithilfe der PokeAPI abrufe und dynamisch darstelle.",
           "contribution": "Als alleinige Entwicklerin dieses Projekts war ich verantwortlich für die vollständige Umsetzung, einschließlich der Anbindung der PokeAPI und der Gestaltung der interaktiven Elemente."
-      },
+        },
+      "join":
+        {
+          "description": "Join auf deutsch",
+          "contribution": "JOin auf deutsch"
+        },
+      "pollo_loco":
+        {
+          "description": "Mein Pokedex-Projekt zeigt auf unterhaltsame Art und Weise meine Fähigkeiten in der Integration von REST-APIs. Erkunde alle Pokémon-Details, die ich mithilfe der PokeAPI abrufe und dynamisch darstelle.",
+          "contribution": "Als alleinige Entwicklerin dieses Projekts war ich verantwortlich für die vollständige Umsetzung, einschließlich der Anbindung der PokeAPI und der Gestaltung der interaktiven Elemente."
+        },
       "arrow_left": "Vorheriges Projekt",
       "arrow_right": "Nächstes Projekt"
     },

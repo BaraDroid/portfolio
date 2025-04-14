@@ -17,14 +17,23 @@ export class WorkComponent {
   showContribution: boolean = false;
   currentIndex: number = 0;
 
-  projects =[
+  projects: {
+    name: string;
+    imgSrc: string;
+    technologies: string;
+    iconSrc: string;
+    gitHubUrl: string;
+    liveUrl: string;
+    descriptionKey: string;
+  }[] = [
     {
       name: 'Pokedex',
       imgSrc: '././assets/screenshots/pokedex.png',
       technologies: 'REST API | JavaScript | CSS | HTML',
       iconSrc: './assets/emojis/statistic.svg',
       gitHubUrl: 'https://github.com/BaraDroid/pokedex',
-      liveUrl: 'https://pokedex.barbora-lambeinova.de/'
+      liveUrl: 'https://pokedex.barbora-lambeinova.de/',
+      descriptionKey: 'work.pokedex.description'
     },
     {
       name: 'Join',
@@ -32,7 +41,8 @@ export class WorkComponent {
       technologies: 'Angular | Firebase | TypeScript | SCSS | HTML',
       iconSrc: './assets/emojis/join.svg',
       gitHubUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
-      liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png'
+      liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
+      descriptionKey: 'work.join.description'
     },
     {
       name: 'El Pollo Loco',
@@ -40,16 +50,25 @@ export class WorkComponent {
       technologies: 'Objektorientierung | JavaScript | CSS | HTML',
       iconSrc: './assets/emojis/pollo_loco.svg',
       gitHubUrl: 'https://github.com/BaraDroid/El-pollo-loco',
-      liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png'
+      liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
+      descriptionKey: 'work.pollo_loco.description'
     },
   ]
 
   showNextProject() {
     this.currentIndex++;
+    if(this.currentIndex >= this.projects.length){
+      this.currentIndex = 0;
+    }
+    console.log('next method currentIndex', this.currentIndex);
   }
 
   showPreviousProject() {
     this.currentIndex--;
+    if(this.currentIndex < 0) {
+      this.currentIndex = this.projects.length - 1;
+    }
+    console.log('previous method currentIndex', this.currentIndex);
   }
     
 

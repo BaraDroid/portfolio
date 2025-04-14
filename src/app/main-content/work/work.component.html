@@ -22,21 +22,21 @@
                             class="project_icon jumping_icon" src="{{ projects[currentIndex].iconSrc }}" alt="icon for showing more info">
                         </div>
                         <span class="technologies">{{ projects[currentIndex].technologies }}</span>
-                        {{ 'work.Pokedex.description' | translate }}
+                        {{ projects[currentIndex].descriptionKey | translate }}
                         <div class="interactiv_btns">
                             <button class="btn" (click)="goToUrl(projects[currentIndex].gitHubUrl)">Git Hub <img src="./assets/menu_icons/arrow_outward.svg" alt="illustrating arrow"></button>
                             <button class="btn" (click)="goToUrl(projects[currentIndex].liveUrl)">Live Test <img src="./assets/menu_icons/arrow_outward.svg" alt="illustrating arrow"></button>
                         </div>
                     </div>
                     <div class="arrows">
-                        <span class="slide_btn" (click)="showNextProject()"><< {{ 'work.arrow_left' | translate }}</span>
-                        <span class="slide_btn" (click)="showPreviousProject()">{{ 'work.arrow_right' | translate }} >></span>
+                        <span class="slide_btn" (click)="showPreviousProject()"><< {{ 'work.arrow_left' | translate }}</span>
+                        <span class="slide_btn" (click)="showNextProject()">{{ 'work.arrow_right' | translate }} >></span>
                     </div>
                 </div>
             </div>
 
             <div class="my_contribution" *ngIf="showContribution">
-                {{ 'work.Pokedex.contribution' | translate }}
+                {{ 'work.pokedex.contribution' | translate }}
             </div>
 
         </div>
