@@ -27,8 +27,4 @@ closeTheMenu(): void {
   this.menuService.closeMenu();
 }
 
-toggleInfoSlider() {
-  this.infoSliderVisible = !this.infoSliderVisible;
-}
-
 }
