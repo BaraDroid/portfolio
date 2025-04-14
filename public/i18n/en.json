@@ -22,8 +22,8 @@
     },
     "work": {
       "h2": "My work",
-      "text": "Explore the selection of my work here - interact with the projects to see my skills in action.",
-      "description": "Pokedex. A little project to see my work with APIs.",
+      "text": "Explore a selection of my work below interact with them to see my skills demonstrated.",
+      "description": "Check out my Pokedex project, a fun and functional demonstration of my REST API integration skills. Using the comprehensive PokeAPI, you can browse through Pokémon details and see how I handle data retrieval and dynamic content rendering.",
       "arrow_left": "Previous Project",
       "arrow_right": "Next Project"
     },

@@ -22,8 +22,8 @@
     },
     "work": {
       "h2": "Projekte",
-      "text": "Schauen Sie sich die Auswahl an meinen Projekten an:",
-      "description": "Pokedex. Ein kleines Projekt als Arbeit mit einer API.",
+      "text": "Hier präsentiere ich eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+      "description": "Mein Pokedex-Projekt zeigt auf unterhaltsame Art und Weise meine Fähigkeiten in der Integration von REST-APIs. Erkunde alle Pokémon-Details, die ich mithilfe der PokeAPI abrufe und dynamisch darstelle.",
       "arrow_left": "Vorheriges Projekt",
       "arrow_right": "Nächstes Projekt"
     },
