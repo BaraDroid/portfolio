@@ -78,24 +78,68 @@ h2 {
     }
     >.wheel {
         position: absolute;
+        height: 180px;
         bottom: 0;
         left: 0;
         z-index:10;
     }
 }
 
-.text {
+.about_project {
     display: flex;
     flex-direction: column;
     width: 500px;
     background-color: #1d1d1d;
     border-radius: 4px;
     color:#F8F7E5;
-    padding: 32px;
+    padding: 64px 32px;
+    gap: 16px;
     >.interactiv_btns {
         display: flex;
         gap: 40px;
     }
+}
+
+.project_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    font-size: 24px; 
+    font-weight: 700;
+}
+
+.project_icon {
+    height: 30px;
+    height: 30px;
+}
+
+.my_contribution {
+    border-radius: 4px;
+    border: 1px solid #f8f7e5;
+    padding: 32px;
+    //display: none;
+    //opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #679aac;
+    color: #f8f7e5;
+    font-family: 'Quicksand';
+    align-self: flex-end;
+    transition: opacity 0.4s ease-out;
+}
+
+.my_contribution_visible {
+    display: flex;
+    opacity: 100
+}
+
+.technologies {
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400px;
+    color: #679aac;
 }
 
 .arrows {
@@ -117,12 +161,12 @@ h2 {
 }
 
 @media (max-width: 964px) {
-    .text {padding: 16px; width: 440px;}
+    .about_project {padding: 16px; width: 440px;}
 }
 
 @media(max-width: 885px) {
     .slider {flex-direction: column;}
-    .text {width: fit-content;}
+    .about_project {width: fit-content;}
 }
 
 @media (max-width: 850px) {
@@ -148,7 +192,7 @@ h2 {
         height: fit-content;
         margin-bottom: 8px;
     }
-    .text .interactiv_btns {gap: 8px;}
+    .about_project .interactiv_btns {gap: 8px;}
 
 }
 
@@ -159,7 +203,7 @@ h2 {
 
 @media (max-width: 519px) {
     .main {margin-right: 8px;}
-    .text .interactiv_btns {justify-content: center;}
+    .about_project .interactiv_btns {justify-content: center;}
     .btn {margin-bottom: 8px; width: 130px;}
     .arrows {font-size: 14px;}
 }
@@ -182,6 +226,6 @@ h2 {
         font-size: 14px;
     }
     .headline span {font-size: 14px;}
-    .text {font-size: 14px;}
+    .about_project {font-size: 14px;}
     .arrows {font-size: 14px;}
 }
