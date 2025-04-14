@@ -33,6 +33,8 @@ section {
 .right_side {
     display: flex;
     flex-direction: column;
+    width: calc(100% - 557px);
+    //to funguje minimalne, kdyz mam otevreny dev tools
 }
 
 h2 {
@@ -40,7 +42,7 @@ h2 {
     font-size: 72px;
     font-weight: 700;
     color: #1D1D1D;
-    margin-left: calc(100% - 349px);
+    //margin-left: calc(100% - 349px);
     white-space: nowrap;
     align-self: flex-end;
 }
@@ -49,11 +51,13 @@ h2 {
     background-color: #1D1D1D;
     border-radius: 4px;
     padding: 32px;
-    width: 662px;
+    width: 90%;
     z-index: 2;
-    margin-top: -457px;
-    margin-left: 24%;
+    align-self: flex-end;
+    margin-top: 30vh;
+    margin-right: 20%;
     color: #F8F7E5;
+
 }
 
 .interactive {
@@ -127,12 +131,12 @@ app-navdots {
 
 //************max-width*******************************************************
 @media(max-width: 1290px) {
-    .text_over {margin-left: 30%;}
+    .text_over {margin-right: 3%; width: 84%;}
     .left_side >img {margin-left: 0;}
 }
 
 @media (max-width: 1245px) {
-    .text_over {width: 624px;}
+    //.text_over {width: 624px;}
 }
 
 @media (max-width: 1192px) {
@@ -142,20 +146,21 @@ app-navdots {
         height: unset;
         padding-top: 0;
     }
-    .text_over {margin-top: -262px; margin-left: 20%;}
-    .scroll_bar {padding-bottom: 0;}
+    // .text_over {align-self: center;
+    //     margin-left: 20%;}
+    // .scroll_bar {padding-bottom: 0;}
 }
 
 @media (max-width: 1048px) {
     .left_side >img {width: 347px;}
-    .text_over {margin-top: -178px; width: 588px;}
+    //.text_over {width: 588px;}
 }
 
 @media (max-width: 994px) {
     .text_over {
         padding: 16px;
         font-size: 16px;
-        margin-left: 10%;
+        //margin-left: 10%;
     }
     .info_slide_up {padding: 16px; gap: 8px;}
     h5 {font-size: 20px;}
@@ -167,7 +172,7 @@ app-navdots {
 
 @media (max-width: 889px) {
     .left_side >img {width: 300px;}
-    .text_over {width: 444px;}
+    //.text_over {width: 444px;}
     h2 {font-size: 62px;}
 }
 
@@ -182,11 +187,10 @@ app-navdots {
         height: unset;
         padding-top: 46px;
     }
-    .text_over {
-        margin-left: 17%;
-        margin-top: -83px;
-        width: 71%;
-    }
+    // .text_over {
+    //     margin-left: 17%;
+    //     width: 71%;
+    // }
     h2 {font-size: 40px; line-height: 40px;}
     .vanishable {display: none;}
 }
@@ -196,11 +200,6 @@ app-navdots {
 }
 
 @media(max-width: 380px) {
-    .text_over {
-        margin-left: 9%;
-        margin-top: -100px;
-        width: 72%;
-    }
     .mobile_view_text {display: block;}
     .normal_view_text {display: none;}
 }

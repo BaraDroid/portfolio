@@ -5,28 +5,30 @@
         <div class="left_side"><img src="./assets/imgs/about_me_crop.png" alt=""></div>
         <div class="right_side">
             <h2 class="fontEckzar">{{ 'about_me.h2' | translate }}</h2>
-            <div class="scroll_bar">
-                <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
+
+            <div class="text_over">
+                <div class="description fontQuicksand">
+                    <p class="normal_view_text">{{ 'about_me.text1' | translate }}</p>
+                    <p class="mobile_view_text">{{ 'about_me.mobile_view_text' | translate }}</p>
+                    <br>
+                    <p class="vanishable">{{ 'about_me.text2' | translate }}</p>
+                    <div class="interactive">
+                       <a href="#contact"><button class="btn fontQuicksand">Let´s Talk</button></a>
+                        <img class="jumping_icon"
+                        (mouseover)="toggleInfoSlider()"
+                        (mouseleave)="toggleInfoSlider()" src="./assets/emojis/secret.svg" alt="">
+                    </div>
+                </div>
             </div>
+
+        </div>
+        <div class="scroll_bar">
+            <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
         </div>
     </div>
 
-    <div class="text_over">
-        <div class="description fontQuicksand">
-            <p class="normal_view_text">{{ 'about_me.text1' | translate }}</p>
-            <p class="mobile_view_text">{{ 'about_me.mobile_view_text' | translate }}</p>
-            <br>
-            <p class="vanishable">{{ 'about_me.text2' | translate }}</p>
-            <div class="interactive">
-               <a href="#contact"><button class="btn fontQuicksand">Let´s Talk</button></a>
-                <img class="jumping_icon"
-                (mouseover)="toggleInfoSlider()"
-                (mouseleave)="toggleInfoSlider()" src="./assets/emojis/secret.svg" alt="">
-            </div>
-            
-        </div>
-    </div>
-    
+
+ 
     <div class="info_slide_up" [ngClass]="{'show_info_slider': infoSliderVisible}">
         <div class="menu_title">
             <h5>More about me</h5>
