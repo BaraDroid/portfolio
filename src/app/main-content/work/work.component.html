@@ -9,28 +9,28 @@
             </div>
             <div class="slider">
                 <div class="screenshot">
-                    <img class="project_image" src="{{ projects[0].imgSrc }}" alt="">
+                    <img class="project_image" src="{{ projects[currentIndex].imgSrc }}" alt="">
                     <img class="wheel rotating" src="././assets/animation_wheels/orange_sun.svg" alt="">
                 </div>
                 <div class="description fontQuicksand">
                     <div class="about_project">
                         <div class="project_name">
-                            <h5>{{ projects[0].name }}</h5>
+                            <h5>{{ projects[currentIndex].name }}</h5>
                             <img 
                             (mouseover)="showContribution = true"
                             (mouseleave)="showContribution = false"
-                            class="project_icon jumping_icon" src="{{ projects[0].iconSrc }}" alt="icon for showing more info">
+                            class="project_icon jumping_icon" src="{{ projects[currentIndex].iconSrc }}" alt="icon for showing more info">
                         </div>
-                        <span class="technologies">{{ projects[0].technologies }}</span>
+                        <span class="technologies">{{ projects[currentIndex].technologies }}</span>
                         {{ 'work.Pokedex.description' | translate }}
                         <div class="interactiv_btns">
-                            <button class="btn" (click)="goToUrl(projects[0].gitHubUrl)">Git Hub <img src="./assets/menu_icons/arrow_outward.svg" alt="illustrating arrow"></button>
-                            <button class="btn" (click)="goToUrl(projects[0].liveUrl)">Live Test <img src="./assets/menu_icons/arrow_outward.svg" alt="illustrating arrow"></button>
+                            <button class="btn" (click)="goToUrl(projects[currentIndex].gitHubUrl)">Git Hub <img src="./assets/menu_icons/arrow_outward.svg" alt="illustrating arrow"></button>
+                            <button class="btn" (click)="goToUrl(projects[currentIndex].liveUrl)">Live Test <img src="./assets/menu_icons/arrow_outward.svg" alt="illustrating arrow"></button>
                         </div>
                     </div>
                     <div class="arrows">
-                        <span class="slide_btn"><< {{ 'work.arrow_left' | translate }}</span>
-                        <span class="slide_btn">{{ 'work.arrow_right' | translate }} >></span>
+                        <span class="slide_btn" (click)="showNextProject()"><< {{ 'work.arrow_left' | translate }}</span>
+                        <span class="slide_btn" (click)="showPreviousProject()">{{ 'work.arrow_right' | translate }} >></span>
                     </div>
                 </div>
             </div>
