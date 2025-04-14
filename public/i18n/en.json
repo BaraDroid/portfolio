@@ -23,20 +23,21 @@
     "work": {
       "h2": "My work",
       "text": "Explore a selection of my work below interact with them to see my skills demonstrated.",
-      "projects": [
+      "pokedex":
         {
           "description": "Pokedex project, a fun and functional demonstration of my REST API integration skills. Browse through Pokémon details and see how I handle data retrieval and dynamic content rendering.",
           "contribution": "Being the sole developer on this project, I handled its entire implementation, from integrating the PokeAPI and creation the interactive elements."
       },
+      "join":
       {
-        "description": "Join",
-        "contribution": "Join"
+        "description": "A Kanban-inspired task manager built entirely with Angular. Users can easily create and organize tasks with intuitive drag-and-drop features, assign them to team members, and categorize them within customizable boards. The backend is powered by Firebase, providing robust data storage and secure user authentication.",
+        "contribution": "As a developer in a four-person team, I was mainly responsible for the functionality allowing to add new tasks, as well as the development of the board section, which serves as the main view for managing and tracking task progress."
       },
+      "pollo_loco":
       {
-      "description": "Pokedex project, a fun and functional demonstration of my REST API integration skills. Browse through Pokémon details and see how I handle data retrieval and dynamic content rendering.",
-      "contribution": "Being the sole developer on this project, I handled its entire implementation, from integrating the PokeAPI and creation the interactive elements."
-      }
-      ],      
+      "description": "This jump and run project, developed with a focus on advanced object-oriented programming, showcases my ability to control complex game logic and create engaging player experiences.",
+      "contribution": "I developed this jump and run game primarily to showcase my object-oriented JavaScript skills, using HTML for the layout and CSS for styling."
+      },      
       "arrow_left": "Previous Project",
       "arrow_right": "Next Project"
     },

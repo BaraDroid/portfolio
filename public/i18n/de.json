@@ -30,13 +30,13 @@
         },
       "join":
         {
-          "description": "Join auf deutsch",
-          "contribution": "JOin auf deutsch"
+          "description": "Task Manager, basierend auf dem Kanban System, entwickelt in Angular. Ermöglicht das Erstellen und Organisieren von Aufgaben durch Drag-and-Drop-Funktionen. Die Backend-Implementierung erfolgte mit Firebase, inklusive Nutzerauthentifizierung für eine personalisierte Nutzung.",
+          "contribution": "In diesem kollaborativen Projekt (4 Teammitglieder) konnte ich meine Fähigkeiten einsetzen, um die Funktionalität zum Hinzufügen von Tasks und die interaktive Board-Sektion zu realisieren."
         },
       "pollo_loco":
         {
-          "description": "Mein Pokedex-Projekt zeigt auf unterhaltsame Art und Weise meine Fähigkeiten in der Integration von REST-APIs. Erkunde alle Pokémon-Details, die ich mithilfe der PokeAPI abrufe und dynamisch darstelle.",
-          "contribution": "Als alleinige Entwicklerin dieses Projekts war ich verantwortlich für die vollständige Umsetzung, einschließlich der Anbindung der PokeAPI und der Gestaltung der interaktiven Elemente."
+          "description": "Dieses Jump and Run Spiel wurde primär entwickelt, um meine Fähigkeiten in der fortgeschrittenen objektorientierten Programmierung mit JavaScript zu demonstrieren, ergänzt durch die Darstellungsmöglichkeiten von HTML und CSS.",
+          "contribution": "Dieses Projekt zeigt meine Fähigkeit, komplexe Spiellogik zu steuern und fesselnde Spielerlebnisse zu schaffen."
         },
       "arrow_left": "Vorheriges Projekt",
       "arrow_right": "Nächstes Projekt"

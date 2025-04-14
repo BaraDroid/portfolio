@@ -25,15 +25,17 @@ export class WorkComponent {
     gitHubUrl: string;
     liveUrl: string;
     descriptionKey: string;
+    contributionKey: string;
   }[] = [
     {
       name: 'Pokedex',
       imgSrc: '././assets/screenshots/pokedex.png',
-      technologies: 'REST API | JavaScript | CSS | HTML',
+      technologies: 'REST API | JavaScript | Asynchronous Requests | CSS | HTML',
       iconSrc: './assets/emojis/statistic.svg',
       gitHubUrl: 'https://github.com/BaraDroid/pokedex',
       liveUrl: 'https://pokedex.barbora-lambeinova.de/',
-      descriptionKey: 'work.pokedex.description'
+      descriptionKey: 'work.pokedex.description',
+      contributionKey: 'work.pokedex.contribution'
     },
     {
       name: 'Join',
@@ -42,16 +44,18 @@ export class WorkComponent {
       iconSrc: './assets/emojis/join.svg',
       gitHubUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
       liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
-      descriptionKey: 'work.join.description'
+      descriptionKey: 'work.join.description',
+      contributionKey: 'work.join.contribution'
     },
     {
       name: 'El Pollo Loco',
       imgSrc: '././assets/screenshots/pollo_loco.png',
-      technologies: 'Objektorientierung | JavaScript | CSS | HTML',
+      technologies: 'OOP | JavaScript | Collision Detection | CSS | HTML',
       iconSrc: './assets/emojis/pollo_loco.svg',
       gitHubUrl: 'https://github.com/BaraDroid/El-pollo-loco',
       liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
-      descriptionKey: 'work.pollo_loco.description'
+      descriptionKey: 'work.pollo_loco.description',
+      contributionKey: 'work.pollo_loco.contribution'
     },
   ]
 
