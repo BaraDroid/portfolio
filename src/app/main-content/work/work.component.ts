@@ -7,7 +7,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 
 @Component({
   selector: 'app-work',
-  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, TranslateDirective, NavdotsComponent],
+  imports: [CommonNavbarComponent, CommonModule, TranslatePipe, NavdotsComponent],
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss'
 })
@@ -15,6 +15,18 @@ export class WorkComponent {
   isWhite: boolean = false;
   indexOfThisSection: number = 3;
   showContribution: boolean = false;
+
+  projects =[
+    {
+      name: 'Pokedex',
+      imgSrc: '././assets/screenshots/pokedex.png',
+      technologies: 'REST API | JavaScript | CSS | HTML',
+      iconSrc: './assets/emojis/statistic.svg',
+      gitHubUrl: 'https://github.com/BaraDroid/pokedex',
+      liveUrl: 'https://pokedex.barbora-lambeinova.de/'
+    }
+  ]
+    
 
   //menu.service
 constructor(private menuService: MenuService) {}
