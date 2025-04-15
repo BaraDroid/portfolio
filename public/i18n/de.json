@@ -62,15 +62,16 @@
     "formular": {
       "name": "Wie lautet Ihr Name?",
       "name_placeholder": "Schreiben Sie Ihr Name hier.",
-      "notification_name": "Bitte geben Sie Ihren Namen an",
+      "notification_name": "Ups! Dein Name fehlt wohl!",
       "email": "Was ist Ihre E-Mail Adresse?",
       "email_placeholder": "email@email.com",
-      "notification_email": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+      "notification_email": "Hoppla! Die Email ist ein Pflichtfeld!",
       "message": "Wie kann ich Ihnen helfen?",
       "message_placeholder": "Hallo Barbora, ich bin interessiert an...",
       "notification_message": "Bitte geben Sie eine Nachricht ein",
       "checkbox_text_part1": "Ich habe die",
       "checkbox_link": "Datenschutzerklärung",
-      "checkbox_text_part2": "gelesen und stimme der Verarbeitung meiner Daten zu."
+      "checkbox_text_part2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+      "checkbox_error": "Bitte akzeptiere die Datenschutzbestimmungen."
     }
 }

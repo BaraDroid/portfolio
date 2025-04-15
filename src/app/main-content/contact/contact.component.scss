@@ -49,23 +49,23 @@ h2 {
 }
 
 .blue_sun {
-    position: absolute;
-    bottom: 0;
-    left: 190px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 190px;
     z-index: 10;
 }
 
 .orange_sun {
-    position: absolute;
-    height: 144px;
-    bottom: 0;
-    left: 112px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 112px;
 }
 
-svg {
-    &:first-of-type {
-        height: 263px;
-    }
+.colorize {
+    font-family: 'Quicksand';
+    color: #ff834f;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 app-footer {width: 100%;}
@@ -135,5 +135,5 @@ app-navdots {
 @media (max-width: 450px) {
     .scroll_bar {display: none;}
     .content {padding-left: 16px; padding-right: 16px;}
-    .colorize {color:#f9af41; font-weight: bold;}
+    .colorize {color:#f9af41;}
 }

@@ -62,15 +62,16 @@
     "formular": {
       "name": "What´s your name?",
       "name_placeholder": "Your name goes here.",
-      "notification_name": "Please enter your name",
+      "notification_name": "Oops! It seems your name is missing!",
       "email": "What´s your email?",
       "email_placeholder": "your email@email.com",
-      "notification_email": "Please enter your email",
+      "notification_email": "Hoppla! Your email is required!",
       "message": "How can I help you?",
       "message_placeholder": "Hello Barbora, I am interested in...",
-      "notification_message": "Please enter your message",
+      "notification_message": "What do you need to develop?",
       "checkbox_text_part1": "I´ve read the",
       "checkbox_link": "privacy policy",
-      "checkbox_text_part2": "and agree to the processing of my data."
+      "checkbox_text_part2": "and agree to the processing of my data.",
+      "checkbox_error": "Please accept the privacy policy."
     }
 }

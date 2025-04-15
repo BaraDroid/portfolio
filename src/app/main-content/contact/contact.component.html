@@ -9,6 +9,10 @@
                 <p class="colorize">{{ 'contact.text1' | translate }}</p><br>
                 <p>{{ 'contact.text2' | translate }}</p>
             </div>
+            <div class="gearwheels">
+                <img class="blue_sun rotating" src="./assets/animation_wheels/animation_wheel_blue.svg" alt="blue rotating wheel">
+                <img class="orange_sun rotate_anticlockwise" src="./assets/animation_wheels/animation_wheel_orange.svg" alt="orange rotating wheel">
+            </div>
         </div>
         <div class="content_right">
             <div class="formular">
@@ -19,8 +23,6 @@
         <div class="scroll_bar">
             <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
         </div>
-    </div>
-    <img class="blue_sun rotating" src="./assets/animation_wheels/animation_wheel_blue.svg" alt="blue rotating wheel">
-    <img class="orange_sun rotate_anticlockwise" src="./assets/animation_wheels/animation_wheel_orange.svg" alt="orange rotating wheel">
+    </div>    
     <app-footer></app-footer>
 </section>

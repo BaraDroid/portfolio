@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -5,12 +6,14 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-formular',
-  imports: [FormsModule, TranslatePipe, TranslateDirective],
+  imports: [FormsModule, TranslatePipe, TranslateDirective, CommonModule],
   templateUrl: './formular.component.html',
   styleUrl: './formular.component.scss'
 })
 
 export class FormularComponent {
+privacyPolicyChecked: boolean = false;
+sendFormular: boolean = false;
 
 http = inject(HttpClient);
 
@@ -35,7 +38,7 @@ post = {
 };
 
 onSubmit(ngForm: NgForm) {
-  if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+  if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.privacyPolicyChecked) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
@@ -49,6 +52,8 @@ onSubmit(ngForm: NgForm) {
       });
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
     ngForm.resetForm();
+    this.privacyPolicyChecked = false;
+    this.sendFormular = false;
   }
 }
   }

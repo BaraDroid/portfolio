@@ -23,12 +23,19 @@
                 <span>{{ 'formular.notification_message' | translate }}</span>
             }
         </div>
-        <div class="checking">
-                <input type="checkbox" [(ngModel)]="contactData.checkboxField" name="checkboxField" required>
+        <div class="checkbox">
+            <div class="checking">
+                <img (click)="privacyPolicyChecked = !privacyPolicyChecked" [class]="privacyPolicyChecked ? 'checkmark_aktiv' : 'checkmark'" src="./assets/formular/unchecked_ default.svg" alt="checkbox for privacy policy">
                 <span class="legal_information">{{ 'formular.checkbox_text_part1' | translate }}<a href="data_protection"> {{ 'formular.checkbox_link' | translate }}</a> {{ 'formular.checkbox_text_part2' | translate }}</span>
+            </div>
+            @if(sendFormular && !privacyPolicyChecked) {
+                <span class="error_message">{{ 'formular.checkbox_error' | translate }}</span>
+                @if(privacyPolicyChecked) {sendFormular = false}
+             }
         </div>
+        
     </div>
-    <div class="drop_line"><input type="submit" value="Drop a line"></div>
+    <div (click)="sendFormular = true" class="drop_line"><input [disabled]="!contactForm.valid || !privacyPolicyChecked" [ngClass]="{'disabled': !contactForm.valid || !privacyPolicyChecked}" type="submit" value="Drop a line"></div>
 </form>
     
 

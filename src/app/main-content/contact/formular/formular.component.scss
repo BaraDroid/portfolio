@@ -25,11 +25,27 @@
     gap: 32px;
 }
 
+.error_message {
+    left: 19px;
+}
+
 .checking {
     display: flex;
     align-items: center;
+    >img {top: 2px;}
     >span {
         >a {color:#f9af41;}
+    }
+}
+
+.checkmark:hover {
+    content: url(./../../../../../public/assets/formular/unchecked_hover.svg);
+}
+
+.checkmark_aktiv {
+    content: url(./../../../../../public/assets/formular/checked_default.svg);
+    &:hover {
+        content: url(./../../../../../public/assets/formular/checked_hover.svg);
     }
 }
 
@@ -51,12 +67,6 @@ input[type=text] {
     border: none;
     border-bottom: 1px solid #f9af41;
     padding: 16px;
-}
-
-input[type=checkbox] {
-    border: 3px solid #f9af41;
-    background-color: #1d1d1d;
-    margin-right: 8px;
 }
 
 label {
@@ -91,6 +101,16 @@ label {
         }
 }
 }
+
+.drop_line input[type="submit"].disabled {
+    color: #666;
+    cursor: not-allowed;
+  }
+
+  .drop_line input[type="submit"]:disabled:hover {
+    background-color: inherit;
+    cursor: not-allowed;
+  }
 
 @media(max-width: 1195px) {
     input[type=checkbox] {margin-top: 4px;}
