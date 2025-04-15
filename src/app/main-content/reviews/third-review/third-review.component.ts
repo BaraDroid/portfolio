@@ -4,7 +4,7 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-third-review',
-  imports: [CommonModule,TranslatePipe, TranslateDirective],
+  imports: [CommonModule,TranslatePipe],
   templateUrl: './third-review.component.html',
   styleUrl: './third-review.component.scss'
 })

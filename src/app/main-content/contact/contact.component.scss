@@ -13,7 +13,7 @@ section {
 .content {
     width: 100%;
     max-width: 1440px;
-    height: calc(100vh - 88px - 88px);
+    //height: calc(100vh - 88px - 88px);
     padding-left: 112px;
     padding-right: 72px;
     display: flex;
@@ -29,36 +29,37 @@ section {
 
 h2 {
     color: #f9af41;
+    text-wrap: nowrap;
 }
 
 .content_left {
-    margin-top: 72px;
+    //margin-top: 72px;
     width: 528px;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 36px;
     position: relative;
 }
 
 .content_rigth {
     width: 100%;
+    height:auto;
 }
 
 .formular {
-    margin-top: 275px;
+   top: 175px;
 }
 
 .blue_sun {
-    // position: absolute;
-    // bottom: 0;
-    // left: 190px;
     z-index: 10;
+    right: 13%;
 }
 
-.orange_sun {
-    // position: absolute;
-    // bottom: 0;
-    // left: 112px;
+.gearwheels {
+    overflow: hidden; 
+    z-index: 2;
+    position: relative;
+    bottom: -57px;
 }
 
 .colorize {
@@ -68,7 +69,7 @@ h2 {
     font-weight: 700;
 }
 
-app-footer {width: 100%;}
+app-footer {width: 100%; position: relative; bottom: 0;}
 
 app-navdots {
     display: flex;
