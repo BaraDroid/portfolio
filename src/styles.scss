@@ -104,3 +104,11 @@ app-common-navbar {
   animation: rotate_wheel 11s linear infinite;
 }
 
+@keyframes rotate_other_direction {
+  from {rotate: 0deg;}
+  to {rotate: -360deg;}
+}
+
+.rotate_anticlockwise {
+  animation: rotate_other_direction 11s linear infinite;
+}
