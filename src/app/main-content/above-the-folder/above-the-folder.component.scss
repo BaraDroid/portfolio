@@ -32,6 +32,7 @@ app-navdots {
     height: calc(100vh - 88px);
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .atf_left {
@@ -75,18 +76,18 @@ app-navdots {
 }
 
 .sun {
-    position: absolute;
-    top: 104px;
-    right: 8px;
+    position: relative;
+    //top: 104px;
+    //right: 8px;
     height: 327px;
-    z-index: 5;
+    //z-index: 2;
 }
 .my_foto {
-    position: absolute;
-    bottom: 0;
-    left: -10px;
-    height: 100%;
-    z-index: 10;
+    position: relative;
+    //bottom: 0;
+    //left: -10px;
+    //height: 100%;
+    //z-index: 10;
 }
 
 .scroll_bar {

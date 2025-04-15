@@ -42,8 +42,8 @@ export class WorkComponent {
       imgSrc: '././assets/screenshots/join.png',
       technologies: 'Angular | Firebase | TypeScript | SCSS | HTML',
       iconSrc: './assets/emojis/join.svg',
-      gitHubUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
-      liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
+      gitHubUrl: 'https://github.com/BaraDroid/join',
+      liveUrl: 'https://join.barbora-lambeinova.de/',
       descriptionKey: 'work.join.description',
       contributionKey: 'work.join.contribution'
     },
