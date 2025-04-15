@@ -1,4 +1,4 @@
-<ng-container *ngFor="let id of allIds; let i = index; track $index">
+<ng-container *ngFor="let id of allIds; let i = index">
         <a href="#{{ id.id }}">
                 @if(sectionIndex == 1) {
                 <img [src]="i === sectionIndex ? dotAboutAndContactSrc : blackDotSrc" alt="{{ id.name }}">
