@@ -9,7 +9,7 @@
                 {{ 'competencen.text' | translate }}
             </div>
             <div class="animation">
-                <img class="learning_sun" src="./assets/animation_wheels/orange_sun.svg" alt="">
+                <img class="learning_sun rotating" [ngClass]="{'stop_rotating' : showFurtherSkills }" src="./assets/animation_wheels/orange_sun.svg" alt="">
                 <img (mouseover)="showFurtherSkills = true" (mouseleave)="showFurtherSkills = false" class="learning_icon" src="./assets/emojis/learning.svg" alt="">
             </div>'
             <div class="further_skills" *ngIf="showFurtherSkills" [ngClass]="{'further_skills_visible' : showFurtherSkills}">

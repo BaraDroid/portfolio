@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <div class="my_contribution" *ngIf="showContribution">
+            <div class="my_contribution" *ngIf="showContribution" [ngClass]="{ 'fade_contribution_in' : showContribution }">
                 {{ projects[currentIndex].contributionKey | translate }}
             </div>
 

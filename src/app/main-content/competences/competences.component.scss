@@ -131,6 +131,11 @@ h2 {
     animation: slide_from_bottom 0.4s ease-out forwards;
 }
 
+.stop_rotating {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
 app-navdots {
     display: flex;
     flex-direction: column;
