@@ -9,7 +9,10 @@ section {
     align-items: center;
     position: relative
 }
-app-common-navbar {width: 100%;}
+app-common-navbar {
+    width: 100%;
+    max-width: 1440px;
+}
 
 app-navdots {
     display: flex;

@@ -10,6 +10,11 @@ section {
     align-items: center;
 }
 
+app-common-navbar {
+    width: 100%;
+    max-width: 1440px;
+}
+
 .navbar {
     height: 88px;
     padding: 24px 72px;
