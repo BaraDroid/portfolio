@@ -2,10 +2,8 @@
     <app-common-navbar [whiteColor]="isWhite" ></app-common-navbar>
 
     <div class="content">
-        <div class="left_side"><img src="./assets/imgs/about_me_crop.png" alt=""></div>
-        <div class="right_side">
-            <h2 class="fontEckzar">{{ 'about_me.h2' | translate }}</h2>
-
+        <div class="left_side">
+            <img src="./assets/imgs/about_me_crop.png" alt="">
             <div class="text_over">
                 <div class="description fontQuicksand">
                     <p class="normal_view_text">{{ 'about_me.text1' | translate }}</p>
@@ -20,7 +18,9 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="right_side">
+            <h2 class="fontEckzar">{{ 'about_me.h2' | translate }}</h2>
         </div>
         <div class="scroll_bar">
             <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
