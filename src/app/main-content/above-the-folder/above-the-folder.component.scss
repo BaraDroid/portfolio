@@ -77,17 +77,14 @@ app-navdots {
 
 .sun {
     position: relative;
-    //top: 104px;
-    //right: 8px;
     height: 327px;
-    //z-index: 2;
+    align-self: center;
+    bottom: 133px;
 }
 .my_foto {
-    position: relative;
-    //bottom: 0;
-    //left: -10px;
-    //height: 100%;
-    //z-index: 10;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
 }
 
 .scroll_bar {
@@ -96,66 +93,21 @@ app-navdots {
 
 .rotating {margin-top: 50px;}
 
-//***************MIN WIDTH**********************************************
-@media(min-width: 1286px) {
-    .my_foto {left: 100px;}
-    .sun {right: 60px;}
-}
-
-//**************MAX WIDTH*********************************************
-@media (max-width: 1240px) {
-    .my_foto {left: -30px;}
-    .sun {height: 291px;}
-}
-
-@media (max-width: 1189px){
-    .sun {right: -37px;}
-}
-
-@media(max-width: 1160px) {
-    .my_foto {left: -43px;}
-}
 
 @media (max-width: 1130px) {
     .atf_left .text h1 {line-height: 78px; font-size: 78px;}
     .atf_left .text span {font-size: 30px;}
-    .my_foto {left: -84px;}
-}
-
-@media(max-width: 1100px) {
-    .my_foto {left: -104px;}
-}
-
-@media (max-width: 1086px) {
-    .my_foto{left: -140px;}
-    .sun {top: 123px;}
-}
-
-@media(max-width: 1060px) {
-    .my_foto {left: -155px;}
 }
 
 @media (max-width: 1018px) {
-    .sun{height: 270px; top: 175px;}
-
     .atf_left .text h1 {line-height: 70px; font-size: 70px;}
     .atf_left .text span {font-size: 25px;line-height: 30px;}
 }
 
 @media(max-width: 1000px) {
-    .my_foto {left: -150px;}
-    .sun{top: 156px; right: -44px;}
     .atf_left .text span {font-size: 30px;line-height: 50px;}
     .atf_left{>img{margin-top: 56px;}}
     .arrow{bottom: 168px;}
-}
-
-@media (max-width: 981px) {
-    .sun {top: 114px;}
-}
-
-@media (max-width: 965px) {
-    .my_foto {left: -163px;}
 }
 
 @media(max-width: 940px) {
@@ -163,47 +115,27 @@ app-navdots {
 }
 
 @media (max-width: 925px) {
-    .sun{right: -21px; top: 142px;}
     .atf_left .text h1 {line-height: 60px; font-size: 60px;}
 }
 
 @media (max-width: 900px) {
     app-navdots {display: none;}
     .scroll_bar {display: none;}
-    .my_foto {left: -130px;}
-    .sun {right: 0;}
-}
-
-@media (max-width: 885px) {
-    .sun {height: 242px; top: 158px; right: -13px;}
-}
-
-@media (max-width: 850px) {
-    .my_foto {left: -150px;}
 }
 
 @media (max-width: 828px) {
     .atf_left{gap: 50px; margin-left: 0;}
     .atf_left img {height: 125px;}
     .arrow {bottom: 186px; width: 30px; left: 48px;}
-    .my_foto{height: 97%;}
 }
 
 @media (max-width: 810px) {
-    .sun {top: 166px; right: -30px;}
     .atf_left .text h1 {font-size: 50px; line-height: 52px;}
     .atf_left .text span {font-size: 26px; line-height: 34px;}
-    .my_foto{left: -125px;}
 }
 
 @media (max-width: 775px) {
-    .my_foto{height: 93%;}
     .arrow {left: 43px; bottom: 192px; width: 34px;}
-}
-
-@media(max-width: 759px) {
-    .my_foto{left: -153px;}
-    .sun{top: 179px;}
 }
 
 @media(max-width: 708px) {
@@ -212,35 +144,15 @@ app-navdots {
 
 @media(max-width: 705px) {
     .atf_left {margin-top: 36px;}
-    .my_foto {height: 90%; left: -166px;}
 }
 
 @media (max-width: 700px) {
     .content {padding-left: 16px; padding-right: 16px;}
-    .my_foto {left: -140px;}
-    .sun {right: 17px;}
 }
 
 @media (max-width: 650px) {
     .atf_left{gap: 75px;}
     .arrow {bottom: 215px; left: 45px;}
-}
-
-@media (max-width: 640px) {
-    .my_foto {left: -159px;}
-}
-
-@media (max-width: 625px) {
-    .my_foto {left: -170px;}
-}
-
-
-@media (max-width: 610px) {
-    .my_foto {height: 85%;}
-}
-
-@media (max-width: 590px) {
-    .my_foto {height: 80%;}
 }
 
 @media(max-width: 580px) {
@@ -256,40 +168,7 @@ app-navdots {
         bottom: 231px;
         width: 30px;
     }
-    .my_foto {height: 82%; left: -199px;}
-    .sun {right: 136px; top: 223px;}
     .atf_left {gap: 8px;}
-}
-
-@media(max-width: 568px) {
-    .sun{height: 238px; top: 247px;}
-    .my_foto {height: 80%;}
-}
-
-@media(max-width: 560px) {
-    .sun{right: 126px;}
-}
-
-@media(max-width: 545px) {
-    .sun{right: 108px;}
-}
-
-@media(max-width: 541px) {
-    .my_foto {left: -210px;}
-}
-
-@media(max-width: 522px) {
-    .my_foto {left: -222px;}
-}
-
-@media(max-width: 515px) {
-    .sun {right: 116px;}
-    .my_foto {left: -230px; height: 77%;}
-}
-
-@media(max-width: 511px) {
-    .my_foto {left: -246px;}
-    .sun {right: 93px;}
 }
 
 @media(max-width: 506px) {
@@ -297,35 +176,17 @@ app-navdots {
     .rotating {
         margin-top: -21px;
     }
-    //.arrow {bottom: 103px;}
-    .sun {top: 275px;}
-}
-
-@media(max-width: 484px) {
- .sun {height: 222px;}
 }
 
 @media (max-width: 460px) {
-    .my_foto {left: -278px;}
-    .sun {top: 275px;}
     .btn {margin-top: 0;}
     .atf_left >img {margin-top: 272px; z-index: 20;}
     .arrow {bottom: 360px;}
     .rotating {background-color: #679aac; border-radius: 50%;}
 }
 
-@media (max-width: 450px) {
-    .my_foto {bottom: -16px;}
-}
-
-@media (max-width: 430px) {
-    .my_foto {left: -300px;}
-}
-
 @media (max-width: 420px) {
     .atf_left {gap: 30px;}
-    .my_foto {left: -319px;}
-    .sun {top: 304px; right: 132px;}
     // .rotating {
     //     margin-top: 0;
     //     z-index: 20;
@@ -334,26 +195,11 @@ app-navdots {
     .arrow {bottom: 382px;}
 }
 
-@media (max-width: 404px) {
-    .sun {right: 116px;}
-}
-
-@media (max-width: 392px) {
-    .my_foto {height: 72%; left: -325px;}
-    .sun {right: 101px; top: 322px;}
-}
-
-@media (max-width: 380px) {
-    .my_foto {height: 71%;}
-}
-
 @media (max-width: 375px) {
     section {overflow-x: hidden;}
 }
 
 @media (max-width: 369px) {
-    .my_foto {left: -336px; height: 69%;}
-    .sun {right: 20px; height: 293px;}
     .atf_left .text span {
         font-size: 26px;
     }
@@ -366,16 +212,4 @@ app-navdots {
     .atf_left .text h1 {
         font-size: 46px;
     }
-    .my_foto {left: -295px;}
-    .sun {top:297px; right: 101px; height: 205px;}
-}
-
-@media (max-width: 343px) {
-    .my_foto {left: -299px;}
-    .sun {right: 79px;}
-}
-
-@media (max-width: 340px) {
-    .my_foto {height: 67%;}
-    .sun {height: 196px; top: 323px;}
 }
