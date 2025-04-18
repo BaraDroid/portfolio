@@ -14,7 +14,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 export class WorkComponent {
   isWhite: boolean = false;
   indexOfThisSection: number = 3;
-  showContribution: boolean = false;
+  showContribution: boolean = true;
   currentIndex: number = 0;
 
   projects: {

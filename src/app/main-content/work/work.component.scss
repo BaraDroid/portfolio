@@ -78,7 +78,7 @@ h2 {
     position: relative;
     >.project_image {
         width: 90%;
-        z-index: 20;
+        z-index: 11;
     }
     >.wheel {
         position: absolute;
@@ -177,10 +177,13 @@ h5 {
 @media (max-width: 1140px) {
     .headline {margin-top: 16px; width: 100%;}
     .slider {gap: 16px;}
+    .my_contribution {right: 12vw;
+    top: -5vh;}
 }
 
 @media (max-width: 964px) {
     .about_project {padding: 16px; width: 440px;}
+    .my_contribution {padding: 16px; text-align: justify; right: 8vw;}
 }
 
 @media(max-width: 900px) {
@@ -188,12 +191,19 @@ h5 {
 }
 
 @media(max-width: 885px) {
+    .headline {height: 10vh;}
+    h2 {font-size: 50px;}
+    .screenshot{width: 68%;}
     .slider {flex-direction: column;}
     .about_project {width: fit-content;}
+    .main {margin-right: 0;}
+    .my_contribution {
+        z-index: 20;
+        top: 15vh;
+    }
 }
 
 @media (max-width: 850px) {
-    h2 {font-size: 50px;}
     .arrows {margin-top: 16px;}
     .screenshot {height: 90%;}
 }
@@ -220,12 +230,18 @@ h5 {
         margin-bottom: 8px;
     }
     .about_project .interactiv_btns {gap: 8px;}
-
+    .my_contribution {right: 13vw;}
 }
 
 @media(max-width: 570px) {
     .screenshot {width: 100%;}
     .main {margin-right: 16px;}
+}
+
+@media (max-width: 530px) {
+    .btn {margin-top: 0;
+        margin-bottom: 0;
+        padding: 8px 16px;}
 }
 
 @media (max-width: 519px) {
@@ -239,10 +255,19 @@ h5 {
     h2 {font-size: 36px; line-height: 36px;}
 }
 
+@media (max-width: 460px) {
+    .my_contribution {width: 66vw;}
+}
+
 @media (max-width: 450px) {
     .content {padding-right: 16px; padding-left: 16px;}
     .scroll_bar {display: none;}
     .arrows {font-size: 15px;}
+}
+
+@media (max-width: 414px) {
+    .my_contribution {right: 18vw;}
+    .screenshot {overflow: hidden;}
 }
 
 @media (max-width: 350px) {
@@ -250,9 +275,9 @@ h5 {
     .btn {
         width: 122px;
         padding: 8px 16px;
-        font-size: 14px;
+        font-size: 16px;
     }
-    .headline span {font-size: 14px;}
-    .about_project {font-size: 14px;}
+    .headline span {font-size: 16px;}
+    .about_project {font-size: 16px;}
     .arrows {font-size: 14px;}
 }
