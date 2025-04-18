@@ -24,4 +24,5 @@ constructor(private menuService: MenuService) {}
   closeTheMenu(): void {
     this.menuService.closeMenu();
   }
+
 }

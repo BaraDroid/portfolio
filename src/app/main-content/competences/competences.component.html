@@ -1,4 +1,4 @@
-<section (click)="closeTheMenu()" >
+<section (click)="closeTheMenu()" (click)="closeSlider()">
     <app-common-navbar [whiteColor]="isWhite" ></app-common-navbar>
 
     <div class="content">
@@ -10,12 +10,12 @@
             </div>
             <div class="animation">
                 <img class="learning_sun rotating" [ngClass]="{'stop_rotating' : showFurtherSkills }" src="./assets/animation_wheels/orange_sun.svg" alt="">
-                <img (mouseover)="showFurtherSkills = true" (mouseleave)="showFurtherSkills = false" class="learning_icon" src="./assets/emojis/learning.svg" alt="">
+                <img (mouseover)="handleMouseOverForSlider()" (mouseleave)="handleMouseLeaveForSlider()" (click)="clickForSlider(); $event.stopPropagation()" class="learning_icon" src="./assets/emojis/learning.svg" alt="">
             </div>
             <div class="further_skills" *ngIf="showFurtherSkills" [ngClass]="{'further_skills_visible' : showFurtherSkills}">
                 <div class="skills_title">
                     <h5>{{ 'competencen.further_skills.h5' | translate }}</h5>
-                    <img src="./assets/menu_icons/close_white.svg" alt="closing icon">
+                    <img (click)="closeSlider()" src="./assets/menu_icons/close_white.svg" alt="closing icon">
                 </div>
                 <p>{{ 'competencen.further_skills.p' | translate }}</p>
                 <img src="./assets/frontend_icons/python_logo.svg" alt="python logo">

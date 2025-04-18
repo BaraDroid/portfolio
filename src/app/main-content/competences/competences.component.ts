@@ -14,7 +14,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 export class CompetencesComponent {
 isWhite: boolean = true;
 indexOfThisSection: number = 2;
-showFurtherSkills: boolean = true;
+showFurtherSkills: boolean = false;
 
 icons: {
   path: string;
@@ -50,7 +50,7 @@ icons: {
   },
   {
     path: './assets/frontend_icons/rest_api.svg',
-    description: 'Rest-Api'
+    description: 'REST-API'
   },
   {
     path: './assets/frontend_icons/scrum.svg',
@@ -70,5 +70,26 @@ constructor(private menuService: MenuService) {}
     this.menuService.closeMenu();
   }
   
+  handleMouseOverForSlider() {
+    if(window.innerWidth > 900) {
+      this.showFurtherSkills = true;
+    }
+  }
+  
+  handleMouseLeaveForSlider() {
+    if(window.innerWidth > 900) {
+      this.showFurtherSkills = false;
+    }
+  }
+  
+  clickForSlider() {
+      if(window.innerWidth < 900) {
+        this.showFurtherSkills = !this.showFurtherSkills;
+      }
+    }
+  
+  closeSlider() {
+    this.showFurtherSkills = false;
+  }
   
 }
