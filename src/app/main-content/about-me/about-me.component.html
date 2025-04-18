@@ -1,4 +1,4 @@
-<section (click)="closeTheMenu()">
+<section (click)="closeTheMenu()" (click)="closeSlider()">
     <app-common-navbar [whiteColor]="isWhite" ></app-common-navbar>
 
     <div class="content">
@@ -13,8 +13,9 @@
                     <div class="interactive">
                        <a href="#contact"><button class="btn fontQuicksand">Let´s Talk</button></a>
                         <img class="jumping_icon"
-                        (mouseover)="infoSliderVisible = true"
-                        (mouseleave)="infoSliderVisible = false" src="./assets/emojis/secret.svg" alt="">
+                        (mouseover)="handleMouseOverForSlider()"
+                        (mouseleave)="handleMouseLeaveForSlider()"
+                         (click)="clickForSlider()"  (click)="$event.stopPropagation()" src="./assets/emojis/secret.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -32,7 +33,7 @@
     <div class="info_slide_up" *ngIf="infoSliderVisible" [ngClass]="{'show_info_slider': infoSliderVisible}">
         <div class="menu_title">
             <h5>More about me</h5>
-            <img class="x_icon" src="./assets/menu_icons/close_white.svg" alt="x icon">
+            <img  (click)="closeSlider()" class="x_icon" src="./assets/menu_icons/close_white.svg" alt="x icon">
         </div>
         
             @for (text of 'about_me.slide_up_info' | translate ; track $index) {
