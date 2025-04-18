@@ -192,10 +192,7 @@ app-navdots {
 @media (max-width: 889px) {
     .left_side >img {width: 300px;}
     h2 {font-size: 62px;}
-}
-
-@media (max-width: 805px) {
-
+    .text_over {top: 38vh;}
 }
 
 @media (max-width: 795px) {
@@ -225,7 +222,12 @@ app-navdots {
     h2{padding: 0;}
 }
 //tady koncim ten justify-self bei right side hat nix gebracht
-@media (max-width: 550px) {
+@media (max-width: 607px) {
+    .vanishable {display: none;}
+    .text_over {width: 120%;}
+}
+
+@media (max-width: 570px) {
     .left_side >img {
         width: 240px; 
         align-self: flex-start; 
@@ -233,18 +235,51 @@ app-navdots {
         padding-top: 46px;
     }
     h2 {font-size: 40px; line-height: 40px;}
-    .vanishable {display: none;}
+    .text_over {top: 35vh;}
 }
 
 @media (max-width: 511px) {
     .btn {margin-top: 0;}
 }
 
+@media (max-width: 480px) {
+    h2 {position: absolute;
+        right: -24vw;}
+    .left_side >img {width: 200px;}
+    .text_over {left: 108px; width: 159%;}
+}
+
+@media (max-width: 466px) {
+    .text_over {width: 137%;}
+}
+
+@media (max-width: 425px) {
+    .text_over {left: 82px;}
+}
+
+@media (max-width: 399px) {
+    .left_side >img {width: 172px;}
+    .text_over {top: 29vh;}
+    h2 {right: -19vw;}
+}
+
 @media(max-width: 380px) {
     .mobile_view_text {display: block;}
     .normal_view_text {display: none;}
+    .show_info_slider {right: 20%;}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .btn {padding: 8px 16px; width: 124px;}
+    .show_info_slider {right: 15%;}
+    .text_over {left: 66px;}
+}
+
+@media (max-width: 335px) {
+    .text_over {top: 40vh;
+        left: 28px;
+        width: 240px;
+        height: 312px;}
+    .left_side >img {width: 240px;}
+    h2 {right: -3vw;}
 }
