@@ -18,7 +18,8 @@
     },
     "competencen": {
       "h2": "Core Kompetenzen",
-      "text": "Meine technologischen Kernkompetenzen umfassen Angular, Firebase (inkl. Authentifizierung), objektorientiertes JavaScript, REST API-Integration sowie die Frontend-Entwicklung mit HTML, CSS und SCSS. Durch meine vielfältigen Projekte habe ich meine Fähigkeit zur erfolgreichen Konzeption und Umsetzung von Webanwendungen in Einzel- und Teamarbeit unter Beweis gestellt.",
+      "text": "Meine technologischen Kernkompetenzen umfassen Angular, Firebase (inkl. Authentifizierung), objektorientiertes JavaScript, REST API-Integration sowie die Frontend-Entwicklung mit HTML, CSS und SCSS.",
+      "text_vanishable": "Durch meine vielfältigen Projekte habe ich meine Fähigkeit zur erfolgreichen Konzeption und Umsetzung von Webanwendungen in Einzel- und Teamarbeit unter Beweis gestellt.",
       "further_skills": {
         "h5": "Ist die gesuchte Fähigkeit nicht dabei?",
         "p": "Zögere nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern. Am liebsten würde ich lernen: "

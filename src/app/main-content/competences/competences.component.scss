@@ -211,11 +211,9 @@ app-navdots {
     .description {width: 90%;}
     .content_left {height: fit-content; justify-content: center;}
     .learning_sun {
-        height: 100px;
-        width: 100px;
-        bottom: -410px;
+        bottom: -399px;
     }
-    .learning_icon {left: 32px; bottom: -380px;}
+    .learning_icon {left: 40px; bottom: -360px;}
     .content_left h2 {margin-top: 16px;}
     .content_right {margin-bottom: 180px;}
     .content_right .frontend_icon {width: 96px;}
@@ -243,8 +241,7 @@ app-navdots {
         margin-top: 0;
         font-size: 16px;
     }
-    .learning_sun { bottom: -444px; height: 80px;}
-    .learning_icon {bottom: -425px;}
+    .learning_icon {bottom: -361px;}
 }
 
 @media (max-width: 589px) {
@@ -252,7 +249,16 @@ app-navdots {
     .content_right .frontend_icon {width: 80px; margin-top: 26px;}
 }
 
-//od 550 je komplet mobile ansicht, jak je to ve figme
+@media(max-width: 545px) {
+    .learning_sun { bottom: -430px;}
+    .learning_icon {bottom: -388px;}
+}
+
+@media(max-width: 500px) {
+    .learning_sun { bottom: -400px;}
+    .learning_icon {bottom: -363px;}
+    .further_skills {left: 22vw;}
+}
 
 @media (max-width: 477px) {
     .content_left h2 {font-size: 32px;}
@@ -262,4 +268,12 @@ app-navdots {
 @media (max-width: 450px) {
     .content {padding-left: 16px; padding-right: 16px;}
     .description {width: 100%;}
+    .further_skills {top: 48vh;}
+}
+
+@media(max-width: 370px) {
+    .vanishable {display: none;}
+    .learning_sun {bottom: -468px;}
+    .learning_icon {bottom: -428px;}
+    .further_skills {left: 25vw;}
 }
