@@ -145,13 +145,6 @@ h5 {
     animation: fade_in 0.4s ease-out;
 }
 
-// TO DO to pridani tridy funguje, ale ta opacity se nemeni postupne
-//musim pak pridat do html  [ngClass]="{'visible': showContribution}"
-// .visible {
-//     opacity: 1 !important; 
-//         transition: opacity 10.4s ease-out;
-//  }
-
 .technologies {
     font-family: 'Karla';
     font-size: 16px;
@@ -190,6 +183,10 @@ h5 {
     .about_project {padding: 16px; width: 440px;}
 }
 
+@media(max-width: 900px) {
+    app-navdots {display: none;}
+}
+
 @media(max-width: 885px) {
     .slider {flex-direction: column;}
     .about_project {width: fit-content;}
@@ -208,6 +205,10 @@ h5 {
 
 @media (max-width: 709px) {
     h2 {font-size: 42px; line-height: 42px;}
+}
+
+@media (max-width: 700px) {
+    .content {padding-right: 16px; padding-left: 16px;}
 }
 
 @media (max-width: 669px) {
