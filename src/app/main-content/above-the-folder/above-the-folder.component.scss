@@ -162,9 +162,6 @@ app-navdots {
     .atf_left {width: 274px;}
 }
 
-//HIER  tady jsem vykomentovala overflow
-//odtud to dodelat na malym kompu, urcite mi nebude sedet vyska a na mobily bude lepsi to delat na malej obrazovce
-
 @media(max-width: 580px) {
     .atf_left .text span{line-height: 32px;}
     .atf_left .text h1 {
@@ -174,17 +171,44 @@ app-navdots {
     .atf_left {gap: 8px;}
 }
 
+@media (max-width: 525px) {
+    .content {justify-content: space-between;}
+    .my_foto {height: 69%;}
+    .atf_left {width: 150px;}
+}
+
+@media (max-width: 475px) {
+    .my_foto {height: 65%;}
+    .sun {height: 189px;
+        bottom: -59px;}
+    .rotating {height: 70%;}
+    .arrow {left: 38px;
+        bottom: 58px;
+        height: 29px;;}
+}
+
 @media (max-width: 460px) {
     .btn {margin-top: 0;}
     .atf_left >img {margin-top: 272px; z-index: 20;}
     .rotating {background-color: #679aac; border-radius: 50%;}
 }
 
-@media (max-width: 420px) {
-    .atf_left {gap: 30px;}
+@media (max-width: 450px) {
+    .content {height: 100%;}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
+    .atf_left {gap: 30px;}
+    .rotating {margin-top: 0;}
+    .my_foto {right: 0;}
+}
+
+@media (max-width: 410px) {
+    .my_foto {right: -15px;}
+}
+
+@media (max-width: 395px) {
+    .atf_left {gap: 16px;}
     section {overflow-x: hidden;}
 }
 
@@ -195,10 +219,27 @@ app-navdots {
     .atf_left .text h1 {
         font-size: 53px;
     }
+    .my_fot {height: 64%;}
 }
 
 @media (max-width: 356px) {
     .atf_left .text h1 {
         font-size: 46px;
     }
+    .scroll_element {align-self: flex-end;
+        margin-top: 33vh;
+        z-index: 5;}
+        .my_foto {right: 25px;}
+        .sun {left: -28px;}
+}
+
+@media (max-width: 340px) {
+    .my_foto { height: 62%; right: 35px;}
+    .sun {height: 180px;}
+}
+
+@media (max-width: 333px) {
+    .sun {left: -34px;}
+    .atf_left {width: 130px;}
+    .my_foto {right: 14px;}
 }
