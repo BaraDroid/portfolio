@@ -14,7 +14,7 @@ import { NavdotsComponent } from "../../shared/navdots/navdots.component";
 export class CompetencesComponent {
 isWhite: boolean = true;
 indexOfThisSection: number = 2;
-showFurtherSkills: boolean = false;
+showFurtherSkills: boolean = true;
 
 icons: {
   path: string;

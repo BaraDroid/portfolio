@@ -115,6 +115,9 @@ h2 {
     gap: 8px;
     width: 67%;
     text-align: center;
+    align-self: center;
+    top: 16px;
+    z-index: 30;
     > h5 {
         font-size: 24px;
         font-weight: 700;
@@ -129,8 +132,8 @@ h2 {
 }
 
 @keyframes slide_from_bottom {
-    from {transform: translateX(45%) translateY(120%)};
-    to {transform: translateX(45%) translateY(-16%);}
+    from {transform: translateY(100%)};
+    to {transform: translateY(0%);}
 }
 
 .further_skills_visible {
@@ -153,6 +156,10 @@ app-navdots {
     }
   }
 
+@media (max-width: 1230px) {
+    .content {padding-left: 72px;}
+}
+
 @media (max-width: 1189px) {
     .content {gap: 16px;}
     .description {width: 500px;}
@@ -168,9 +175,16 @@ app-navdots {
 @media (max-width: 1058px) {
     .description {padding: 18px; width: 400px;}
     .content_left h2 {font-size: 48px;}
+    .further_skills {padding: 16px; text-align: justify; left: 2vw;}
+    .further_skills h5 {font-size: 18px;}
 }
 
-@media (max-width: 965px) { //tady to zmenime na pod sebou
+@media (max-width: 965px) {
+    .further_skills {
+        position: absolute;
+        top: 56vh;
+        left: 17vw;
+    }
     .content {
         padding-left: 72px; 
         padding-right: 72px;
@@ -200,10 +214,18 @@ app-navdots {
     }
 }
 
+@media(max-width: 900px) {
+    app-navdots {display: none;}
+}
+
+@media(max-width: 700px) {
+    .content {padding-right: 16px; padding-left: 16px;}
+}
+
 @media (max-width: 679px) {
     .content_left h2 {
         margin-top: 0;
-        font-size: 38px;
+        font-size: 40px;
     }
     .description {
         margin-top: 0;
@@ -217,6 +239,8 @@ app-navdots {
     .content_right {margin-bottom: 0;}
     .content_right .frontend_icon {width: 80px; margin-top: 26px;}
 }
+
+//od 550 je komplet mobile ansicht, jak je to ve figme
 
 @media (max-width: 477px) {
     .content_left h2 {font-size: 32px;}
