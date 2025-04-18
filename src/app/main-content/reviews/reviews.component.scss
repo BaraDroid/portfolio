@@ -14,6 +14,10 @@ app-common-navbar {
     max-width: 1440px;
 }
 
+.nr_one, .nr_two, .nr_three {
+    width: 100%;
+}
+
 .content {
     width: 100%;
     height: 100%;
@@ -41,7 +45,7 @@ app-common-navbar {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    margin-top: 48px;
+    margin-top: 16px;
     gap: 40px;
     padding-right: 40px;
 }
