@@ -38,7 +38,6 @@ app-common-navbar {
 .right_side {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 557px);
 }
 
 h2 {
@@ -54,7 +53,7 @@ h2 {
     position: absolute;
     left: 500px;
     top: 42vh;
-    width: 100%;
+    width: 110%;
     background-color: #1D1D1D;
     border-radius: 4px;
     padding: 32px;
@@ -115,7 +114,7 @@ h2 {
     position: absolute;
     bottom: 0;
     bottom: -139px;
-    right: 20%;
+    right: 25%;
 }
 
 h5 {
@@ -147,14 +146,11 @@ app-navdots {
 //************max-width*******************************************************
 @media(max-width: 1290px) {
     .left_side >img {margin-left: 0;}
+    .text_over {left: 396px;}
+    .show_info_slider {right: 23%;}
 }
 
-@media (max-width: 1240px) {
-    .text_over {left: 416px;}
-
-}
-
-@media (max-width: 1192px) {
+@media (max-width: 1200px) {
     .left_side >img {
         width: 412px; 
         align-self: flex-start; 
@@ -164,16 +160,27 @@ app-navdots {
     .text_over {left: 319px; width: 161%;}
 }
 
+@media (max-width: 1183px) {
+    .text_over {width: 140%;}
+    .show_info_slider {bottom: -164px;}
+}
+
+@media (max-width: 1088px) {
+    .text_over {left: 270px;}
+}
+
 @media (max-width: 1048px) {
     .left_side >img {width: 347px;}
+    .show_info_slider {right: 29%;}
 }
 
 @media (max-width: 994px) {
     .text_over {
         padding: 16px;
         font-size: 16px;
+        left: 220px;
     }
-    .info_slide_up {padding: 16px; gap: 8px;}
+    .info_slide_up {padding: 16px; gap: 16px;}
     h5 {font-size: 20px;}
 }
 
@@ -187,10 +194,37 @@ app-navdots {
     h2 {font-size: 62px;}
 }
 
-@media (max-width: 700px) {
-    .content {padding-right: 16px; padding-left: 16px;}
+@media (max-width: 805px) {
+
 }
 
+@media (max-width: 795px) {
+    h2 {font-size: 48px; padding-left: 11vw;}
+    .text_over {left: 148px;}
+}
+
+@media (max-width: 775px) {
+    h2 {padding-left: 9vw;}
+    .text_over {top: 38vh;}
+}
+
+@media (max-width: 759) {
+    h2 {padding-left: 7vw;}
+}
+
+@media (max-width: 744) {
+    h2 {padding-left: 5vw;}
+}
+
+@media (max-width: 725) {
+    h2 {padding-left: 2vw;}
+}
+
+@media (max-width: 700px) {
+    .content {padding-right: 16px; padding-left: 16px;}
+    h2{padding: 0;}
+}
+//tady koncim ten justify-self bei right side hat nix gebracht
 @media (max-width: 550px) {
     .left_side >img {
         width: 240px; 
