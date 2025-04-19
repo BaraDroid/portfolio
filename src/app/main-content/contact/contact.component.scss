@@ -136,11 +136,11 @@ app-navdots {
     .main {gap:24px;}
 }
 
-@media (max-width: 710px) {
-    h2 {font-size: 36px; line-height: 36px;}
+@media (max-width: 850px) {
+    .blue_sun {height: 176px; bottom: -16vh;}
+    .orange_sun {height: 139px;}
 }
 
-//hier
 @media (max-width: 785px) {
     .content_left {margin-top: 0; gap: 16px; width: 100%;}
     .main {flex-direction: column;}
@@ -152,25 +152,48 @@ app-navdots {
         line-height: 42px;
     }
     .colorize {font-size: 18px;}
-    .gearwheels {bottom: -49vh;
+    .gearwheels {bottom: -60vh;
         height: 211px;}
     .main {gap: 16px;}
     .blue_sun {bottom: -9vh; height: 108px;}
     .orange_sun {right: 4%; height: 92px; bottom: -7vh;}
 }
 
+@media (max-width: 710px) {
+    
+}
+
 @media (max-width: 700px) {
+    h2 {font-size: 36px; line-height: 36px;}
     .content {padding-right: 16px; padding-left: 16px;}
+    .gearwheels {right: 0;}
 }
 
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
+    .section_name{margin-top: 16px;}
+    .gearwheels {bottom: -73vh;}
 }
 
 @media (max-width: 520px) {
-    h2 {font-size: 26px; line-height: 26px;}
+    //h2 {font-size: 26px; line-height: 26px;}
+
 }
 
 @media (max-width: 450px) {
     .colorize {color:#f9af41;}
+    .gearwheels {height: 119px;}
+    .blue_sun {bottom: 0;}
+    .orange_sun {bottom: 0;}
+}
+
+@media (max-width: 385px) {
+    .gearwheels {bottom: -70vh;}
+    .colorize {font-size: 16px;}
+    .vanishable {display: none;}
+}
+
+@media (max-width: 365px) {
+    .gearwheels {bottom: -73vh;}
+    h2 {font-size: 30px;}
 }
