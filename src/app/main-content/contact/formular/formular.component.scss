@@ -119,18 +119,22 @@ label {
 
 @media (max-width: 1171px) {
     .your_info {flex-direction: column; gap: 16px;}   
-    .formular {gap: 16px;}
-    .drop_line {margin-top: 49px;}
+    .formular {height: 100%; gap: 16px;}
     input[type=text] {width: 100%;}
     .your_info {align-items: normal;}
 }
 
+@media(max-width:870px){
+    label {font-size: 18px;}
+}
+
 @media (max-width: 785px) {
     .drop_line {margin-top: 0;}
-    .formular {height: 100%;}
-    label {font-size: 18px;}
+    .formular {align-self: flex-start;}
     input [type=text] {padding: 8px;}
     textarea {padding: 8px;}
+    input[type=text] {padding: 8px;}
+    .message {gap: 16px;}
 }
 
 @media (max-width: 780px) {

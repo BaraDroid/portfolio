@@ -38,14 +38,22 @@ a {
 
 @media (max-width: 785px) {
     .portfolio_footer {
-        padding: 16px;
+        padding: 0;
+        padding-bottom: 16px;
         flex-direction: column;
-        gap: 16px;
+       // gap: 16px;
     }
+    .name_copyright .oneThird {margin-bottom: 8px;}
+    .links.oneThird {width: 100%;}
 }
 
 @media (max-width: 720px) {
     .oneThird {width: 100%};
+}
+
+@media (max-width: 550px) {
+    .links {justify-content: space-between;}
+    .links {padding: 0 16px;}
 }
 
 @media (max-width: 520px) {

@@ -51,14 +51,20 @@ h2 {
 
 .blue_sun {
     z-index: 10;
-    right: 13%;
+    right: 0%;
+}
+
+.orange_sun {
+    right: 8%;
 }
 
 .gearwheels {
     overflow: hidden; 
     z-index: 2;
-    position: relative;
-    bottom: -57px;
+    position: absolute;
+    bottom: -10vh;
+    right: 4vw;
+    width: 100%;
 }
 
 .colorize {
@@ -90,16 +96,25 @@ app-navdots {
     .checking {align-items: flex-start;}
     .legal_information {font-size: 16px;}
     input [type=checkbox] {margin-top: 4px; margin-left: 8px;}
-    .content_left {margin-top: 20px;}
+    .content_left {width: 40%;}
+    .content_rigth {width: 60%;}
+    .main {width: 100%;}
+    .gearwheels {bottom: -10vh;
+        right: 4vw;}
+    .orange_sun {right: -54%;}
+    .blue_sun {bottom: -22vh;}
+    .content {padding-left: 72px;}
 }
 
 @media (max-width: 1171px) {
     app-formular {height: 100%;}
-    .formular {margin-top: 86px;}
 }
 
 @media (max-width: 1128px) {
     h2 {font-size: 55px; line-height: 55px;}
+    .blue_sun {height: 213px;}
+    .orange_sun {right: -44%;
+        height: 176px;}
 }
 
 @media (max-width: 1020px) {
@@ -107,30 +122,49 @@ app-navdots {
     .main {gap: 16px;}
 }
 
-@media (max-width: 940px) {
-    h2 {font-size: 39px; line-height: 39px;}
-    .content_left {width: 380px;}
+@media (max-width: 990px) {
+    .blue_sun {height: 185px; bottom: -18vh;}
+    .orange_sun {height: 151px; bottom: 2vh;}
+    .gearwheels {bottom: -10vh;}
+}
+
+@media (max-width: 900px) {
+    app-navdots {display: none;}
+}
+
+@media (max-width:870px){
+    .main {gap:24px;}
 }
 
 @media (max-width: 710px) {
     h2 {font-size: 36px; line-height: 36px;}
 }
 
+//hier
 @media (max-width: 785px) {
     .content_left {margin-top: 0; gap: 16px; width: 100%;}
     .main {flex-direction: column;}
-    .formular {margin-top: 16px;}
-    .orange_sun {left: 36px;}
-    .blue_sun {left: 127px;}
-    svg {
-        &:first-of-type {
-            height: 190px;
-        }
+    .formular {margin-top: 16px; top: 0;}
+    .gearwheels {bottom: -67vh;}
+    .content_right {margin-top: 0; width: 100%;}
+    app-formular {align-self: flex-start; justify-self: flex-start;}
+    h2 {font-size: 42px;
+        line-height: 42px;
     }
+    .colorize {font-size: 18px;}
+    .gearwheels {bottom: -49vh;
+        height: 211px;}
+    .main {gap: 16px;}
+    .blue_sun {bottom: -9vh; height: 108px;}
+    .orange_sun {right: 4%; height: 92px; bottom: -7vh;}
 }
 
-@media (max-width: 720px) {
-    svg {display: none;}
+@media (max-width: 700px) {
+    .content {padding-right: 16px; padding-left: 16px;}
+}
+
+@media (max-width: 550px) {
+    app-common-navbar {display: none;}
 }
 
 @media (max-width: 520px) {
@@ -138,7 +172,5 @@ app-navdots {
 }
 
 @media (max-width: 450px) {
-    .scroll_bar {display: none;}
-    .content {padding-left: 16px; padding-right: 16px;}
     .colorize {color:#f9af41;}
 }

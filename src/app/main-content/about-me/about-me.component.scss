@@ -227,6 +227,10 @@ app-navdots {
     .text_over {width: 120%;}
 }
 
+@media (max-width: 550px) {
+    app-common-navbar {display: none;}
+}
+
 @media (max-width: 570px) {
     .left_side >img {
         width: 240px; 

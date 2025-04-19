@@ -147,8 +147,6 @@ app-navdots {
     }
 }
 
-
-
-@media (max-width: 450px) {
-
+@media (max-width: 550px) {
+    app-common-navbar {display: none;}
 }

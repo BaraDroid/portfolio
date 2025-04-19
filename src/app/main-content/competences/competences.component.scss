@@ -254,6 +254,10 @@ app-navdots {
     .learning_icon {bottom: -388px;}
 }
 
+@media (max-width: 550px) {
+    app-common-navbar {display: none;}
+}
+
 @media(max-width: 500px) {
     .learning_sun { bottom: -400px;}
     .learning_icon {bottom: -363px;}
