@@ -22,7 +22,7 @@ app-common-navbar {
     width: 100%;
     height: 100%;
     max-width: 1440px;
-    padding-left: 112px;
+    padding-left: 72px;
     padding-right: 72px;
     display: flex;
     color:#f8f7e5;
@@ -77,39 +77,17 @@ app-navdots {
     }
   }
 
+@media (max-width: 1225px) {
+    .nr_one {align-self: center;}
+    .nr_two {align-self: center;}
+    .nr_three {align-self: center;}  
+}
+
 @media(max-width: 1108px) {
-    .content h2 {font-size: 60px; margin-top: 36px;}
+    .content h2 {font-size: 60px; margin-top: 16px;}
 }
 
 @media (max-width: 988px) {
-    .boxes {flex-direction: column; justify-content: space-evenly;}
-    .content h2 {font-size: 48px; margin-top: 0;}
-    .content {padding-left: 72px; padding-right: 72px; justify-content: space-between; gap: 16px;}
-    .nr_one {align-self: center;}
-    .nr_two {align-self: center;}
-    .nr_three {align-self: center;}
-    .boxes {padding-right: 0;}
-}
-
-@media (max-width: 900px) {
-    app-navdots {display: none;}
-}
-
-@media (max-width: 754px) {
-    .content h2 {font-size: 36px; line-height: 40px;}
-}
-
-@media(max-width: 700px) {
-    .content {padding-right: 16px; padding-left: 16px;}
-}
-
-@media (max-width: 710px) {
-    .references {align-items: center;}
-    .boxes {gap: 16px;}
-}
-
-@media(max-width: 550px) {
-    //hier das scrollbar machen (nach rechts)
     .boxes {
         flex-direction: row; 
         overflow-x: auto; 
@@ -142,6 +120,34 @@ app-navdots {
     background: #ff834f;
   }
 }
+
+@media(max-width: 966px) {
+    .content h2 {text-wrap: wrap;}
+}
+
+@media (max-width: 900px) {
+    app-navdots {display: none;}
+}
+
+@media (max-width: 754px) {
+    .content h2 {font-size: 36px; line-height: 40px;}
+}
+
+@media(max-width: 700px) {
+    .content {padding-right: 16px; padding-left: 16px;}
+    app-first-review {align-self: center;}
+    app-second-review {align-self: center;}
+    app-third-review {align-self: center;}
+    .boxes{
+        justify-content: unset;
+        height: 100%;
+        margin-top: 16px;
+        gap: 40px;
+        padding-right: 0px;
+    }
+}
+
+
 
 @media (max-width: 450px) {
 
