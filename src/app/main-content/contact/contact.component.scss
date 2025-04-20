@@ -32,7 +32,6 @@ h2 {
 }
 
 .content_left {
-    //margin-top: 72px;
     width: 528px;
     display: flex;
     flex-direction: column;
@@ -172,12 +171,10 @@ app-navdots {
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
     .section_name{margin-top: 16px;}
-    .gearwheels {bottom: -73vh;}
-}
-
-@media (max-width: 520px) {
-    //h2 {font-size: 26px; line-height: 26px;}
-
+    .gearwheels {bottom: -75vh; height: 120px;}
+    .blue_sun {bottom: 0;}
+    .orange_sun {bottom: 0;}
+    app-footer {bottom: 20%;}
 }
 
 @media (max-width: 450px) {
@@ -187,8 +184,12 @@ app-navdots {
     .orange_sun {bottom: 0;}
 }
 
+@media (max-width: 394px) {
+    .gearwheels {bottom: -72vh;}
+    app-footer {bottom: 15%;}
+}
+
 @media (max-width: 385px) {
-    .gearwheels {bottom: -70vh;}
     .colorize {font-size: 16px;}
     .vanishable {display: none;}
 }
@@ -197,4 +198,78 @@ app-navdots {
     .gearwheels {bottom: -73vh;}
     h2 {font-size: 30px;}
 }
-//test comment
+
+//*****iPhoneSE**************************************
+@media screen and (width: 375px) and (height: 667px) {
+    h2 {font-size: 30px;
+        line-height: 30px;}
+    .main {gap:8px;}
+    .content_left {gap:8px;}
+    .gearwheels {height: 89px; bottom: -70vh;}
+    .content_right {margin-top: -16px;}
+    .blue_sun {height: 90px;}
+    .orange_sun {height: 73px;}
+    app-footer {bottom:13%;}
+}
+
+//*****iPhone 12 Pro**************************************
+@media screen and (width: 390px) and (height: 844px) {
+    .gearwheels {bottom: -75vh;}
+}
+
+//*****Samsung Galaxy S8+**************************************
+@media screen and (width: 360px) and (height: 740px) {
+    .gearwheels {height: 89px; bottom: -71vh;}
+    .content_left {gap:8px;}
+    .main {gap:8px;}
+    app-footer {bottom:11%;}
+    .blue_sun {height: 90px;}
+    .orange_sun {height: 73px;}
+}
+
+//*****iPad Air**************************************
+@media screen and (width: 820px) and (height: 1180px) {
+    .gearwheels {bottom: 8vh; width: 300px; right: -4vw;}
+    .blue_sun {bottom: -11vh;}
+    .orange_sun {right: -53%;}
+}
+
+//*****iPad Pro**************************************
+@media screen and (width: 1024px) and (height: 1366px) {
+    .gearwheels {bottom: 8vh; width: 379px; right: -4vw;}
+    .blue_sun {bottom: -14vh; right: -7%;}
+    .orange_sun {right: -53%;}
+}
+
+//*****surface Pro 7**************************************
+@media screen and (width: 912px) and (height: 1368px) {
+    .gearwheels {bottom: 14vh; right: 0;}
+    .blue_sun {bottom: -10vh;}
+    .orange_sun {left: 49%;}
+}
+
+//*****surface Duo**************************************
+@media screen and (width: 540px) and (height: 720px) {
+    app-footer {bottom:13%;}
+    .gearwheels {bottom: -73vh;
+        height: 108px;}
+    .content_left {gap:8px;}
+    .main {gap:8px;}
+}
+
+//*****Asus Zenbook Fold**************************************
+@media screen and (width: 853px) and (height: 1280px) {
+    .gearwheels {bottom: 8vh; width: 300px; right: -4vw;}
+    .blue_sun {bottom: -11vh;}
+    .orange_sun {right: -50%; bottom: 3vh;}
+}
+
+//*****Nesthub**************************************
+@media screen and (width: 1024px) and (height: 600px) {
+    .formular {top:0;}
+    .content_left {gap: 8px;}
+    h2 {font-size: 40px; line-height: 40px;}
+    .colorize {font-size: 22px; margin-bottom: 8px;}
+    .blue_sun {bottom: -26vh;}
+    .orange_sun {right: -46%;}
+}

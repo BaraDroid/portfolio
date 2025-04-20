@@ -229,6 +229,7 @@ app-navdots {
 
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
+    .content{padding-top: 32px;}
 }
 
 @media (max-width: 570px) {
@@ -279,11 +280,26 @@ app-navdots {
     .text_over {left: 66px;}
 }
 
-@media (max-width: 335px) {
+@media (max-width: 345px) {
     .text_over {top: 40vh;
         left: 28px;
         width: 240px;
         height: 312px;}
     .left_side >img {width: 240px;}
     h2 {right: -3vw;}
+}
+
+//*****Nesthub**************************************
+@media screen and (width: 1024px) and (height: 600px) {
+    .text_over {top: 22vh;}
+}
+
+//*****surface Pro 7**************************************
+@media screen and (width: 912px) and (height: 1368px) {
+    .show_ingo_slider {bottom: -94px;}
+}
+
+//*****iPhoneSE**************************************
+@media screen and (width: 375px) and (height: 667px) {
+    .show_info_slider {right: 26%;}
 }

@@ -240,6 +240,7 @@ h5 {
 
 @media(max-width: 550px) {
     app-common-navbar {display: none;}
+    .content {padding-top: 32px;}
 }
 
 @media (max-width: 530px) {
@@ -284,4 +285,11 @@ h5 {
     .headline span {font-size: 16px;}
     .about_project {font-size: 16px;}
     .arrows {font-size: 14px;}
+}
+
+//*****Nesthub**************************************
+@media screen and (width: 1024px) and (height: 600px) {
+    .headline {margin-top: 0; height: 60px;}
+    h2 {font-size: 60px; line-height: 60px;}
+    .screenshot {height: 94%;}
 }

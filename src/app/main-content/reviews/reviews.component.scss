@@ -127,6 +127,7 @@ app-navdots {
 
 @media (max-width: 900px) {
     app-navdots {display: none;}
+    .boxes {padding-right: 0;}
 }
 
 @media (max-width: 754px) {
@@ -149,4 +150,17 @@ app-navdots {
 
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
+    .content {padding-top: 16px;}
+}
+
+//*****iPad Pro**************************************
+@media screen and (width: 1024px) and (height: 1366px) {
+    .nr_one {align-self: flex-start;}
+    .nr_two {align-self: center;}
+    .nr_three {align-self: flex-end;}
+}
+
+//*****iPad mini**************************************
+@media screen and (width: 768px) and (height: 1024px) {
+    .boxes {padding-right: 0;}
 }

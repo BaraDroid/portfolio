@@ -143,3 +143,17 @@ label {
     .message {gap: 16px;}
     .legal_information {font-size: 16px;}
 }
+
+//*****iPhoneSE**************************************
+@media screen and (width: 375px) and (height: 667px) {
+    .formular {gap: 8px;}
+    .your_info {gap: 8px;}
+    .formular {height: 90%;}
+    .message {gap: 8px;}
+    .drop_line input {font-size: 16px; margin-top: -11px;}
+}
+
+//*****Nesthub**************************************
+@media screen and (width: 1024px) and (height: 600px) {
+    
+}

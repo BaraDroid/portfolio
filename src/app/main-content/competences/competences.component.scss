@@ -281,3 +281,17 @@ app-navdots {
     .learning_icon {bottom: -428px;}
     .further_skills {left: 25vw;}
 }
+
+//*****iPhoneSE**************************************
+@media screen and (width: 375px) and (height: 667px) {
+    .learning_sun {bottom: -331px;}
+    .learning_icon {bottom: -295px;}
+}
+
+//*****Nesthub**************************************
+@media screen and (width: 1024px) and (height: 600px) {
+    h2 {margin-top: 0;}
+    .learning_sun {bottom: -156px;}
+    .learning_icon {bottom: -121px;}
+    .further_skills {top: -100px;}
+}

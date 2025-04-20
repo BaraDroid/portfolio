@@ -53,7 +53,6 @@ a {
 @media (max-width: 550px) {
     .links {justify-content: space-between;}
     .links {padding: 0 16px;}
-    .portfolio_footer {padding-bottom: 173px;}
 }
 
 @media (max-width: 520px) {
@@ -62,9 +61,4 @@ a {
 
 @media (max-width: 450px) {
     .oneThird {justify-content: space-between;}
-    .portfolio_footer {padding-bottom: 153px;}
-}
-
-@media (max-width: 365px) {
-    .portfolio_footer {padding-bottom: 132px;}
 }
