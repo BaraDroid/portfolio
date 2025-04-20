@@ -74,5 +74,17 @@
       "checkbox_link": "privacy policy",
       "checkbox_text_part2": "and agree to the processing of my data.",
       "checkbox_error": "Please accept the privacy policy."
+    },
+    "imprint": {
+      "title": "Imprint",
+      "law": "Information according to § 5 TMG (Telemedia Act):",
+      "adress": "Address",
+      "site": "Website",
+      "disclaimer": "Disclaimer",
+      "content": "Contents of this website: The contents of our website have been created with the utmost care. However, we cannot assume any liability for the correctness, completeness and topicality of the contents. As a service provider, we are responsible for our own content on these pages in accordance with general laws according to § 7 para. 1 TMG. According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+      "liability": "Liability for links: Our offer contains links to external websites of third parties, the content of which we have no influence on. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.",
+      "copyright": "Copyright: The content and works created by the site operators on these pages are subject to German copyright law. Contributions from third parties are marked as such. The duplication, processing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.",
+      "privacy-policy": "Privacy policy: The data protection regulations according to our",
+      "privacy-policy-link": "Privacy Policy"
     }
 }

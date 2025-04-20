@@ -1,31 +1,32 @@
 <section>
     <app-main-navbar></app-main-navbar>
     <div class="content fontQuicksand">
-        <h1 class="fontEckzar">Impressum</h1>
-Angaben gemäß § 5 TMG (Telemediengesetz):
+        <h1 class="fontEckzar">{{ 'imprint.title' | translate }}</h1>
+{{ 'imprint.law' | translate }}
 <br>
 Name:<br>
 Barbora Lambeinova
 <br><br>
-Adresse:<br>
+{{ 'imprint.adress' | translate }}:<br>
 Marktplatz 12<br>
 86650 Wemding<br><br>
 
-E-Mail-Adresse:<br>
+E-Mail-{{ 'imprint.adress' | translate }}:<br>
 LambeinovabB "&#64;" seznam.cz<br><br>
 
-Webseite:<br>
+{{ 'imprint.site' | translate }}:<br>
 barbora-lambeinova.de <br><br>
 
-<h4>Haftungsausschluss (Disclaimer):</h4>
+<h4>{{ 'imprint.disclaimer' | translate }}:</h4>
 
-Inhalte dieser Webseite: Die Inhalte unserer Webseiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-
-Haftung für Links: Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
-
-Urheberrecht: Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-
-Datenschutz: Es gelten die Datenschutzbestimmungen gemäß unserer <a href="data_protection">Datenschutz</a>. <br>
+<p>{{ 'imprint.content' | translate }}</p>
+<br>
+<p>{{ 'imprint.liability' | translate }}</p>
+<br>
+<p>{{ 'imprint.copyright' | translate }}</p>
+<br>
+<p>{{ 'imprint.privacy-policy' | translate }}<a href="data_protection"> {{ 'imprint.privacy-policy-link' | translate }}</a>.</p>
+ <br>
 
     </div>
     <app-footer></app-footer>
