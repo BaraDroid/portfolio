@@ -121,6 +121,22 @@ app-navdots {
   }
 }
 
+@media (max-width: 1290px) {
+    .content h2 {font-size: 62px;}
+}
+
+@media(max-width: 1180px) {
+    .content h2 {font-size: 56px;}
+}
+
+@media(max-width: 1075px) {
+    .content h2 {font-size: 52px; line-height: 52px;}
+}
+
+@media(max-width: 1005px) {
+    .content h2 {font-size: 42px;}
+}
+
 @media(max-width: 966px) {
     .content h2 {text-wrap: wrap;}
 }
