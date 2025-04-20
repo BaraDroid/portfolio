@@ -37,7 +37,7 @@
 			<img id="burgerMenu" (click)="openMenuTab($event); $event.stopPropagation()" src="./assets/menu_icons/menu_default.svg" alt="burger menu icon">
 	</div>
 
-	<div class="menu_tab fontQuicksand font_bold" [ngClass]="{ 'menu_open flies_in': menuOpen }">
+	<div class="menu_tab fontQuicksand font_bold" [ngClass]="{ 'menu_open flies_in': menuOpen }" (click)="$event.stopPropagation()">
         <div class="heading">
             <span>Menu</span>
 			<img (click)="closeMenuTab()" id="menuClose" src="./assets/menu_icons/close.svg" alt="x for closing menu">

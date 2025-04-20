@@ -19,7 +19,7 @@
         }
         
     </div>
-    <div class="menu_tab fontQuicksand font_bold" [ngClass]="{ 'menu_open': menuOpen }">
+    <div class="menu_tab fontQuicksand font_bold" [ngClass]="{ 'menu_open': menuOpen }" (click)="$event.stopPropagation()">
         <div class="heading">
             <span>Menu</span>
             <img (click)="closeMenuTab()" id="menuClosed" src="./assets/menu_icons/close.svg" alt="x for closing menu">
