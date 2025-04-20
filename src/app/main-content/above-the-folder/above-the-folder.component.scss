@@ -77,7 +77,7 @@ app-navdots {
 }
 
 .atf_right {
-    height: 100vh;
+    //height: 100vh;
     width: 740px;
     display: flex;
     justify-content: flex-end;
@@ -177,9 +177,8 @@ app-navdots {
 }
 
 @media(max-width: 550px) {
-    app-main-navbar {display: none;}
-    .content {padding-top: 16px; }
-    .atf_right {height: calc(100vh - 16px);}
+    .content {height: 100dvh;}
+    .atf_left {margin-top: 0;}
 }
 
 @media (max-width: 525px) {
@@ -205,7 +204,6 @@ app-navdots {
 }
 
 @media (max-width: 450px) {
-    .content {height: 100%;}
     .my_foto {right: 0;}
 }
 
@@ -270,7 +268,7 @@ app-navdots {
 @media screen and (width: 375px) and (height: 667px) {
     .my_foto {right: 44px;
         height: 61%;}
-    .atf_right {height: 100vh;}
+    .scroll_element {margin-top: 27vh;}
 }
 
 //*****iPad mini**************************************
@@ -311,9 +309,10 @@ app-navdots {
 //*****Nesthub**************************************
 @media screen and (width: 1024px) and (height: 600px) {
     .sun {height: 251px;}
-    .rotating {margin-top: -20px;
+    .rotating {margin-top: -12px;
         height: 108px;}
     .arrow {left: 39px;
         bottom: 38px;
         height: 34px;}
+    .btn {margin-top: 0;}
 }
