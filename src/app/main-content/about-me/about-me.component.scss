@@ -51,9 +51,9 @@ h2 {
 
 .text_over {
     position: absolute;
-    left: 500px;
+    left: 36vw;
     top: 42vh;
-    width: 110%;
+    width: 40vw;
     background-color: #1D1D1D;
     border-radius: 4px;
     padding: 32px;
@@ -146,7 +146,7 @@ app-navdots {
 //************max-width*******************************************************
 @media(max-width: 1290px) {
     .left_side >img {margin-left: 0;}
-    .text_over {left: 396px;}
+    .text_over {left: 36vw; width: 46vw;}
     .show_info_slider {right: 23%;}
 }
 
@@ -157,28 +157,23 @@ app-navdots {
         height: unset;
         padding-top: 0;
     }
-    .text_over {left: 319px; width: 161%;}
+    .text_over {left: 30vw; width: 53vw;}
 }
 
 @media (max-width: 1183px) {
-    .text_over {width: 140%;}
     .show_info_slider {bottom: -164px;}
-}
-
-@media (max-width: 1088px) {
-    .text_over {left: 270px;}
 }
 
 @media (max-width: 1048px) {
     .left_side >img {width: 347px;}
     .show_info_slider {right: 29%;}
+    .text_over {left: 27vw;}
 }
 
 @media (max-width: 994px) {
     .text_over {
         padding: 16px;
         font-size: 16px;
-        left: 220px;
     }
     .info_slide_up {padding: 16px; gap: 16px;}
     h5 {font-size: 20px;}
@@ -197,7 +192,6 @@ app-navdots {
 
 @media (max-width: 795px) {
     h2 {font-size: 48px; padding-left: 11vw;}
-    .text_over {left: 148px;}
 }
 
 @media (max-width: 775px) {
@@ -220,11 +214,15 @@ app-navdots {
 @media (max-width: 700px) {
     .content {padding-right: 16px; padding-left: 16px;}
     h2{padding: 0;}
+    .text_over{width: 59vw;}
+}
+
+@media(max-width: 645px) {
+    .text_over {top: 35vh;}
 }
 
 @media (max-width: 607px) {
     .vanishable {display: none;}
-    .text_over {width: 120%;}
 }
 
 @media (max-width: 550px) {
@@ -251,15 +249,13 @@ app-navdots {
     h2 {position: absolute;
         right: -24vw;}
     .left_side >img {width: 200px;}
-    .text_over {left: 108px; width: 159%;}
 }
 
-@media (max-width: 466px) {
-    .text_over {width: 137%;}
-}
-
-@media (max-width: 425px) {
-    .text_over {left: 82px;}
+@media (max-width: 430px) {
+    .btn {    
+        width: 121px;
+        padding: 8px 8px;
+    }
 }
 
 @media (max-width: 399px) {
@@ -274,17 +270,20 @@ app-navdots {
     .show_info_slider {right: 24%; bottom: -111px;}
 }
 
-@media (max-width: 360px) {
-    .btn {padding: 8px 16px; width: 124px;}
-    .show_info_slider {right: 15%;}
-    .text_over {left: 66px;}
+@media(max-width: 370px) {
+    .btn {width: 103px;}
 }
 
-@media (max-width: 345px) {
-    .text_over {top: 40vh;
-        left: 28px;
-        width: 240px;
-        height: 312px;}
+@media (max-width: 360px) {
+    .btn {padding: 8px 16px; width: 124px;}
+    .show_info_slider {        
+        right: 21%;
+        width: 75vw;
+    }
+}
+
+@media (max-width: 348px) {
+    .text_over {top: 40vh;}
     .left_side >img {width: 240px;}
     h2 {right: -3vw;}
 }

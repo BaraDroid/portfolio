@@ -58,12 +58,12 @@ h2 {
 }
 
 .gearwheels {
-    overflow: hidden; 
+    overflow: hidden;
     z-index: 2;
     position: absolute;
+    justify-self: flex-start;
     bottom: -10vh;
-    right: 4vw;
-    width: 100%;
+    left: -6vw;
 }
 
 .colorize {
@@ -98,10 +98,6 @@ app-navdots {
     .content_left {width: 40%;}
     .content_rigth {width: 60%;}
     .main {width: 100%;}
-    .gearwheels {bottom: -10vh;
-        right: 4vw;}
-    .orange_sun {right: -54%;}
-    .blue_sun {bottom: -22vh;}
     .content {padding-left: 72px;}
 }
 
@@ -111,9 +107,11 @@ app-navdots {
 
 @media (max-width: 1128px) {
     h2 {font-size: 55px; line-height: 55px;}
-    .blue_sun {height: 213px;}
-    .orange_sun {right: -44%;
-        height: 176px;}
+}
+
+@media (max-width: 1107px) {
+    .blue_sun {height: 25vh;}
+    .orange_sun {height: 20vh;}
 }
 
 @media (max-width: 1020px) {
@@ -121,10 +119,9 @@ app-navdots {
     .main {gap: 16px;}
 }
 
-@media (max-width: 990px) {
-    .blue_sun {height: 185px; bottom: -18vh;}
-    .orange_sun {height: 151px; bottom: 2vh;}
-    .gearwheels {bottom: -10vh;}
+@media(max-width: 955px) {
+    .blue_sun{height: 20vh;}
+    .orange_sun {height: 15vh;}
 }
 
 @media (max-width: 900px) {
@@ -135,69 +132,55 @@ app-navdots {
     .main {gap:24px;}
 }
 
-@media (max-width: 850px) {
-    .blue_sun {height: 176px; bottom: -16vh;}
-    .orange_sun {height: 139px;}
+@media (max-width: 815px) {
+    .gearwheels {bottom: 5vh;}
 }
 
 @media (max-width: 785px) {
     .content_left {margin-top: 0; gap: 16px; width: 100%;}
     .main {flex-direction: column;}
     .formular {margin-top: 16px; top: 0;}
-    .gearwheels {bottom: -67vh;}
     .content_right {margin-top: 0; width: 100%;}
     app-formular {align-self: flex-start; justify-self: flex-start;}
     h2 {font-size: 42px;
         line-height: 42px;
     }
     .colorize {font-size: 18px;}
-    .gearwheels {bottom: -60vh;
-        height: 211px;}
     .main {gap: 16px;}
-    .blue_sun {bottom: -9vh; height: 108px;}
-    .orange_sun {right: 4%; height: 92px; bottom: -7vh;}
+    .gearwheels {bottom: -60vh; left: -8vw;}
 }
 
-@media (max-width: 710px) {
-    
+@media(max-width: 750px) {
+    .blue_sun {height: 15vh;}
+    .orange_sun {height: 10vh;}
+    .gearwheels {bottom: -56vh;}
 }
 
 @media (max-width: 700px) {
     h2 {font-size: 36px; line-height: 36px;}
     .content {padding-right: 16px; padding-left: 16px;}
-    .gearwheels {right: 0;}
+    .gearwheels {left: 0vw;}
 }
 
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
     .section_name{margin-top: 16px;}
-    .gearwheels {bottom: -72vh; height: 120px;}
-    .blue_sun {bottom: 0;}
-    .orange_sun {bottom: 0;}
     app-footer {bottom: 20%;}
+    .gearwheels {bottom: -71vh;}
 }
 
 @media (max-width: 450px) {
     .colorize {color:#f9af41;}
-    .gearwheels {height: 119px;}
-    .blue_sun {bottom: 0;}
-    .orange_sun {bottom: 0;}
 }
 
 @media (max-width: 394px) {
-    .gearwheels {bottom: -72vh;}
     app-footer {bottom: 19%;}
 }
 
 @media (max-width: 385px) {
     .colorize {font-size: 16px;}
     .vanishable {display: none;}
-    .gearwheels {bottom: -73vh;}
-    app-footer {bottom: 17%;}
-}
-
-@media (max-width: 380px) {
-    .gearwheels {bottom: -71vh;}
+    app-footer {bottom: 19%;}
 }
 
 @media (max-width: 365px) {
@@ -241,16 +224,16 @@ app-navdots {
 
 //*****iPad Pro**************************************
 @media screen and (width: 1024px) and (height: 1366px) {
-    .gearwheels {bottom: 8vh; width: 379px; right: -4vw;}
-    .blue_sun {bottom: -14vh; right: -7%;}
-    .orange_sun {right: -53%;}
+    .gearwheels {bottom: 0vh;
+        left: 8vw;
+        rotate: 271deg;}
 }
 
 //*****surface Pro 7**************************************
 @media screen and (width: 912px) and (height: 1368px) {
-    .gearwheels {bottom: 14vh; right: 0;}
-    .blue_sun {bottom: -10vh;}
-    .orange_sun {left: 49%;}
+    .gearwheels {    bottom: 0vh;
+        left: -2vw;
+        width: 500px;}
 }
 
 //*****surface Duo**************************************
@@ -264,9 +247,14 @@ app-navdots {
 
 //*****Asus Zenbook Fold**************************************
 @media screen and (width: 853px) and (height: 1280px) {
-    .gearwheels {bottom: 8vh; width: 300px; right: -4vw;}
-    .blue_sun {bottom: -11vh;}
-    .orange_sun {right: -50%; bottom: 3vh;}
+    .gearwheels {bottom: -2vh;
+        left: 2vw;
+        width: 500px;}
+}
+
+//*****Samsung Galaxy A51/S7**************************************
+@media screen and (width: 412px) and (height: 914px) {
+    app-footer {bottom: 25%;}
 }
 
 //*****Nesthub**************************************
@@ -275,8 +263,6 @@ app-navdots {
     .content_left {gap: 8px;}
     h2 {font-size: 40px; line-height: 40px;}
     .colorize {font-size: 22px; margin-bottom: 8px;}
-    .blue_sun {bottom: -26vh;}
-    .orange_sun {right: -46%;}
 }
 
 //*****Sasung Galaxy A54**************************************
