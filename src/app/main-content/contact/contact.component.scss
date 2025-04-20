@@ -171,7 +171,7 @@ app-navdots {
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
     .section_name{margin-top: 16px;}
-    .gearwheels {bottom: -75vh; height: 120px;}
+    .gearwheels {bottom: -72vh; height: 120px;}
     .blue_sun {bottom: 0;}
     .orange_sun {bottom: 0;}
     app-footer {bottom: 20%;}
@@ -186,16 +186,21 @@ app-navdots {
 
 @media (max-width: 394px) {
     .gearwheels {bottom: -72vh;}
-    app-footer {bottom: 15%;}
+    app-footer {bottom: 19%;}
 }
 
 @media (max-width: 385px) {
     .colorize {font-size: 16px;}
     .vanishable {display: none;}
+    .gearwheels {bottom: -73vh;}
+    app-footer {bottom: 17%;}
+}
+
+@media (max-width: 380px) {
+    .gearwheels {bottom: -71vh;}
 }
 
 @media (max-width: 365px) {
-    .gearwheels {bottom: -73vh;}
     h2 {font-size: 30px;}
 }
 

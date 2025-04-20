@@ -6,11 +6,12 @@ import { CommonNavbarComponent } from '../../shared/common-navbar/common-navbar.
 import { CommonModule } from '@angular/common';
 import { MenuService } from '../../menu.service';
 import { NavdotsComponent } from "../../shared/navdots/navdots.component";
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-reviews',
-  imports: [FirstReviewComponent, SecondReviewComponent, ThirdReviewComponent, CommonNavbarComponent, CommonModule, NavdotsComponent],
+  imports: [FirstReviewComponent, SecondReviewComponent, ThirdReviewComponent, CommonNavbarComponent, CommonModule, NavdotsComponent, TranslatePipe],
   templateUrl: './reviews.component.html',
   styleUrl: './reviews.component.scss'
 })
