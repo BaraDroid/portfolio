@@ -2,6 +2,9 @@ section {
     background-color: #679aac;
     width: 100%;
     color: #f8f7e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content {
@@ -9,6 +12,11 @@ section {
     max-width: 1440px;
     padding-left: 112px;
     padding-right: 112px;
+}
+
+app-main-navbar {
+    width: 100%;
+    max-width: 1440px;
 }
 
 @media (max-width: 450px) {

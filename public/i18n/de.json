@@ -75,6 +75,9 @@
       "checkbox_text_part2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
       "checkbox_error": "Bitte akzeptiere die Datenschutzbestimmungen."
     },
+    "footer": {
+      "imprint": "Impressum"
+    },
     "imprint": {
       "title": "Impressum",
       "law": "Angaben gemäß § 5 TMG (Telemediengesetz):",
