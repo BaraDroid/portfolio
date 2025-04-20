@@ -77,7 +77,7 @@ app-navdots {
 }
 
 .atf_right {
-    height: 100%;
+    height: 100vh;
     width: 740px;
     display: flex;
     justify-content: flex-end;
@@ -142,6 +142,11 @@ app-navdots {
     .atf_left .text span {font-size: 26px; line-height: 34px;}
 }
 
+@media(max-width: 768px) {
+    .my_foto {right: -35px;}
+    .sun {left: 33px;}
+}
+
 @media(max-width: 705px) {
     .atf_left {margin-top: 36px;}
 }
@@ -157,22 +162,24 @@ app-navdots {
     .sun {height: 216px; bottom: 9px;}
 }
 
-@media (max-width: 560px) {
-    .atf_right {width: 200px;}
-    .atf_left {width: 274px;}
-}
-
 @media(max-width: 580px) {
     .atf_left .text span{line-height: 32px;}
     .atf_left .text h1 {
         font-size: 56px;
         line-height: 56px;
     }
-    .atf_left {gap: 8px;}
+    .atf_left {gap: 8px; width: 280px;}
+}
+
+@media (max-width: 560px) {
+    .atf_right {width: 200px;}
+    .atf_left {width: 274px;}
 }
 
 @media(max-width: 550px) {
     app-main-navbar {display: none;}
+    .content {padding-top: 16px; }
+    .atf_right {height: calc(100vh - 16px);}
 }
 
 @media (max-width: 525px) {
@@ -185,8 +192,8 @@ app-navdots {
     .my_foto {height: 65%;}
     .sun {height: 189px;
         bottom: -59px;}
-    .rotating {height: 70%;}
-    .arrow {left: 38px;
+    .rotating {height: 63%;}
+    .arrow {left: 48px;
         bottom: 58px;
         height: 29px;;}
 }
@@ -199,12 +206,14 @@ app-navdots {
 
 @media (max-width: 450px) {
     .content {height: 100%;}
+    .my_foto {right: 0;}
 }
 
 @media (max-width: 420px) {
     .atf_left {gap: 30px;}
     .rotating {margin-top: 0;}
     .my_foto {right: 0;}
+    .arrow {left: 33px;}
 }
 
 @media (max-width: 410px) {
@@ -216,34 +225,94 @@ app-navdots {
     section {overflow-x: hidden;}
 }
 
-@media (max-width: 369px) {
+@media (max-width: 375px) {
     .atf_left .text span {
         font-size: 26px;
     }
     .atf_left .text h1 {
         font-size: 53px;
     }
-    .my_fot {height: 64%;}
-}
-
-@media (max-width: 356px) {
     .atf_left .text h1 {
         font-size: 46px;
     }
     .scroll_element {align-self: flex-end;
         margin-top: 33vh;
-        z-index: 5;}
-        .my_foto {right: 25px;}
-        .sun {left: -28px;}
+        z-index: 5;
+        right: 36%;
+    }
+    .my_foto {right: 25px; height: 58%;}
+    .sun {left: -28px;}
 }
 
-@media (max-width: 340px) {
-    .my_foto { height: 62%; right: 35px;}
-    .sun {height: 180px;}
+@media (max-width: 356px) {
+   .sun {height: 176px;}
 }
 
-@media (max-width: 333px) {
-    .sun {left: -34px;}
-    .atf_left {width: 130px;}
-    .my_foto {right: 14px;}
+@media (max-width: 350px) {
+    .sun {height: 168px;}
+}
+
+@media (max-width: 342px) {
+    .sun {height: 152px; bottom: -107px; left: -2px;}
+    .atf_left {width: 100px;}
+    .atf_right {width: 175px;}
+    .my_foto {right: -12px;}
+    .scroll_element {right: 11%;}
+}
+
+@media (max-width: 329px) {
+    .my_foto {right: -18px;}
+}
+
+//*****responsiveness for concrete mobile screens*******************************************
+
+//*****iPhoneSE**************************************
+@media screen and (width: 375px) and (height: 667px) {
+    .my_foto {right: 44px;
+        height: 61%;}
+}
+
+//*****iPad mini**************************************
+@media screen and (width: 768px) and (height: 1024px) {
+    .my_foto {height: 79%;}
+}
+
+//*****iPad Air**************************************
+@media screen and (width: 820px) and (height: 1180px) {
+    .my_foto {height: 74%;}
+}
+
+//*****iPad Pro**************************************
+@media screen and (width: 1024px) and (height: 1366px) {
+    .my_foto {height: 79%;}
+    .sun {height: 388px;
+        align-self: center;
+        bottom: 67px;}
+}
+
+//*****surface Pro 7**************************************
+@media screen and (width: 912px) and (height: 1368px) {
+    .sun {height: 352px;}
+    .my_foto {height: 79%;}
+}
+
+//*****Galaxy Z Fold 5**************************************
+@media screen and (width: 344px) and (height: 882px) {
+    .my_foto{right: -5px;}
+    .sun {left: -3px; bottom: -104px;}
+}
+
+//*****Asus Zenbook Fold**************************************
+@media screen and (width: 853px) and (height: 1280px) {
+    .my_foto {height: 74%;}
+}
+
+//*****Nesthub**************************************
+@media screen and (width: 1024px) and (height: 600px) {
+    .sun {height: 251px;}
+    .rotating {margin-top: -20px;
+        height: 108px;}
+    .arrow {left: 39px;
+        bottom: 38px;
+        height: 34px;}
 }
