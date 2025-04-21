@@ -14,6 +14,7 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 export class FormularComponent {
 privacyPolicyChecked: boolean = false;
 sendFormular: boolean = false;
+showConfirmation: boolean = false;
 
 http = inject(HttpClient);
 
@@ -44,12 +45,15 @@ onSubmit(ngForm: NgForm) {
         next: (response) => {
           this.privacyPolicyChecked = false;
           ngForm.resetForm();
+          this.showConfirmation = true;
           this.sendFormular = false;
         },
         error: (error) => {
           console.error(error);
         },
-        //complete: () => console.info('send post complete'),
+        complete: () => setTimeout(() => {
+          this.showConfirmation = false;
+        }, 3000)
       });
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
     ngForm.resetForm();

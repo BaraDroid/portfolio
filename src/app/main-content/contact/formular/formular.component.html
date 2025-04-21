@@ -36,6 +36,9 @@
         
     </div>
     <div (click)="sendFormular = true" class="drop_line"><input [disabled]="!contactForm.valid || !privacyPolicyChecked" [ngClass]="{'disabled': !contactForm.valid || !privacyPolicyChecked}" type="submit" value="Drop a line"></div>
+    <div class="confirm" *ngIf="showConfirmation">
+        {{ 'confirm' | translate }}
+    </div>
 </form>
     
 
