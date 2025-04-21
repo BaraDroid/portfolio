@@ -1,4 +1,4 @@
-<form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+<form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" (click)="dismissConfirmation()" >
     <div class="your_info">
         <div class="name_email">
             <label for="name">{{ 'formular.name' | translate }}</label>

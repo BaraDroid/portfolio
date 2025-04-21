@@ -61,4 +61,8 @@ onSubmit(ngForm: NgForm) {
     this.privacyPolicyChecked = false;
   }
 }
+
+dismissConfirmation() {
+  this.showConfirmation = false;
+}
   }
