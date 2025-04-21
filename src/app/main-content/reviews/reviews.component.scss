@@ -77,6 +77,31 @@ app-navdots {
     }
   }
 
+  .moving_arrow {
+    rotate: 90deg;
+    height: 43px;
+    width: 10px;
+    left: 19px;
+    background-size: cover;
+    background-position: center;
+    animation: moveArrow 2s infinite;
+  }
+
+  @keyframes moveArrow {
+    0% {
+      background-image: url('./../../../../public/assets/move/arrow_default.svg');
+    }
+    50% {
+      background-image: url('./../../../../public/assets/move/arrow_default.svg'); /* Hält das erste Bild für die Hälfte der Zeit */
+    }
+    50.1% {
+      background-image: url('./../../../../public/assets/move/arrow_move.svg');
+    }
+    100% {
+      background-image: url('./../../../../public/assets/move/arrow_move.svg'); /* Hält das zweite Bild für die Hälfte der Zeit */
+    }
+  }
+
 @media (max-width: 1225px) {
     .nr_one {align-self: center;}
     .nr_two {align-self: center;}

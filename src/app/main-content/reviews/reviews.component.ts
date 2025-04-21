@@ -18,6 +18,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class ReviewsComponent {
 isWhite: boolean = true;
 indexOfThisSection: number = 4;
+showArrows: boolean = false;
+
+ngOnInit() {
+  this.checkScreenWidth();
+}
 
 //menu.service
 constructor(private menuService: MenuService) {}
@@ -25,5 +30,12 @@ constructor(private menuService: MenuService) {}
   // Methode, die aufgerufen wird, wenn das Menü geschlossen werden soll (z.B. durch einen Button-Klick)
   closeTheMenu(): void {
     this.menuService.closeMenu();
+  }
+
+  checkScreenWidth() {
+    if(window.innerWidth <= 988) {
+      this.showArrows = true;
+    }
+    else{this.showArrows = false;}
   }
 }
