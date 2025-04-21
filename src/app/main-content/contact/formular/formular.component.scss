@@ -82,7 +82,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 175;
     >input {
         background-color:rgba(103, 154, 172, 0);
         border: 1px solid #F8F7E5;
