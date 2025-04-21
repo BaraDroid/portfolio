@@ -112,6 +112,10 @@ label {
     cursor: not-allowed;
   }
 
+@media(max-width: 1200px) {
+    input[type=text] {padding: 16px 8px;}
+}
+
 @media(max-width: 1195px) {
     input[type=checkbox] {margin-top: 4px;}
     .checking {align-items: flex-start;}

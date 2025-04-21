@@ -42,18 +42,19 @@ onSubmit(ngForm: NgForm) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
-          console.log('response next');
+          this.privacyPolicyChecked = false;
           ngForm.resetForm();
+          this.sendFormular = false;
         },
         error: (error) => {
           console.error(error);
         },
-        complete: () => console.info('send post complete'),
+        //complete: () => console.info('send post complete'),
       });
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
     ngForm.resetForm();
-    this.privacyPolicyChecked = false;
     this.sendFormular = false;
+    this.privacyPolicyChecked = false;
   }
 }
   }

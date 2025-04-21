@@ -1,6 +1,6 @@
 {
     "above_the_folder": {
-      "headline1_part": "Hello, I´m",
+      "headline1_part": "Hello, I'm",
       "job": "Developer"
     },
     "about_me": {
@@ -21,7 +21,7 @@
       "text": "My fundamental technological strengths lie in Angular, Firebase (including Authentication), object-oriented JavaScript, REST API integration, and frontend development with HTML, CSS, and SCSS.",
       "text_vanishable": "My diverse portfolio demonstrates my proven ability to successfully conceive and implement web applications in both individual and collaborative environments.",
       "further_skills": {
-        "h5": "Don´t see the skill you are looking for?",
+        "h5": "Don't see the skill you are looking for?",
         "p": "Feel free to contact me. I look forward to expanding my previous knowledge. Also I have a special interest in learning: "
       }
     },
@@ -49,28 +49,28 @@
     "reviews": {
       "h2": "What my colleagues say about me:",
       "review1": "Working with Barbora is extremely pleasant. She not only quickly understands her tasks but also executes them with the utmost precision and care. Her work style is consistently structured and efficient, making teamwork with her particularly productive and enjoyable. Barbora brings a positive and motivated attitude to the team, and her reliability plays a key role in the success of our joint projects. It is truly a pleasure working with her!",
-      "review2": "Working with Barbora was a great experience. She was always eager to take on new challenges and tackle bugs. In our Angular project Join, she developed complete features, such as the add-task section. Her determination was impressive, and her openness to both giving and receiving feedback made our collaboration not only productive but also genuinely enjoyable. I’d be happy to work with her again anytime.",
+      "review2": "Working with Barbora was a great experience. She was always eager to take on new challenges and tackle bugs. In our Angular project Join, she developed complete features, such as the add-task section. Her determination was impressive, and her openness to both giving and receiving feedback made our collaboration not only productive but also genuinely enjoyable. I'd be happy to work with her again anytime.",
       "review3": "Barbora is a reliable and professional team player. She dedicated herself extensively to adding and structuring tasks, and also took on design responsibilities. Her sense of design and structured approach brought clear added value to the project, both in terms of content and visually.",
       "link": "To the Linkedin Profile"
     },
     "contact": {
-      "h2_part1": "Let´s build",
+      "h2_part1": "Let's build",
       "h2_part2": "something Cool",
       "h2_part3": "together!",
       "text1": "Got a problem to solve?",
-      "text2": "If I catch your attention, don´t hesitate to contact me with this formular. I would be happy to hear from you!"
+      "text2": "If I catch your attention, don't hesitate to contact me with this formular. I would be happy to hear from you!"
     },
     "formular": {
-      "name": "What´s your name?",
+      "name": "What's your name?",
       "name_placeholder": "Your name goes here.",
       "notification_name": "Oops! It seems your name is missing!",
-      "email": "What´s your email?",
+      "email": "What's your email?",
       "email_placeholder": "your email@email.com",
       "notification_email": "Hoppla! Your email is required!",
       "message": "How can I help you?",
       "message_placeholder": "Hello Barbora, I am interested in...",
       "notification_message": "What do you need to develop?",
-      "checkbox_text_part1": "I´ve read the",
+      "checkbox_text_part1": "I've read the",
       "checkbox_link": "privacy policy",
       "checkbox_text_part2": "and agree to the processing of my data.",
       "checkbox_error": "Please accept the privacy policy."
