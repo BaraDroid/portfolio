@@ -1,134 +1,131 @@
 {
-    "above_the_folder": {
-      "headline1_part": "Hallo, ich bin",
-      "job": "Developerin"
+  "above_the_folder": {
+    "headline1_part": "Hallo, ich bin",
+    "job": "Entwicklerin"
+  },
+  "about_me": {
+    "h2": "Über mich",
+    "mobile_view_text": "Kreative Frontend-Entwicklerin mit interdisziplinärem Hintergrund. Seit 2024 begeistert in der IT. Gestaltet nutzerzentrierte Websites mit Fokus auf JavaScript, HTML, CSS und UX/UI.",
+    "text1": "Ich bin eine motivierte Frontend-Entwicklerin mit kreativem, interdisziplinärem Hintergrund. Nach Jahren der Arbeit in verschiedenen Bereichen habe ich 2024 meine Berufung in der IT gefunden. Mit einem starken Fundament in den Bereichen JavaScript, HTML, CSS und UX/UI Design strebe ich danach, funktionale und ästhetisch ansprechende Websites zu gestalten, die den Nutzern ein Erlebnis bieten.",
+    "text2": "Was mich an der Arbeit als Entwickler:in besonders fasziniert, ist die kreative Freiheit und das verspielte Element, das im Code selbst steckt.",
+    "text3": "Lass uns verbinden und gemeinsam etwas Erstaunliches erschaffen!",
+    "slide_up_info": [
+      "Genießt Teamarbeit",
+      "Entwickelt sich gerne weiter",
+      "Wohnt in Wemding",
+      "Offen für Remote-Arbeit"
+    ]
+  },
+  "competencen": {
+    "h2": "Kernkompetenzen",
+    "text": "Meine technologischen Kernkompetenzen umfassen Angular, Firebase (inkl. Authentifizierung), objektorientiertes JavaScript, REST-API-Integration sowie die Frontend-Entwicklung mit HTML, CSS und SCSS.",
+    "text_vanishable": "Durch meine vielfältigen Projekte habe ich meine Fähigkeit zur erfolgreichen Konzeption und Umsetzung von Webanwendungen in Einzel- und Teamarbeit unter Beweis gestellt.",
+    "further_skills": {
+      "h5": "Ist die gesuchte Fähigkeit nicht dabei?",
+      "p": "Zögere nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern. Am liebsten würde ich lernen: "
+    }
+  },
+  "work": {
+    "h2": "Projekte",
+    "text": "Hier präsentiere ich eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+    "pokedex": {
+      "description": "Mein Pokedex-Projekt zeigt auf unterhaltsame Art und Weise meine Fähigkeiten in der Integration von REST-APIs. Erkunde alle Pokémon-Details, die ich mithilfe der PokeAPI abrufe und dynamisch darstelle.",
+      "contribution": "Als alleinige Entwicklerin dieses Projekts war ich verantwortlich für die vollständige Umsetzung, einschließlich der Anbindung der PokeAPI und der Gestaltung der interaktiven Elemente."
     },
-    "about_me": {
-      "h2": "Über mich",
-      "mobile_view_text": "Kreative Frontend-Entwicklerin mit interdisziplinärem Hintergrund. Seit 2024 begeistert in der IT. Gestaltet nutzerzentrierte Websites mit Fokus auf JavaScript, HTML, CSS und UX/UI.",
-      "text1": "Ich bin motivierte Frontend Entwicklerin mit kreativem, interdisziplinärem Hintergrund.  Nach Jahren der Arbeit in verschiedenen Bereichen habe ich 2024 meine Berufung in der IT gefunden. Mit einem starken Fundament in den Bereichen JavaScript, HTML, CSS, und UX/UI Design strebe ich danach, funktionale und ästhetisch ansprechende Websites zu gestalten, die den Nutzern ein Erlebnis bieten.",
-      "text2": "Was mich an der Arbeit als Entwickler:in besonders fasziniert, ist die kreative Freiheit und das verspielte Element, das in dem Code selbst steckt.",
-      "text3": "Lass uns verbinden und gemeinsam etwas Erstaunliches erschaffen!",
-      "slide_up_info": [
-          "Genießt Teamarbeit",
-          "Entwickelt sich gerne weiter",
-          "Wohnt in Wemding",
-          "Offen für Remote-Arbeit"
-      ]
+    "join": {
+      "description": "Task-Manager, basierend auf dem Kanban-System, entwickelt in Angular. Ermöglicht das Erstellen und Organisieren von Aufgaben durch Drag-and-Drop-Funktionen. Die Backend-Implementierung erfolgte mit Firebase, inklusive Nutzerauthentifizierung für eine personalisierte Nutzung.",
+      "contribution": "In diesem kollaborativen Projekt (4 Teammitglieder) konnte ich meine Fähigkeiten einsetzen, um die Funktionalität zum Hinzufügen von Tasks und die interaktive Board-Sektion zu realisieren."
     },
-    "competencen": {
-      "h2": "Core Kompetenzen",
-      "text": "Meine technologischen Kernkompetenzen umfassen Angular, Firebase (inkl. Authentifizierung), objektorientiertes JavaScript, REST API-Integration sowie die Frontend-Entwicklung mit HTML, CSS und SCSS.",
-      "text_vanishable": "Durch meine vielfältigen Projekte habe ich meine Fähigkeit zur erfolgreichen Konzeption und Umsetzung von Webanwendungen in Einzel- und Teamarbeit unter Beweis gestellt.",
-      "further_skills": {
-        "h5": "Ist die gesuchte Fähigkeit nicht dabei?",
-        "p": "Zögere nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern. Am liebsten würde ich lernen: "
-      }
+    "pollo_loco": {
+      "description": "Dieses Jump-and-Run-Spiel wurde primär entwickelt, um meine Fähigkeiten in der fortgeschrittenen objektorientierten Programmierung mit JavaScript zu demonstrieren, ergänzt durch die Darstellungsmöglichkeiten von HTML und CSS.",
+      "contribution": "Dieses Projekt zeigt meine Fähigkeit, komplexe Spiellogik zu steuern und fesselnde Spielerlebnisse zu schaffen."
     },
-    "work": {
-      "h2": "Projekte",
-      "text": "Hier präsentiere ich eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
-      "pokedex":
-        {
-          "description": "Mein Pokedex-Projekt zeigt auf unterhaltsame Art und Weise meine Fähigkeiten in der Integration von REST-APIs. Erkunde alle Pokémon-Details, die ich mithilfe der PokeAPI abrufe und dynamisch darstelle.",
-          "contribution": "Als alleinige Entwicklerin dieses Projekts war ich verantwortlich für die vollständige Umsetzung, einschließlich der Anbindung der PokeAPI und der Gestaltung der interaktiven Elemente."
-        },
-      "join":
-        {
-          "description": "Task Manager, basierend auf dem Kanban System, entwickelt in Angular. Ermöglicht das Erstellen und Organisieren von Aufgaben durch Drag-and-Drop-Funktionen. Die Backend-Implementierung erfolgte mit Firebase, inklusive Nutzerauthentifizierung für eine personalisierte Nutzung.",
-          "contribution": "In diesem kollaborativen Projekt (4 Teammitglieder) konnte ich meine Fähigkeiten einsetzen, um die Funktionalität zum Hinzufügen von Tasks und die interaktive Board-Sektion zu realisieren."
-        },
-      "pollo_loco":
-        {
-          "description": "Dieses Jump and Run Spiel wurde primär entwickelt, um meine Fähigkeiten in der fortgeschrittenen objektorientierten Programmierung mit JavaScript zu demonstrieren, ergänzt durch die Darstellungsmöglichkeiten von HTML und CSS.",
-          "contribution": "Dieses Projekt zeigt meine Fähigkeit, komplexe Spiellogik zu steuern und fesselnde Spielerlebnisse zu schaffen."
-        },
-      "arrow_left": "Vorheriges Projekt",
-      "arrow_right": "Nächstes Projekt"
-    },
-    "reviews": {
-      "h2": "Was andere über mich sagen:",
-      "review1": "Die Zusammenarbeit mit Barbora ist äußerst angenehm. Sie versteht nicht nur schnell ihre Aufgaben, sondern setzt diese auch immer mit höchster Präzision und Sorgfalt um. Ihre Arbeitsweise ist stets strukturiert und effizient, was die Teamarbeit mit ihr besonders produktiv und angenehm macht. Barbora bringt eine stets positive und motivierte Einstellung ins Team und ihre Zuverlässigkeit trägt entscheidend zum Erfolg unserer gemeinsamen Projekte bei. Es ist eine wahre Freude, mit ihr zusammenzuarbeiten!",
-      "review2": "Die Zusammenarbeit mit Barbora war eine großartige Erfahrung. Sie zeigte stets die Bereitschaft, neue Herausforderungen anzunehmen und Bugs zu beheben. In unserem Angular-Projekt Join entwickelte sie vollständige Features – darunter zum Beispiel den Add-Task-Section. Ihre Entschlossenheit war beeindruckend, und ihre Offenheit im Geben und Annehmen von Feedback machte unsere Zusammenarbeit nicht nur produktiv, sondern auch wirklich angenehm. Ich würde jederzeit gerne wieder mit ihr zusammenarbeiten.",
-      "review3": "Barbora ist eine verlässliche und professionelle Teamplayerin. Sie hat sich intensiv um das Hinzufügen und die Strukturierung der Tasks gekümmert und darüber hinaus auch gestalterische Aufgaben übernommen. Ihr Gespür für Design und ihre strukturierte Arbeitsweise haben dem Projekt sowohl inhaltlich als auch visuell einen klaren Mehrwert gebracht.",
-      "link": "Zum Linkedin Profil"
-    },
-    "contact": {
-      "h2_part1": "Lass uns zusammen",
-      "h2_part2": "etwas Cooles",
-      "h2_part3": "entwickeln!",
-      "text1": "Haben Sie ein Problem zu lösen?",
-      "text2": "Kontaktieren Sie mir gerne mit diesem Kontakt Formular. Ich freue mich auf euere Angebote!"
-    },
-    "formular": {
-      "name": "Wie lautet Ihr Name?",
-      "name_placeholder": "Schreiben Sie Ihr Name hier.",
-      "notification_name": "Ups! Dein Name fehlt wohl!",
-      "email": "Was ist Ihre E-Mail Adresse?",
-      "email_placeholder": "email@email.com",
-      "notification_email": "Hoppla! Die Email ist ein Pflichtfeld!",
-      "message": "Wie kann ich Ihnen helfen?",
-      "message_placeholder": "Hallo Barbora, ich bin interessiert an...",
-      "notification_message": "Bitte geben Sie eine Nachricht ein",
-      "checkbox_text_part1": "Ich habe die",
-      "checkbox_link": "Datenschutzerklärung",
-      "checkbox_text_part2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
-      "checkbox_error": "Bitte akzeptiere die Datenschutzbestimmungen."
-    },
-    "footer": {
-      "imprint": "Impressum"
-    },
-    "imprint": {
-      "title": "Impressum",
-      "law": "Angaben gemäß § 5 TMG (Telemediengesetz):",
-      "adress": "Adresse",
-      "site": "Webseite",
-      "disclaimer": "Haftungsausschluss (Disclaimer)",
-      "content": "Inhalte dieser Webseite: Die Inhalte unserer Webseiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
-      "liability": "Haftung für Links: Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
-      "copyright": "Urheberrecht: Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
-      "privacy-policy": "Datenschutz: Es gelten die Datenschutzbestimmungen gemäß unserer",
-      "privacy-policy-link": "Datenschutz"
-    },
-    "privacy-policy": {
-      "title": "Datenschutzerklärung",
-      "title01": "Einleitung",
-      "text01": "Ich freue mich über Ihr Interesse an meinem Portfolio. Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen. Im Folgenden informiere ich Sie daher über die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten bei der Nutzung des Formulars und der Webseite gemäß den geltenden Datenschutzbestimmungen, insbesondere der Datenschutz-Grundverordnung (DSGVO).",
-      "title02": "Verantwortlicher",
-      "text02": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:",
-      "title03": "Erhebung und Verarbeitung personenbezogener Daten",
-      "text03": "Die Nutzung des Formulars auf dieser Webseite setzt voraus, dass Sie bestimmte personenbezogene Daten angeben, wie zum Beispiel:",
-      "adress": "E-Mail-Adresse",
-      "message": "Nachricht",
-      "text03b": "Diese Daten werden nur für den Zweck der Bearbeitung Ihrer Anfrage verwendet. Eine darüber hinausgehende Verwendung der Daten erfolgt nicht.",
-      "title04": "Zweck und Rechtsgrundlage der Datenverarbeitung",
-      "text04": "Wir verarbeiten Ihre personenbezogenen Daten nur zu den folgenden Zwecken:",
-      "text04b": "Bearbeitung und Beantwortung Ihrer Anfrage über das Formular.",
-      "text04c": "Zur Erfüllung von vertraglichen Pflichten, wenn Sie eine Anfrage stellen oder mit uns in Kontakt treten.",
-      "text04d": "Die Rechtsgrundlage für die Verarbeitung Ihrer Daten basiert auf:",
-      "text04e": "Art. 6 Abs. 1 lit. b DSGVO – Erforderlich zur Erfüllung eines Vertrages oder zur Durchführung vorvertraglicher Maßnahmen.",
-      "text04f": "Art. 6 Abs. 1 lit. a DSGVO – Ihre Einwilligung (z.B. durch das Abhaken der Zustimmung zur Verarbeitung der Daten).",
-      "title05": "Einwilligung zur Verarbeitung der Daten",
-      "text05": "Mit dem Absenden des Formulars und dem Abhaken der Zustimmung zur Verarbeitung Ihrer Daten bestätigen Sie, dass Sie mit der Speicherung und Verarbeitung Ihrer personenbezogenen Daten zum genannten Zweck einverstanden sind.",
-      "title06": "Speicherung der Daten",
-      "text06": "Ihre personenbezogenen Daten werden nur so lange gespeichert, wie dies zur Bearbeitung Ihrer Anfrage erforderlich ist, und werden anschließend gelöscht, es sei denn, gesetzliche Aufbewahrungspflichten stehen einer Löschung entgegen.",
-      "title07": "Weitergabe von Daten",
-      "text07": "Ihre personenbezogenen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist zur Erfüllung des Zwecks erforderlich oder es besteht eine gesetzliche Verpflichtung zur Weitergabe.",
-      "title08": "Ihre Rechte",
-      "text08": "Als betroffene Person haben Sie die folgenden Rechte:",
-      "text08a": "Auskunftsrecht: Sie haben das Recht, Auskunft über Ihre von uns gespeicherten personenbezogenen Daten zu erhalten.",
-      "text08b": "Recht auf Berichtigung: Sie können die Berichtigung unrichtiger oder die Vervollständigung unvollständiger personenbezogener Daten verlangen.",
-      "text08c": "Recht auf Löschung: Sie können die Löschung Ihrer personenbezogenen Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
-      "text08d": "Recht auf Einschränkung der Verarbeitung: Sie können die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen.",
-      "text08e": "Widerspruchsrecht: Sie können der Verarbeitung Ihrer personenbezogenen Daten widersprechen, soweit diese auf einer berechtigten Interessen basiert.",
-      "text08f": "Recht auf Datenübertragbarkeit: Sie können die Übertragung Ihrer personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format verlangen.",
-      "text08g": "Um diese Rechte auszuüben, können Sie uns jederzeit unter den angegebenen Kontaktmöglichkeiten erreichen.",
-      "title09": "Sicherheit Ihrer Daten",
-      "text09": "Wir treffen alle erforderlichen technischen und organisatorischen Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Zerstörung zu schützen.",
-      "title10": "Änderungen dieser Datenschutzerklärung",
-      "text10": "Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Eine aktuelle Version wird stets auf dieser Webseite veröffentlicht.",
-      "title11": "Kontakt",
-      "text11": "Falls Sie Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, können Sie mich unter den folgenden Kontaktdaten erreichen:"
-     },
-     "confirm": "Email gesendet!"
+    "arrow_left": "Vorheriges Projekt",
+    "arrow_right": "Nächstes Projekt"
+  },
+  "reviews": {
+    "h2": "Was andere über mich sagen:",
+    "review1": "Die Zusammenarbeit mit Barbora ist äußerst angenehm. Sie versteht nicht nur schnell ihre Aufgaben, sondern setzt diese auch immer mit höchster Präzision und Sorgfalt um. Ihre Arbeitsweise ist stets strukturiert und effizient, was die Teamarbeit mit ihr besonders produktiv und angenehm macht. Barbora bringt eine stets positive und motivierte Einstellung ins Team und ihre Zuverlässigkeit trägt entscheidend zum Erfolg unserer gemeinsamen Projekte bei. Es ist eine wahre Freude, mit ihr zusammenzuarbeiten!",
+    "review2": "Die Zusammenarbeit mit Barbora war eine großartige Erfahrung. Sie zeigte stets die Bereitschaft, neue Herausforderungen anzunehmen und Bugs zu beheben. In unserem Angular-Projekt Join entwickelte sie vollständige Features – darunter zum Beispiel die Add-Task-Section. Ihre Entschlossenheit war beeindruckend, und ihre Offenheit im Geben und Annehmen von Feedback machte unsere Zusammenarbeit nicht nur produktiv, sondern auch wirklich angenehm. Ich würde jederzeit gerne wieder mit ihr zusammenarbeiten.",
+    "review3": "Barbora ist eine verlässliche und professionelle Teamplayerin. Sie hat sich intensiv um das Hinzufügen und die Strukturierung der Tasks gekümmert und darüber hinaus auch gestalterische Aufgaben übernommen. Ihr Gespür für Design und ihre strukturierte Arbeitsweise haben dem Projekt sowohl inhaltlich als auch visuell einen klaren Mehrwert gebracht.",
+    "link": "Zum LinkedIn-Profil"
+  },
+  "contact": {
+    "h2_part1": "Lass uns zusammen",
+    "h2_part2": "etwas Cooles",
+    "h2_part3": "entwickeln!",
+    "text1": "Haben Sie ein Problem zu lösen?",
+    "text2": "Kontaktieren Sie mich gerne mit diesem Kontaktformular. Ich freue mich auf Ihre Angebote!"
+  },
+  "formular": {
+    "name": "Wie lautet Ihr Name?",
+    "name_placeholder": "Schreiben Sie Ihren Namen hier.",
+    "notification_name": "Ups! Dein Name fehlt wohl!",
+    "email": "Was ist Ihre E-Mail-Adresse?",
+    "email_placeholder": "email@email.com",
+    "notification_email": "Hoppla! Die E-Mail ist ein Pflichtfeld!",
+    "message": "Wie kann ich Ihnen helfen?",
+    "message_placeholder": "Hallo Barbora, ich bin interessiert an...",
+    "notification_message": "Bitte geben Sie eine Nachricht ein",
+    "checkbox_text_part1": "Ich habe die",
+    "checkbox_link": "Datenschutzerklärung",
+    "checkbox_text_part2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "checkbox_error": "Bitte akzeptieren Sie die Datenschutzbestimmungen."
+  },
+  "footer": {
+    "imprint": "Impressum"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "law": "Angaben gemäß § 5 TMG (Telemediengesetz):",
+    "adress": "Adresse",
+    "site": "Webseite",
+    "disclaimer": "Haftungsausschluss (Disclaimer)",
+    "content": "Die Inhalte unserer Webseiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "liability": "Haftung für Links: Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+    "copyright": "Urheberrecht: Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+    "privacy-policy": "Datenschutz: Es gelten die Datenschutzbestimmungen gemäß unserer",
+    "privacy-policy-link": "Datenschutz"
+  },
+  "privacy-policy": {
+    "title": "Datenschutzerklärung",
+    "title01": "Einleitung",
+    "text01": "Ich freue mich über Ihr Interesse an meinem Portfolio. Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen. Im Folgenden informiere ich Sie daher über die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten bei der Nutzung des Formulars und der Webseite gemäß den geltenden Datenschutzbestimmungen, insbesondere der Datenschutz-Grundverordnung (DSGVO).",
+    "title02": "Verantwortlicher",
+    "text02": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:",
+    "title03": "Erhebung und Verarbeitung personenbezogener Daten",
+    "text03": "Die Nutzung des Formulars auf dieser Webseite setzt voraus, dass Sie bestimmte personenbezogene Daten angeben, wie zum Beispiel:",
+    "adress": "E-Mail-Adresse",
+    "message": "Nachricht",
+    "text03b": "Diese Daten werden nur für den Zweck der Bearbeitung Ihrer Anfrage verwendet. Eine darüber hinausgehende Verwendung der Daten erfolgt nicht.",
+    "title04": "Zweck und Rechtsgrundlage der Datenverarbeitung",
+    "text04": "Wir verarbeiten Ihre personenbezogenen Daten nur zu den folgenden Zwecken:",
+    "text04b": "Bearbeitung und Beantwortung Ihrer Anfrage über das Formular.",
+    "text04c": "Zur Erfüllung von vertraglichen Pflichten, wenn Sie eine Anfrage stellen oder mit uns in Kontakt treten.",
+    "text04d": "Die Rechtsgrundlage für die Verarbeitung Ihrer Daten basiert auf:",
+    "text04e": "Art. 6 Abs. 1 lit. b DSGVO – Erforderlich zur Erfüllung eines Vertrages oder zur Durchführung vorvertraglicher Maßnahmen.",
+    "text04f": "Art. 6 Abs. 1 lit. a DSGVO – Ihre Einwilligung (z.B. durch das Abhaken der Zustimmung zur Verarbeitung der Daten).",
+    "title05": "Einwilligung zur Verarbeitung der Daten",
+    "text05": "Mit dem Absenden des Formulars und dem Abhaken der Zustimmung zur Verarbeitung Ihrer Daten bestätigen Sie, dass Sie mit der Speicherung und Verarbeitung Ihrer personenbezogenen Daten zum genannten Zweck einverstanden sind.",
+    "title06": "Speicherung der Daten",
+    "text06": "Ihre personenbezogenen Daten werden nur so lange gespeichert, wie dies zur Bearbeitung Ihrer Anfrage erforderlich ist, und werden anschließend gelöscht, es sei denn, gesetzliche Aufbewahrungspflichten stehen einer Löschung entgegen.",
+    "title07": "Weitergabe von Daten",
+    "text07": "Ihre personenbezogenen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist zur Erfüllung des Zwecks erforderlich oder es besteht eine gesetzliche Verpflichtung zur Weitergabe.",
+    "title08": "Ihre Rechte",
+    "text08": "Als betroffene Person haben Sie die folgenden Rechte:",
+    "text08a": "Auskunftsrecht: Sie haben das Recht, Auskunft über Ihre von uns gespeicherten personenbezogenen Daten zu erhalten.",
+    "text08b": "Recht auf Berichtigung: Sie können die Berichtigung unrichtiger oder die Vervollständigung unvollständiger personenbezogener Daten verlangen.",
+    "text08c": "Recht auf Löschung: Sie können die Löschung Ihrer personenbezogenen Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+    "text08d": "Recht auf Einschränkung der Verarbeitung: Sie können die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen.",
+    "text08e": "Widerspruchsrecht: Sie können der Verarbeitung Ihrer personenbezogenen Daten widersprechen, soweit diese auf einem berechtigten Interesse basiert.",
+    "text08f": "Recht auf Datenübertragbarkeit: Sie können die Übertragung Ihrer personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format verlangen.",
+    "text08g": "Um diese Rechte auszuüben, können Sie uns jederzeit unter den angegebenen Kontaktmöglichkeiten erreichen.",
+    "title09": "Sicherheit Ihrer Daten",
+    "text09": "Wir treffen alle erforderlichen technischen und organisatorischen Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Zerstörung zu schützen.",
+    "title10": "Änderungen dieser Datenschutzerklärung",
+    "text10": "Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Eine aktuelle Version wird stets auf dieser Webseite veröffentlicht.",
+    "title11": "Kontakt",
+    "text11": "Falls Sie Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, können Sie mich unter den folgenden Kontaktdaten erreichen:"
+  },
+  "confirm": "E-Mail gesendet!"
 }
