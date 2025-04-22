@@ -20,9 +20,9 @@ isWhite: boolean = true;
 indexOfThisSection: number = 4;
 showArrows: boolean = false;
 
-ngOnInit() {
-  this.checkScreenWidth();
-}
+// ngOnInit() {
+//   this.checkScreenWidth();
+// }
 
 //menu.service
 constructor(private menuService: MenuService, @Inject(PLATFORM_ID) private platformId: Object) {}
@@ -32,13 +32,15 @@ constructor(private menuService: MenuService, @Inject(PLATFORM_ID) private platf
     this.menuService.closeMenu();
   }
 
-  checkScreenWidth() {
-    if(isPlatformBrowser(this.platformId)) {
-      if(window.innerWidth <= 988) {
-        this.showArrows = true;
-      }
-      else{this.showArrows = false;}
-    }
-    }
+
+  //haha, to stejnak smazu, kdyz to necham bejt dlouhy
+  // checkScreenWidth() {
+  //   if(isPlatformBrowser(this.platformId)) {
+  //     if(window.innerWidth <= 988) {
+  //       this.showArrows = true;
+  //     }
+  //     else{this.showArrows = false;}
+  //   }
+  //   }
 
 }

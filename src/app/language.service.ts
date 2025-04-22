@@ -21,13 +21,20 @@ export class LanguageService {
     if(savedLanguage) {
       this.translate.use(savedLanguage);
       localStorage.setItem("choosenLang", savedLanguage);
-      this._germanText.next(savedLanguage === 'de');
-      this._englishText.next(savedLanguage === 'en');
+      if(savedLanguage === "de") {
+        this._germanText.next(true);
+        this._englishText.next(false);
+      }
+      else {
+        this._englishText.next(true);
+        this._germanText.next(false);
+      }
     }
     else {
       this.translate.use("de");
       localStorage.setItem("choosenLang", "de");
-      this._germanText.next(savedLanguage === 'de');
+      this._germanText.next(true);
+      this._englishText.next(false);
     }
    }
 

@@ -42,3 +42,7 @@ app-contact {
 router-outlet {
     width: 100%;
 }
+
+@media (max-width: 988px) {
+    app-reviews {height: auto;}
+}
