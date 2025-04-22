@@ -8,12 +8,12 @@
     	
     <div class="menu">
         @if(whiteColor) {
-            <img id="defaultEnIcon" src="./assets/languages/default_en.svg" *ngIf="languageService.germanText" (click)="changeToEnglish()" alt="EN icon in white">
-            <img id="defaultDeIcon" src="./assets/languages/default_de.svg" *ngIf="languageService.englishText" (click)="changeToGerman()" alt="DE icon in white">
+            <img id="defaultEnIcon" src="./assets/languages/default_en.svg" *ngIf="languageService.germanText" (click)="setLanguage()" alt="EN icon in white">
+            <img id="defaultDeIcon" src="./assets/languages/default_de.svg" *ngIf="languageService.englishText" (click)="setLanguage()" alt="DE icon in white">
             <img class="burger_menu" (click)="openMenuTab($event); $event.stopPropagation()" src="./assets/menu_icons/menu_default.svg" alt="burger menu icon in white">
         } @else {
-            <img id="blackEnIcon" src="./assets/languages/black_en.svg" *ngIf="languageService.germanText" (click)="changeToEnglish()" alt="EN icon in black">
-            <img id="blackDeIcon" src="./assets/languages/black_de.svg" *ngIf="languageService.englishText" (click)="changeToGerman()" alt="DE icon in black">
+            <img id="blackEnIcon" src="./assets/languages/black_en.svg" *ngIf="languageService.germanText" (click)="setLanguage()" alt="EN icon in black">
+            <img id="blackDeIcon" src="./assets/languages/black_de.svg" *ngIf="languageService.englishText" (click)="setLanguage()" alt="DE icon in black">
             <img class="burger_menu" (click)="openMenuTab($event); $event.stopPropagation()" src="./assets/menu_icons/menu_black.svg" alt="burger menu icon in black">
         }
         

@@ -15,11 +15,18 @@ export class LanguageService {
   private _englishText = new BehaviorSubject<boolean>(false); 
   englishText$ = this._englishText.asObservable();
 
+
+  public getStoredLanguage(): string | null {
+    return sessionStorage.getItem("choosenLang");
+  }
+
   set englishText(value: boolean) {
     this._englishText.next(value);
     this._germanText.next(!value);
     if(value) {
       this.translate.use('en');
+      sessionStorage.clear();
+      sessionStorage.setItem("choosenLang", "en");
     }
   }
 
@@ -32,6 +39,8 @@ export class LanguageService {
     this._englishText.next(!value);
     if(value) {
         this.translate.use('de');
+        sessionStorage.clear();
+        sessionStorage.setItem("choosenLang", "de");
     }
   }
 
@@ -39,6 +48,7 @@ export class LanguageService {
     return this._germanText.value;
   }
 
+ 
   }
 
 

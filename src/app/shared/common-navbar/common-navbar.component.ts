@@ -49,13 +49,21 @@ export class CommonNavbarComponent {
     this.menuOpen = false;
   }
 
+setLanguage() {
+  if(this.languageService.getStoredLanguage() === "de") {
+    this.changeToEnglish();
+  }
+  else if(this.languageService.getStoredLanguage() === "en") {
+    this.changeToGerman();
+  }
+  else {this.changeToGerman();}
+}
+
   changeToGerman() {
-    //this.translate.use('de');
     this.languageService.germanText = true;
   }
 
   changeToEnglish() {
-    //this.translate.use('en');
     this.languageService.englishText = true;
   }
 
