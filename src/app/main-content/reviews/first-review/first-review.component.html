@@ -5,5 +5,7 @@
         <div class="font_bold">Frontend Developerin</div>
         <img *ngIf="showWheel" class="hover_wheel" src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">
     </div>
-    <span (click)="goToLinkedInLink()" class="link font_bold">{{ 'reviews.link' | translate }} >></span>
+    <div (click)="goToLinkedInUrl()" class="link font_bold">
+        <span>{{ 'reviews.link' | translate }} >></span>
+    </div>
 </div>

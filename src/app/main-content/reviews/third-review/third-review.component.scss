@@ -18,12 +18,15 @@
 
 .link {
     width: 100%;
-    text-align: end;
     padding: 8px;
     font-size: 22px;
-    &:hover {
-        color: #ff824f;
+    >span {
+        display: flex;
+        justify-self: flex-end;
         cursor: pointer;
+        &:hover {
+            color: #ff824f;
+        }
     }
 }
 

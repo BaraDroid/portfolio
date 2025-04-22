@@ -11,7 +11,7 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 export class FirstReviewComponent {
   showWheel = false;
 
-  goToLinkedInLink() {
+  goToLinkedInUrl() {
     window.open('https://www.linkedin.com/in/caryen-song-b6b913317/', "_blank");
   }
 }
