@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { MenuService } from '../../menu.service';
+import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-main-navbar',
@@ -14,7 +15,9 @@ import { MenuService } from '../../menu.service';
 export class MainNavbarComponent {
   //menu.service
   private closeMenuSubscription: Subscription | undefined;
-  constructor(private translate: TranslateService, private menuService: MenuService) {}
+  constructor(private translate: TranslateService, 
+    private menuService: MenuService,
+    public languageService: LanguageService) {}
 
   linkedinIconHover:boolean = false;
 
@@ -25,9 +28,6 @@ export class MainNavbarComponent {
   showWheelContact: boolean = false;
 
   menuOpen: boolean = false;
-
-  englishText: boolean = false;
-  germanText: boolean = true;
 
   //menu.service
   ngOnInit(): void {
@@ -52,13 +52,11 @@ export class MainNavbarComponent {
 
   changeToGerman() {
     this.translate.use('de');
-    this.germanText = true;
-    this.englishText = false;
+    this.languageService.germanText = true;
   }
 
   changeToEnglish() {
     this.translate.use('en');
-    this.englishText = true;
-    this.germanText = false;
+    this.languageService.englishText = true;
   }
 }

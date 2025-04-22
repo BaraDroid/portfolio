@@ -22,12 +22,6 @@ export class CommonNavbarComponent {
 
   menuOpen: boolean = false;
 
-  // germanText: boolean = true;
-  // englishText: boolean = false;
-  //test commit
-
-// constructor(public LanguageService: LanguageService) {}
-
     //menu.service
     private closeMenuSubscription: Subscription | undefined;
     constructor(private translate: TranslateService, 
@@ -56,16 +50,13 @@ export class CommonNavbarComponent {
   }
 
   changeToGerman() {
-    this.translate.use('de');
+    //this.translate.use('de');
     this.languageService.germanText = true;
-    // this.germanText = true;
-    // this.englishText = false;
   }
 
   changeToEnglish() {
-    this.translate.use('en');
+    //this.translate.use('en');
     this.languageService.englishText = true;
-    // this.englishText = true;
-    // this.germanText = false;
   }
+
 }
