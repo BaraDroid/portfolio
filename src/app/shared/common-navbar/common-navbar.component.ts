@@ -24,6 +24,7 @@ export class CommonNavbarComponent {
 
   // germanText: boolean = true;
   // englishText: boolean = false;
+  //test commit
 
 // constructor(public LanguageService: LanguageService) {}
 
