@@ -4,10 +4,11 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
 import { Subscription } from 'rxjs';
 import { MenuService } from '../../menu.service';
 import { LanguageService } from '../../language.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-common-navbar',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './common-navbar.component.html',
   styleUrl: './common-navbar.component.scss'
 })

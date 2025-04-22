@@ -7,7 +7,25 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LanguageService {
  
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService) {
+    this.setDefaultLanguage();
+   }
+
+
+   setDefaultLanguage() {
+    const savedLanguage = this.getStoredLanguage();
+    if(savedLanguage) {
+      this.translate.use(savedLanguage);
+      localStorage.setItem("choosenLang", savedLanguage);
+      this._germanText.next(savedLanguage === 'de');
+      this._englishText.next(savedLanguage === 'en');
+    }
+    else {
+      this.translate.use("de");
+      localStorage.setItem("choosenLang", "de");
+      this._germanText.next(savedLanguage === 'de');
+    }
+   }
 
   private _germanText = new BehaviorSubject<boolean>(true); 
   germanText$ = this._germanText.asObservable();
@@ -17,7 +35,7 @@ export class LanguageService {
 
 
   public getStoredLanguage(): string | null {
-    return sessionStorage.getItem("choosenLang");
+    return localStorage.getItem("choosenLang");
   }
 
   set englishText(value: boolean) {
@@ -25,8 +43,7 @@ export class LanguageService {
     this._germanText.next(!value);
     if(value) {
       this.translate.use('en');
-      sessionStorage.clear();
-      sessionStorage.setItem("choosenLang", "en");
+      localStorage.setItem("choosenLang", "en");
     }
   }
 
@@ -39,8 +56,7 @@ export class LanguageService {
     this._englishText.next(!value);
     if(value) {
         this.translate.use('de');
-        sessionStorage.clear();
-        sessionStorage.setItem("choosenLang", "de");
+        localStorage.setItem("choosenLang", "de");
     }
   }
 

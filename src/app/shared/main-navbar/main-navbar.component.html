@@ -1,4 +1,4 @@
-<div id="portfolio" class="navbar" (click)="closeMenuTab()">
+<div class="navbar" (click)="closeMenuTab()">
 	<div class="icons">
 		<a href="https://github.com/BaraDroid" target="_blank"><img id="gitHubIcon" src="./assets/social_icons/github.svg" alt="github icon"></a>
 		
@@ -30,7 +30,7 @@
  		<!-- #endregion linkedin icon in svg form -->
 		<a href="mailto:lambeinovab@seznam.cz"><img id="envelopeIcon"  src="./assets/social_icons/mail.svg" alt="envelope icon"></a>
 	</div>
-	<a href="#portfolio"><img class="personal_logo" src="./assets/logo/logo_white_nobg.png" alt="logo in white"></a>	
+	<a routerLink=""><img class="personal_logo" src="./assets/logo/logo_white_nobg.png" alt="logo in white"></a>	
 	<div class="menu">
 			<img (click)="setLanguage()" id="enIcon" src="./assets/languages/default_en.svg" *ngIf="languageService.germanText" alt="EN icon">
 			<img (click)="setLanguage()" id="deIcon" src="./assets/languages/default_de.svg" *ngIf="languageService.englishText"  alt="DE icon">
@@ -44,7 +44,7 @@
         </div>
 
         <div class="links_list">
-            <a (mouseenter)="showWheelAbout = true" (mouseleave)="showWheelAbout = false" href="#about" (click)="closeMenuTab()"><img  *ngIf="showWheelAbout" src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">About me</a>
+            <a (mouseenter)="showWheelAbout = true" (mouseleave)="showWheelAbout = false" [routerLink]="['']" [fragment]="'about'" (click)="closeMenuTab()"><img  *ngIf="showWheelAbout" src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">About me</a>
             <a (mouseenter)="showWheelSkills = true" (mouseleave)="showWheelSkills = false" href="#competences" (click)="closeMenuTab()">@if(showWheelSkills){<img src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">}Skills</a>
             <a (mouseenter)="showWheelPortfolio = true" (mouseleave)="showWheelPortfolio = false" href="#work" (click)="closeMenuTab()">@if(showWheelPortfolio){<img src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">}Portfolio</a>
             <a (mouseenter)="showWheelRef = true" (mouseleave)="showWheelRef = false" href="#references" (click)="closeMenuTab()">@if(showWheelRef){<img src="./assets/animation_wheels/orange_sun.svg" alt="orange_wheel">}References</a>
