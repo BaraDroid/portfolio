@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { MenuService } from '../../menu.service';
+import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-common-navbar',
@@ -21,12 +22,16 @@ export class CommonNavbarComponent {
 
   menuOpen: boolean = false;
 
-  germanText: boolean = true;
-  englishText: boolean = false;
+  // germanText: boolean = true;
+  // englishText: boolean = false;
+
+// constructor(public LanguageService: LanguageService) {}
 
     //menu.service
     private closeMenuSubscription: Subscription | undefined;
-    constructor(private translate: TranslateService, private menuService: MenuService) {}
+    constructor(private translate: TranslateService, 
+      private menuService: MenuService, 
+      public languageService: LanguageService) {}
 
   //menu.service
   ngOnInit(): void {
@@ -51,13 +56,15 @@ export class CommonNavbarComponent {
 
   changeToGerman() {
     this.translate.use('de');
-    this.germanText = true;
-    this.englishText = false;
+    this.languageService.germanText = true;
+    // this.germanText = true;
+    // this.englishText = false;
   }
 
   changeToEnglish() {
     this.translate.use('en');
-    this.englishText = true;
-    this.germanText = false;
+    this.languageService.englishText = true;
+    // this.englishText = true;
+    // this.germanText = false;
   }
 }

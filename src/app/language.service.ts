@@ -5,22 +5,32 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
   providedIn: 'root'
 })
 export class LanguageService {
-  private _isGerman = new BehaviorSubject<boolean>(true); // Standardmäßig Deutsch
-  isGerman$ = this._isGerman.asObservable();
+ 
+  private _germanText = new BehaviorSubject<boolean>(true); 
+  germanText$ = this._germanText.asObservable();
 
-  get isGerman(): boolean {
-    return this._isGerman.value;
+  private _englishText = new BehaviorSubject<boolean>(false); 
+  englishText$ = this._englishText.asObservable();
+
+  set englishText(value: boolean) {
+    this._englishText.next(value);
+    this._germanText.next(!value);
   }
 
-  set isGerman(value: boolean) {
-    this._isGerman.next(value);
+  public get englishText(): boolean {
+    return this._englishText.value;
   }
 
-  toggleLanguage(): void {
-    this.isGerman = !this.isGerman;
+  set germanText(value: boolean) {
+    this._germanText.next(value);
+    this._englishText.next(!value);
   }
 
-  getCurrentLanguageIcon(): string {
-    return this.isGerman ? './assets/icons/de.svg' : './assets/icons/en.svg';
+  public get germanText(): boolean {
+    return this._germanText.value;
   }
-}
+
+
+  }
+
+
