@@ -8,6 +8,7 @@ section {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .content {
@@ -17,15 +18,8 @@ section {
     padding-left: 112px;
     padding-right: 72px;
     display: flex;
-    //flex-direction: row;
     gap: 40px;
 }
-
-// .main {
-//     display: flex;
-//     flex-direction: row;
-//     gap: 40px;
-// }
 
 h2 {
     color: #f9af41;
@@ -37,35 +31,35 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 36px;
-    position: relative;
 }
 
-.content_rigth {
+.problem_text {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.content_right {
     width: 100%;
-    height:auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.formular {
-   top: 175px;
-}
-
-.blue_sun {
-    z-index: 10;
-    right: 0%;
-}
-
-.orange_sun {
-    right: 8%;
-}
+app-formular {bottom: 8%;}
 
 .gearwheels {
     overflow: hidden;
     z-index: 2;
+    bottom: 0;
     position: absolute;
-    justify-self: flex-start;
-    bottom: -10vh;
-    left: -6vw;
+    left: 72px;
 }
+
+.orange_sun {right: 7%;}
+
+.blue_sun {z-index: 2;}
 
 .colorize {
     font-family: 'Quicksand';
@@ -92,13 +86,14 @@ app-navdots {
     }
   }
 
+  //height auto erst bei media query geben
+
 // @media(max-width: 1195px) {
 //     .checking {align-items: flex-start;}
 //     .legal_information {font-size: 16px;}
 //     input [type=checkbox] {margin-top: 4px; margin-left: 8px;}
 //     .content_left {width: 40%;}
 //     .content_rigth {width: 60%;}
-//     .main {width: 100%;}
 //     .content {padding-left: 72px;}
 // }
 
@@ -117,7 +112,6 @@ app-navdots {
 
 // @media (max-width: 1020px) {
 //     .content {padding-left: 72px; gap: 16px;}
-//     .main {gap: 16px;}
 // }
 
 // @media(max-width: 955px) {
@@ -129,17 +123,12 @@ app-navdots {
 //     app-navdots {display: none;}
 // }
 
-// @media (max-width:870px){
-//     .main {gap:24px;}
-// }
-
 // @media (max-width: 815px) {
 //     .gearwheels {bottom: 5vh;}
 // }
 
 // @media (max-width: 788px) {
 //     .content_left {margin-top: 0; gap: 16px; width: 100%;}
-//     .main {flex-direction: column;}
 //     .formular {margin-top: 16px; top: 0;}
 //     .content_right {margin-top: 0; width: 100%;}
 //     app-formular {align-self: flex-start; justify-self: flex-start;}
@@ -147,7 +136,6 @@ app-navdots {
 //         line-height: 42px;
 //     }
 //     .colorize {font-size: 18px;}
-//     .main {gap: 16px;}
 //     .gearwheels {bottom: -60vh; left: -8vw;}
 // }
 
@@ -173,7 +161,6 @@ app-navdots {
 // @media (max-width: 450px) {
 //     .colorize {color:#f9af41;}
 // }
-
 // @media (max-width: 394px) {
 //     app-footer {bottom: 19%;}
 // }
@@ -192,7 +179,6 @@ app-navdots {
 // @media screen and (width: 375px) and (height: 667px) {
 //     h2 {font-size: 30px;
 //         line-height: 30px;}
-//     .main {gap:8px;}
 //     .content_left {gap:8px;}
 //     .gearwheels {height: 89px; bottom: -70vh;}
 //     .content_right {margin-top: -16px;}
@@ -210,7 +196,6 @@ app-navdots {
 // @media screen and (width: 360px) and (height: 740px) {
 //     .gearwheels {height: 89px; bottom: -71vh;}
 //     .content_left {gap:8px;}
-//     .main {gap:8px;}
 //     app-footer {bottom:11%;}
 //     .blue_sun {height: 90px;}
 //     .orange_sun {height: 73px;}
@@ -243,7 +228,6 @@ app-navdots {
 //     .gearwheels {bottom: -73vh;
 //         height: 108px;}
 //     .content_left {gap:8px;}
-//     .main {gap:8px;}
 // }
 
 // //*****Asus Zenbook Fold**************************************

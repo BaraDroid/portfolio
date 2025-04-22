@@ -1,35 +1,33 @@
-<section (click)="closeTheMenu()" >
-    <app-common-navbar [whiteColor] = "isWhite"></app-common-navbar>
+<section (click)="closeTheMenu()">
+    <app-common-navbar [whiteColor]="isWhite"></app-common-navbar>
 
     <div class="content fontQuicksand">
-        <div class="main">
-        <div class="content_left">
-            <div class="section_name">
-                <h2 class="fontEckzar">{{ 'contact.h2_part1' | translate }}</h2>
-                <h2 class="fontEckzar">{{ 'contact.h2_part2' | translate }}</h2>
-                <h2 class="fontEckzar">{{ 'contact.h2_part3' | translate }}</h2>
-            </div>
-            <div>
-                <p class="colorize">{{ 'contact.text1' | translate }}</p>
-                <p class="vanishable"></p>
-                <p>{{ 'contact.text2' | translate }}</p>
-            </div>
-            <div class="gearwheels">
-                <img class="blue_sun rotate_anticlockwise" src="./assets/animation_wheels/animation_wheel_blue.svg" alt="blue rotating wheel">
-                <img class="orange_sun rotating" src="./assets/animation_wheels/animation_wheel_orange.svg" alt="orange rotating wheel">
+
+            <div class="content_left">
+                <div class="section_name">
+                    <h2 class="fontEckzar">{{ 'contact.h2_part1' | translate }}</h2>
+                    <h2 class="fontEckzar">{{ 'contact.h2_part2' | translate }}</h2>
+                    <h2 class="fontEckzar">{{ 'contact.h2_part3' | translate }}</h2>
+                </div>
+                <div class="problem_text">
+                    <p class="colorize">{{ 'contact.text1' | translate }}</p>
+                    <p>{{ 'contact.text2' | translate }}</p>
+                </div>
                 
             </div>
-        </div>
-        <div class="content_right">
-            <div class="formular">
-                <app-formular></app-formular>
+            <div class="content_right">
+                    <app-formular></app-formular>
             </div>
-        </div>
         <div class="scroll_bar">
             <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
         </div>
+
     </div>
-        
-    </div>    
     <app-footer></app-footer>
+    <div class="gearwheels">
+        <img class="blue_sun rotate_anticlockwise" src="./assets/animation_wheels/animation_wheel_blue.svg"
+            alt="blue rotating wheel">
+        <img class="orange_sun rotating" src="./assets/animation_wheels/animation_wheel_orange.svg"
+            alt="orange rotating wheel">
+    </div>
 </section>
