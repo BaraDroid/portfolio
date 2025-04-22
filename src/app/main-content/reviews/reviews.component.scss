@@ -114,6 +114,7 @@ app-navdots {
 
 @media (max-width: 988px) {
     section {height: auto;}
+    .boxes {flex-direction: column; margin-bottom: 16px;}
     // .boxes {
     //     flex-direction: row; 
     //     overflow-x: auto; 
