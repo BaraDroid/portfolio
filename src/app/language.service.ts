@@ -13,7 +13,6 @@ export class LanguageService {
     if (isPlatformBrowser(this.platformId)) {
       this.setDefaultLanguage();
     }
-    
    }
 
 
