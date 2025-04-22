@@ -30,7 +30,6 @@ export class LanguageService {
     return this._germanText.value;
   }
 
-
   }
 
 
