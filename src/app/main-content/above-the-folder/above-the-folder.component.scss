@@ -41,6 +41,7 @@ app-navdots {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    z-index: 40;
     >.text {
         color: #F8F7E5;
         >span {
@@ -82,6 +83,7 @@ app-navdots {
     position: absolute;
     bottom: 0;
     height: 100%;
+    max-height: 970px;
 }
 
 .scroll_bar {
@@ -113,11 +115,8 @@ app-navdots {
 }
 
 @media (max-width: 965px) {
-    .my_foto {right: -20px;}
-}
-
-@media (max-width: 935px) {
     .atf_left .text h1 {line-height: 60px; font-size: 60px;}
+    .arrow {bottom: 54px;}
 }
 
 @media (max-width: 900px) {
@@ -142,12 +141,24 @@ app-navdots {
 @media (max-width: 700px) {
     .content {padding-left: 16px; padding-right: 16px;}
     .my_foto {right: 9px; height: 84%;}
-    .sun {height: 260px; left: -10px;}
+    .atf_right { justify-content: flex-start;}
+    .sun {height: 216px;
+        top: 228px;}
 }
 
-@media (max-width: 610px) {
-    .my_foto {height: 76%;}
-    .sun {height: 216px; bottom: 9px;}
+@media (max-width: 690px) {
+    .atf_right {justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;}
+    .sun {top: -29vh;
+        left: 115px;}
+    .atf_left {margin-top: 8px;}
+    .my_foto {margin: auto;
+        right: 0;
+        height: 250%;
+        left: 0;}
 }
 
 @media(max-width: 580px) {
@@ -156,59 +167,35 @@ app-navdots {
         font-size: 56px;
         line-height: 56px;
     }
-    .atf_left {gap: 8px; width: 280px;}
-}
-
-@media (max-width: 560px) {
-    .atf_right {width: 200px;}
-    .atf_left {width: 274px;}
+    .atf_left {gap: 8px;}
 }
 
 @media(max-width: 550px) {
     .content {height: 100dvh;}
     .atf_left {margin-top: 0;}
-}
-
-@media (max-width: 525px) {
-    .content {justify-content: space-between;}
-    .my_foto {height: 69%;}
-    .atf_left {width: 150px;}
-}
-
-@media (max-width: 475px) {
-    .my_foto {height: 65%;}
-    .sun {height: 189px;
-        bottom: -59px;}
-    .rotating {height: 63%;}
+    .scroll_element {
+        justify-content: flex-start;
+        bottom: -30dvh;
+        z-index: 5;
+        overflow: hidden;
+    }
+    .rotating {height: 63%; background-color: #679aac; border-radius: 50%;}
     .arrow {left: 48px;
-        bottom: 58px;
-        height: 29px;;}
+        bottom: 71px;
+        height: 29px;}
 }
 
-@media (max-width: 460px) {
-    .btn {margin-top: 0;}
-    .atf_left >img {margin-top: 272px; z-index: 20;}
-    .rotating {background-color: #679aac; border-radius: 50%;}
-}
-
-@media (max-width: 450px) {
-    .my_foto {right: 0;}
+@media (max-width: 487px) {
+    .sun {left: 76px;}
 }
 
 @media (max-width: 420px) {
-    .atf_left {gap: 30px;}
-    .rotating {margin-top: 0;}
-    .my_foto {right: 0;}
-    .arrow {left: 33px;}
+    .sun {height: 199px;}
 }
 
-@media (max-width: 410px) {
-    .my_foto {right: -15px;}
-}
+@media (max-width: 382px) {
+    .sun {height: 190px; left: 59px;}
 
-@media (max-width: 395px) {
-    .atf_left {gap: 16px;}
-    section {overflow-x: hidden;}
 }
 
 @media (max-width: 375px) {
@@ -221,91 +208,19 @@ app-navdots {
     .atf_left .text h1 {
         font-size: 46px;
     }
-    .scroll_element {align-self: flex-end;
-        margin-top: 33vh;
-        z-index: 5;
-        right: 36%;
-    }
-    .my_foto {right: 25px; height: 58%;}
-    .sun {left: -28px;}
 }
 
-@media (max-width: 356px) {
-   .sun {height: 176px;}
+@media (max-width: 346px) {
+    .sun {height: 173px; top: -24vh;}
 }
 
-@media (max-width: 350px) {
-    .sun {height: 168px;}
-}
 
-@media (max-width: 342px) {
-    .sun {height: 152px; bottom: -107px; left: -2px;}
-    .atf_left {width: 100px;}
-    .atf_right {width: 175px;}
-    .my_foto {right: -12px;}
-    .scroll_element {right: 11%;}
-}
-
-@media (max-width: 329px) {
-    .my_foto {right: -18px;}
-}
 
 //*****responsiveness for concrete mobile screens*******************************************
 
 //*****iPhoneSE**************************************
 @media screen and (width: 375px) and (height: 667px) {
-    .my_foto {right: 44px;
-        height: 61%;}
-    .scroll_element {margin-top: 27vh;}
-}
-
-//*****iPad mini**************************************
-@media screen and (width: 768px) and (height: 1024px) {
-    .my_foto {height: 79%;}
-}
-
-//*****iPad Air**************************************
-@media screen and (width: 820px) and (height: 1180px) {
-    .my_foto {height: 74%;}
-}
-
-//*****iPad Pro**************************************
-@media screen and (width: 1024px) and (height: 1366px) {
-    .my_foto {height: 79%;}
-    .sun {height: 388px;
-        align-self: center;
-        bottom: 67px;}
-}
-
-//*****surface Pro 7**************************************
-@media screen and (width: 912px) and (height: 1368px) {
-    .sun {height: 352px;}
-    .my_foto {height: 79%;}
-}
-
-//*****Galaxy Z Fold 5**************************************
-@media screen and (width: 344px) and (height: 882px) {
-    .my_foto{right: -5px;}
-    .sun {left: -3px; bottom: -104px;}
-}
-
-//*****Asus Zenbook Fold**************************************
-@media screen and (width: 853px) and (height: 1280px) {
-    .my_foto {height: 74%;}
-}
-
-//*****Nesthub**************************************
-@media screen and (width: 1024px) and (height: 600px) {
-    .sun {height: 251px;}
-    .rotating {margin-top: -12px;
-        height: 108px;}
-    .arrow {left: 39px;
-        bottom: 38px;
-        height: 34px;}
-    .btn {margin-top: 0;}
-}
-
-//*****Sasung Galaxy A54**************************************
-@media screen and (width: 384px) and (height: 755px) {
-    .my_foto {right: 23px;}
+    .sun {height: 170px;}
+    .my_foto {height: 230%;}
+    .scroll_element {bottom: -20dvh;}
 }
