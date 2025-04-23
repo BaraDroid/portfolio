@@ -7,7 +7,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .content {
@@ -45,23 +45,12 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 2vh;
 }
 
 app-formular {bottom: 8%;}
 
-.gearwheels {
-    overflow: hidden;
-    z-index: 2;
-    bottom: -83px;
-    position: absolute;
-    left: 72px;
-    display: flex;
-    align-items: flex-end;
-}
 
-.orange_sun {right: 7%;}
-
-.blue_sun {z-index: 2;}
 
 .colorize {
     font-family: 'Quicksand';
@@ -75,7 +64,7 @@ app-common-navbar {
     max-width: 1440px;
 }
 
-app-footer {width: 100%; position: relative; bottom: 0; max-width: 1440px;}
+app-footer {width: 100%; max-width: 1440px;}
 
 app-navdots {
     display: flex;
@@ -91,7 +80,6 @@ app-navdots {
 
   @media(max-width: 1275px) {
     .content {padding-left: 72px;}
-    .gearwheels {left: 16px;}
   }
 
   @media (max-width: 1225px) {
@@ -118,18 +106,18 @@ app-navdots {
   @media (max-width: 900px) {
     app-navdots {display: none;}
     .scroll_bar {display: none;}
-    //app-footer {order: 1;}
 }
 
   @media(max-width: 788px) {
-    section {height: auto; min-height: 100dvh;}
+    section {
+        height: auto; 
+        min-height: 100dvh;
+    }
     .content {flex-direction: column; height: auto; gap: 24px;}
     .content_right {height: auto;}
     .content_left {width: 100%; gap: 16px}
-    .gearwheels {position: absolute; bottom: -28dvh;}
     .problem_text {gap: 16px;}
     .colorize {font-size: 18px;}
-    app-footer {bottom: auto; top: 0;}
   }
 
   @media (max-width: 700px) {
@@ -140,7 +128,6 @@ app-navdots {
 @media (max-width: 550px) {
     app-common-navbar {display: none;}
     .content {padding-top: 16px;}
-    .gearwheels {margin-top: 8px;}
 }
 
 @media (max-width: 385px) {
@@ -149,7 +136,6 @@ app-navdots {
 }
 
 @media (max-width: 365px) {
-    .gearwheels {left: 0;}
     .blue_ sun {height: 166px;}
     .orange_sun {height: 145px;}
 }

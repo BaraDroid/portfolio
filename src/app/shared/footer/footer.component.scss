@@ -2,15 +2,22 @@
     color: #f8f7e5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     max-width: 1440px;
     padding: 32px;
+    padding-bottom: 8px;
+}
+
+.portfolio_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 61%;
 }
 
 .name_copyright{
     width: 100%;
-    text-align: center;
     white-space: nowrap;
 }
 
@@ -36,7 +43,18 @@ a {
     width: 33vw;
 }
 
-@media (max-width: 900px) {
+.gearwheels {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.orange_sun {right: 7%; height: 100px;}
+
+.blue_sun {z-index: 2; height: 150px;}
+
+@media (max-width: 931px) {
     .portfolio_footer {
         padding: 0;
         padding-bottom: 16px;
@@ -53,8 +71,10 @@ a {
     .portfolio_footer {
         padding: 0;
         padding-bottom: 16px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+        position: relative; 
+        top: -1vh;
     }
     .links {justify-content: space-evenly;}
     .name_copyright {text-align: center;}
@@ -69,7 +89,7 @@ a {
 @media (max-width: 550px) {
     .links {justify-content: space-between;}
     .links {padding: 0 16px;}
-    .portfolio_footer {padding: 0 0 0 0;}
+    .portfolio_footer {padding: 16px 0 0 0;}
 }
 
 @media (max-width: 520px) {
