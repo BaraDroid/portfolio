@@ -27,7 +27,8 @@ h2 {
 }
 
 .content_left {
-    width: 528px;
+    width: 37%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 36px;
@@ -86,7 +87,65 @@ app-navdots {
     }
   }
 
-  //height auto erst bei media query geben
+
+  @media(max-width: 1275px) {
+    .content {padding-left: 72px;}
+    .gearwheels {left: 16px;}
+  }
+
+  @media (max-width: 1225px) {
+    app-formular {bottom: 20%;}
+    h2 {font-size: 64px;
+        line-height: 64px;}
+  }
+
+  @media (max-width: 1085px) {
+    .blue_sun {height: 216px;}
+    .orange_sun {height: 179px;}
+    .content_left {width: 41%;}
+    h2 {font-size: 56px;
+        line-height: 56px;}
+  }
+
+  @media (max-width: 990px) {
+    h2 {font-size: 48px;
+        line-height: 48px;}
+    .blue_sun {height: 186px;}
+    .orange_sun {height: 156px;}
+  }
+
+  @media (max-width: 900px) {
+    app-navdots {display: none;}
+}
+
+  @media (max-width: 890px) {
+    .gearwheels {bottom: 10vw;}
+  }
+
+  @media(max-width: 788px) {
+    section {height: auto; min-height: 100dvh;}
+    .content {flex-direction: column; height: auto; gap: 24px;}
+    .content_left {width: 100%; gap: 16px}
+    .gearwheels {position: relative; align-self: flex-start; bottom: 0;}
+    .problem_text {gap: 16px;}
+    .colorize {font-size: 18px;}
+  }
+
+  @media (max-width: 700px) {
+    h2 {font-size: 36px; line-height: 36px;}
+    .content {padding-right: 16px; padding-left: 16px;}
+}
+
+@media (max-width: 550px) {
+    app-common-navbar {display: none;}
+    .content {padding-top: 16px;}
+}
+
+@media (max-width: 420px) {
+    // .blue_sun {height: 100px;}
+    // .orange_sun {height: 87px;}
+}
+
 
 // @media(max-width: 1195px) {
 //     .checking {align-items: flex-start;}
@@ -119,9 +178,7 @@ app-navdots {
 //     .orange_sun {height: 15vh;}
 // }
 
-// @media (max-width: 900px) {
-//     app-navdots {display: none;}
-// }
+
 
 // @media (max-width: 815px) {
 //     .gearwheels {bottom: 5vh;}
@@ -145,18 +202,9 @@ app-navdots {
 //     .gearwheels {bottom: -56vh;}
 // }
 
-// @media (max-width: 700px) {
-//     h2 {font-size: 36px; line-height: 36px;}
-//     .content {padding-right: 16px; padding-left: 16px;}
-//     .gearwheels {left: 0vw;}
-// }
 
-// @media (max-width: 550px) {
-//     app-common-navbar {display: none;}
-//     .section_name{margin-top: 16px;}
-//     app-footer {bottom: 20%;}
-//     .gearwheels {bottom: -71vh;}
-// }
+
+
 
 // @media (max-width: 450px) {
 //     .colorize {color:#f9af41;}

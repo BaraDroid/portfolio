@@ -136,54 +136,67 @@ label {
   }
   
 
-@media(max-width: 1200px) {
-    input[type=text] {padding: 16px 8px;}
+@media(max-width: 1225px) {
+    .your_info {flex-direction: column; align-items: initial; gap: 32px;}
 }
 
-@media(max-width: 1195px) {
-    input[type=checkbox] {margin-top: 4px;}
-    .checking {align-items: flex-start;}
-}
-
-@media (max-width: 1171px) {
-    .your_info {flex-direction: column; gap: 16px;}   
-    .formular {height: 100%; gap: 16px;}
-    input[type=text] {width: 100%;}
-    .your_info {align-items: normal;}
-}
-
-@media(max-width:870px){
+@media (max-width: 1085px) {
     label {font-size: 18px;}
+    .your_info {gap: 16px;}
+    .form {gap: 16px;}
 }
 
-@media (max-width: 785px) {
-    .drop_line {margin-top: 0;}
-    .formular {align-self: flex-start;}
-    input [type=text] {padding: 8px;}
-    textarea {padding: 8px;}
+@media (max-width: 788px) {
+    form {height: 100%;}
     input[type=text] {padding: 8px;}
-    .message {gap: 16px;}
+    .formular {gap: 16px;}
+    textarea {padding: 8px;}
 }
 
-@media (max-width: 780px) {
-    label {font-size: 16px;}
-    input [type=text] {padding: 8px;}
-    .message {gap: 16px;}
-    .legal_information {font-size: 16px;}
-}
+// @media(max-width: 1195px) {
+//     input[type=checkbox] {margin-top: 4px;}
+//     .checking {align-items: flex-start;}
+// }
+
+// @media (max-width: 1171px) {
+//     .your_info {flex-direction: column; gap: 16px;}   
+//     .formular {height: 100%; gap: 16px;}
+//     input[type=text] {width: 100%;}
+//     .your_info {align-items: normal;}
+// }
+
+// @media(max-width:870px){
+//     label {font-size: 18px;}
+// }
+
+// @media (max-width: 785px) {
+//     .drop_line {margin-top: 0;}
+//     .formular {align-self: flex-start;}
+//     input [type=text] {padding: 8px;}
+//     textarea {padding: 8px;}
+//     input[type=text] {padding: 8px;}
+//     .message {gap: 16px;}
+// }
+
+// @media (max-width: 780px) {
+//     label {font-size: 16px;}
+//     input [type=text] {padding: 8px;}
+//     .message {gap: 16px;}
+//     .legal_information {font-size: 16px;}
+// }
 
 
-//*****iPhoneSE**************************************
-@media screen and (width: 375px) and (height: 667px) {
-    .formular {gap: 8px;}
-    .your_info {gap: 8px;}
-    .formular {height: 90%;}
-    .message {gap: 8px;}
-    .drop_line input {font-size: 16px; margin-top: -11px;}
-}
+// //*****iPhoneSE**************************************
+// @media screen and (width: 375px) and (height: 667px) {
+//     .formular {gap: 8px;}
+//     .your_info {gap: 8px;}
+//     .formular {height: 90%;}
+//     .message {gap: 8px;}
+//     .drop_line input {font-size: 16px; margin-top: -11px;}
+// }
 
-//*****Sasung Galaxy A54**************************************
-@media screen and (width: 384px) and (height: 755px) {
-    .formular {gap: 8px;}
+// //*****Sasung Galaxy A54**************************************
+// @media screen and (width: 384px) and (height: 755px) {
+//     .formular {gap: 8px;}
     
-}
+// }
