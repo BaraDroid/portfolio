@@ -1,5 +1,5 @@
-<section (click)="closeTheMenu()" (click)="closeSlider()" >
-    <app-common-navbar [whiteColor]="isWhite" ></app-common-navbar>
+<section (click)="closeTheMenu()" (click)="closeSlider()">
+    <app-common-navbar [whiteColor]="isWhite"></app-common-navbar>
 
     <div class="content">
         <div class="left_side">
@@ -11,37 +11,40 @@
                     <br>
                     <p class="vanishable">{{ 'about_me.text2' | translate }}</p>
                     <div class="interactive">
-                       <a href="#contact"><button class="btn fontQuicksand">Let's Talk</button></a>
-                        <img class="jumping_icon"
-                        (mouseover)="handleMouseOverForSlider()"
-                        (mouseleave)="handleMouseLeaveForSlider()"
-                         (click)="clickForSlider()"  (click)="$event.stopPropagation()" src="./assets/emojis/secret.svg" alt="">
+                        <a href="#contact"><button class="btn fontQuicksand">Let's Talk</button></a>
+                        <img class="jumping_icon" (mouseover)="handleMouseOverForSlider()"
+                            (mouseleave)="handleMouseLeaveForSlider()" (click)="clickForSlider()"
+                            (click)="$event.stopPropagation()" src="./assets/emojis/secret.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="right_side">
             <h2 class="fontEckzar">{{ 'about_me.h2' | translate }}</h2>
-        </div>
-        <div class="scroll_bar">
-            <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
-        </div>
-    </div>
+            <div class="scroll_bar">
+                <app-navdots [whiteColor]="isWhite" [sectionIndex]="indexOfThisSection"></app-navdots>
+            </div>
 
-
- 
-    <div class="info_slide_up" *ngIf="infoSliderVisible" [ngClass]="{'show_info_slider': infoSliderVisible}">
-        <div class="menu_title">
-            <h5>More about me</h5>
-            <img  (click)="closeSlider()" class="x_icon" src="./assets/menu_icons/close_white.svg" alt="x icon">
-        </div>
+            <div class="info_slide_up" *ngIf="infoSliderVisible" [ngClass]="{'show_info_slider': infoSliderVisible}">
+                <div class="menu_title">
+                    <h5>More about me</h5>
+                    <img (click)="closeSlider()" class="x_icon" src="./assets/menu_icons/close_white.svg" alt="x icon">
+                </div>
         
-            @for (text of 'about_me.slide_up_info' | translate ; track $index) {
+                @for (text of 'about_me.slide_up_info' | translate ; track $index) {
                 <div>
                     <img src="./assets/menu_icons/check_circle.svg" alt="check circle">
                     <span>{{ text }}</span>
                 </div>
-            }
+                }
+            </div>
+            
+        </div>
+        
     </div>
+
+
+
+
 
 </section>

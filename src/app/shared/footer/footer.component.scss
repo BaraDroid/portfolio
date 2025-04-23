@@ -36,12 +36,28 @@ a {
     width: 33vw;
 }
 
+@media (max-width: 900px) {
+    .portfolio_footer {
+        padding: 0;
+        padding-bottom: 16px;
+        padding-right: 72px;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+    }
+    .links {justify-content: space-between;}
+    .name_copyright {text-align: end;}
+}
+
 @media (max-width: 788px) {
     .portfolio_footer {
         padding: 0;
         padding-bottom: 16px;
         flex-direction: column;
+        align-items: center;
     }
+    .links {justify-content: space-evenly;}
+    .name_copyright {text-align: center;}
     .name_copyright .oneThird {margin-bottom: 8px;}
     .links.oneThird {width: 100%;}
 }

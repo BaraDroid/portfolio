@@ -8,7 +8,6 @@ section {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    position: relative;
 }
 
 .content {
@@ -53,7 +52,7 @@ app-formular {bottom: 8%;}
 .gearwheels {
     overflow: hidden;
     z-index: 2;
-    bottom: 0;
+    bottom: -83px;
     position: absolute;
     left: 72px;
     display: flex;
@@ -118,20 +117,19 @@ app-navdots {
 
   @media (max-width: 900px) {
     app-navdots {display: none;}
+    .scroll_bar {display: none;}
+    //app-footer {order: 1;}
 }
-
-  @media (max-width: 890px) {
-    .gearwheels {bottom: 10vw;}
-  }
 
   @media(max-width: 788px) {
     section {height: auto; min-height: 100dvh;}
     .content {flex-direction: column; height: auto; gap: 24px;}
     .content_right {height: auto;}
     .content_left {width: 100%; gap: 16px}
-    .gearwheels {position: relative; align-self: flex-start; bottom: 0;}
+    .gearwheels {position: absolute; bottom: -28dvh;}
     .problem_text {gap: 16px;}
     .colorize {font-size: 18px;}
+    app-footer {bottom: auto; top: 0;}
   }
 
   @media (max-width: 700px) {
@@ -161,6 +159,11 @@ app-navdots {
     .gearwhlees img {height: auto; width: 100%; object-fit: contain;}
     h2 {font-size: 30px;
         line-height: 30px;}
+}
+
+@media (max-width: 335px) {
+    .blue_sun {height: 168px;}
+    .orange_sun {height: 140px;}
 }
 
 @media (height: 900px) and (width: 1024px) {
