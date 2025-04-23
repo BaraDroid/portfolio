@@ -90,7 +90,7 @@ h2 {
     position: absolute;
     height: 120px;
     width: 120px;
-    bottom: -300px;
+    bottom: -37dvh;
     left: 0;
     z-index: 10;
 }
@@ -98,7 +98,7 @@ h2 {
 .learning_icon {
     position: absolute;
     left: 42px;
-    bottom: -262px;
+    bottom: -32dvh;
     z-index: 15;
 }
 
@@ -211,9 +211,9 @@ app-navdots {
     .description {width: 90%;}
     .content_left {height: fit-content; justify-content: center;}
     .learning_sun {
-        bottom: -399px;
+        bottom: -49dvh;
     }
-    .learning_icon {left: 40px; bottom: -360px;}
+    .learning_icon {left: 40px; bottom: -44dvh;}
     .content_left h2 {margin-top: 16px;}
     .content_right {margin-bottom: 180px;}
     .content_right .frontend_icon {width: 96px;}
@@ -241,7 +241,6 @@ app-navdots {
         margin-top: 0;
         font-size: 16px;
     }
-    .learning_icon {bottom: -361px;}
 }
 
 @media (max-width: 589px) {
@@ -250,8 +249,8 @@ app-navdots {
 }
 
 @media(max-width: 545px) {
-    .learning_sun { bottom: -430px;}
-    .learning_icon {bottom: -388px;}
+    .learning_sun {bottom: -52dvh;}
+    .learning_icon {bottom: -47dvh;}
 }
 
 @media (max-width: 550px) {
@@ -259,8 +258,8 @@ app-navdots {
 }
 
 @media(max-width: 500px) {
-    .learning_sun { bottom: -400px;}
-    .learning_icon {bottom: -363px;}
+    .learning_sun {bottom: -50dvh;}
+    .learning_icon {bottom: -45dvh;}
     .further_skills {left: 22vw;}
 }
 
@@ -273,21 +272,15 @@ app-navdots {
     .content {padding-left: 16px; padding-right: 16px;}
     .description {width: 100%;}
     .further_skills {top: 48vh;}
-    .learning_sun {bottom: -385px;}
-    .learning_icon {bottom: -349px;}
+    .learning_sun {bottom: -48dvh;}
+    .learning_icon {bottom: -43dvh;}
 }
 
 @media(max-width: 370px) {
     .vanishable {display: none;}
-    .learning_sun {bottom: -468px;}
-    .learning_icon {bottom: -428px;}
+    .learning_sun {bottom: -57dvh;}
+    .learning_icon {bottom: -52dvh;}
     .further_skills {left: 25vw;}
-}
-
-//*****iPhoneSE**************************************
-@media screen and (width: 375px) and (height: 667px) {
-    .learning_sun {bottom: -331px;}
-    .learning_icon {bottom: -295px;}
 }
 
 //*****Nesthub**************************************
