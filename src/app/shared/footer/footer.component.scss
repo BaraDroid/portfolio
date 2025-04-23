@@ -5,8 +5,9 @@
     align-items: flex-end;
     width: 100%;
     max-width: 1440px;
-    padding: 32px;
+    padding-left: 72px;
     padding-bottom: 8px;
+    padding-right: 72px;
 }
 
 .portfolio_text {
@@ -56,12 +57,15 @@ a {
 
 @media (max-width: 931px) {
     .portfolio_footer {
-        padding: 0;
-        padding-bottom: 16px;
-        padding-right: 72px;
-        flex-direction: column;
+        //padding-right: 16px;
+        //padding-bottom: 16px;
+        //flex-direction: column;
         align-items: flex-end;
         gap: 16px;
+    }
+    .portfolio_text {
+        display: flex;
+        flex-direction: column;
     }
     .links {justify-content: space-between;}
     .name_copyright {text-align: end;}
@@ -70,16 +74,24 @@ a {
 @media (max-width: 788px) {
     .portfolio_footer {
         padding: 0;
-        padding-bottom: 16px;
+        padding-top: 16px;
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
         position: relative; 
-        top: -1vh;
+        width: 100%;
+        gap: 0;
     }
+    .portfolio_text {justify-content: center; width: 100%;}
+    .name_copyright {text-align: center; width: 100%;}
     .links {justify-content: space-evenly;}
-    .name_copyright {text-align: center;}
     .name_copyright .oneThird {margin-bottom: 8px;}
     .links.oneThird {width: 100%;}
+    .gearwheels { height: 100%; justify-content: center;}
+    .orange_sun {right: 3%;
+        height: 113px;}
+    .blue_sun {height: 155px;}
 }
 
 @media (max-width: 720px) {
@@ -94,6 +106,10 @@ a {
 
 @media (max-width: 520px) {
     input[type=text] {padding: 8px;}
+}
+
+@media (max-width: 500px) {
+    .orange_sun {right: 4%;}
 }
 
 @media (max-width: 450px) {
