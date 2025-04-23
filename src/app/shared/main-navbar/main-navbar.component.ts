@@ -8,7 +8,7 @@ import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-main-navbar',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslatePipe],
   templateUrl: './main-navbar.component.html',
   styleUrl: './main-navbar.component.scss'
 })

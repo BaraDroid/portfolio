@@ -3,6 +3,13 @@
       "headline1_part": "Hello, I'm",
       "job": "Developer"
     },
+    "navbar_menu": {
+      "01": "About me",
+      "02": "Skills",
+      "03": "Portfolio",
+      "04": "References",
+      "05": "Contact me"
+    },
     "about_me": {
       "h2": "About me",
       "mobile_view_text": "Creative Frontend Developer with an interdisciplinary background. Enthusiastic about IT since 2024. Designs user-centered websites with a focus on JavaScript, HTML, CSS, and UX/UI.",

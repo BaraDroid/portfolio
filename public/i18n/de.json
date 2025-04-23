@@ -3,6 +3,13 @@
     "headline1_part": "Hallo, ich bin",
     "job": "Entwicklerin"
   },
+  "navbar_menu": {
+    "01": "Über mich",
+    "02": "Kompetenzen",
+    "03": "Projekte",
+    "04": "Referenzen",
+    "05": "Kontakt"
+  },
   "about_me": {
     "h2": "Über mich",
     "mobile_view_text": "Kreative Frontend-Entwicklerin mit interdisziplinärem Hintergrund. Seit 2024 begeistert in der IT. Gestaltet nutzerzentrierte Websites mit Fokus auf JavaScript, HTML, CSS und UX/UI.",
