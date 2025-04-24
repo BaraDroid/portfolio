@@ -28,16 +28,6 @@ export class WorkComponent {
     contributionKey: string;
   }[] = [
     {
-      name: 'Pokedex',
-      imgSrc: '././assets/screenshots/pokedex.png',
-      technologies: 'REST API | JavaScript | Asynchronous Requests | CSS | HTML',
-      iconSrc: './assets/emojis/statistic.svg',
-      gitHubUrl: 'https://github.com/BaraDroid/pokedex',
-      liveUrl: 'https://pokedex.barbora-lambeinova.de/',
-      descriptionKey: 'work.pokedex.description',
-      contributionKey: 'work.pokedex.contribution'
-    },
-    {
       name: 'Join',
       imgSrc: '././assets/screenshots/join.png',
       technologies: 'Angular | Firebase | TypeScript | SCSS | HTML',
@@ -57,6 +47,16 @@ export class WorkComponent {
       descriptionKey: 'work.pollo_loco.description',
       contributionKey: 'work.pollo_loco.contribution'
     },
+    {
+      name: 'Pokedex',
+      imgSrc: '././assets/screenshots/pokedex.png',
+      technologies: 'REST API | JavaScript | Asynchronous Requests | CSS | HTML',
+      iconSrc: './assets/emojis/statistic.svg',
+      gitHubUrl: 'https://github.com/BaraDroid/pokedex',
+      liveUrl: 'https://pokedex.barbora-lambeinova.de/',
+      descriptionKey: 'work.pokedex.description',
+      contributionKey: 'work.pokedex.contribution'
+    },
   ]
 
   showNextProject() {
@@ -64,7 +64,6 @@ export class WorkComponent {
     if(this.currentIndex >= this.projects.length){
       this.currentIndex = 0;
     }
-    console.log('next method currentIndex', this.currentIndex);
   }
 
   showPreviousProject() {
@@ -72,7 +71,6 @@ export class WorkComponent {
     if(this.currentIndex < 0) {
       this.currentIndex = this.projects.length - 1;
     }
-    console.log('previous method currentIndex', this.currentIndex);
   }
     
 

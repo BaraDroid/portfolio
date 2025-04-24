@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-formular',
-  imports: [FormsModule, TranslatePipe, TranslateDirective, CommonModule],
+  imports: [FormsModule, TranslatePipe, TranslateDirective, CommonModule, RouterModule],
   templateUrl: './formular.component.html',
   styleUrl: './formular.component.scss'
 })

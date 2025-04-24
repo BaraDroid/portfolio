@@ -1,44 +1,53 @@
-<form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" (click)="dismissConfirmation()" >
+<form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" (click)="dismissConfirmation()">
     <div class="your_info">
         <div class="name_email">
             <label for="name">{{ 'formular.name' | translate }}</label>
-            <input #name="ngModel" minLength="4" [(ngModel)]="contactData.name" type="text" placeholder="{{ 'formular.name_placeholder' | translate }}" required name="name" id="name"  >
+            <input #name="ngModel" minLength="4" [(ngModel)]="contactData.name" type="text"
+                placeholder="{{ 'formular.name_placeholder' | translate }}" required name="name" id="name">
             @if(!name.valid && name.touched) {
-                <span>{{ 'formular.notification_name' | translate }}</span>
+            <span>{{ 'formular.notification_name' | translate }}</span>
             }
         </div>
         <div class="name_email">
             <label for="email">{{ 'formular.email' | translate }}</label>
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="text" placeholder="{{ 'formular.email_placeholder' | translate }}" required name="email" id="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            <input #email="ngModel" [(ngModel)]="contactData.email" type="text"
+                placeholder="{{ 'formular.email_placeholder' | translate }}" required name="email" id="email"
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             @if(!email.valid && email.touched){
-                <span>{{ 'formular.notification_email' | translate }}</span>
+            <span>{{ 'formular.notification_email' | translate }}</span>
             }
         </div>
     </div>
     <div class="message">
         <div class="name_email">
             <label for="message">{{ 'formular.message' | translate }}</label>
-            <textarea #message="ngModel" minLength="4" [(ngModel)]="contactData.message" name="message" id="message" placeholder="{{ 'formular.message_placeholder' | translate }}" required id="message"></textarea>
+            <textarea #message="ngModel" minLength="4" [(ngModel)]="contactData.message" name="message" id="message"
+                placeholder="{{ 'formular.message_placeholder' | translate }}" required id="message"></textarea>
             @if(!message.valid && message.touched){
-                <span>{{ 'formular.notification_message' | translate }}</span>
+            <span>{{ 'formular.notification_message' | translate }}</span>
             }
         </div>
         <div class="checkbox">
             <div class="checking">
-                <img (click)="privacyPolicyChecked = !privacyPolicyChecked" [class]="privacyPolicyChecked ? 'checkmark_aktiv' : 'checkmark'" src="./assets/formular/unchecked_ default.svg" alt="checkbox for privacy policy">
-                <span class="legal_information">{{ 'formular.checkbox_text_part1' | translate }}<a href="data_protection"> {{ 'formular.checkbox_link' | translate }}</a> {{ 'formular.checkbox_text_part2' | translate }}</span>
+                <img (click)="privacyPolicyChecked = !privacyPolicyChecked"
+                    [class]="privacyPolicyChecked ? 'checkmark_aktiv' : 'checkmark'"
+                    src="./assets/formular/unchecked_ default.svg" alt="checkbox for privacy policy">
+                <span class="legal_information">{{ 'formular.checkbox_text_part1' | translate }}<a
+                        routerLink="/data_protection"> {{ 'formular.checkbox_link' | translate }}</a> {{
+                    'formular.checkbox_text_part2' | translate }}</span>
             </div>
             @if(sendFormular && !privacyPolicyChecked) {
-                <span class="error_message">{{ 'formular.checkbox_error' | translate }}</span>
-                @if(privacyPolicyChecked) {sendFormular = false}
-             }
+            <span class="error_message">{{ 'formular.checkbox_error' | translate }}</span>
+            @if(privacyPolicyChecked) {sendFormular = false}
+            }
         </div>
-        
+
     </div>
-    <div (click)="sendFormular = true" class="drop_line"><input [disabled]="!contactForm.valid || !privacyPolicyChecked" [ngClass]="{'disabled': !contactForm.valid || !privacyPolicyChecked}" type="submit" value="Drop a line"></div>
+    <div (click)="sendFormular = true" class="drop_line"><input [disabled]="!contactForm.valid || !privacyPolicyChecked"
+            [ngClass]="{'disabled': !contactForm.valid || !privacyPolicyChecked}" type="submit"
+            value="{{ 'buttons.section05' | translate }}">
+    </div>
     <div class="confirm" *ngIf="showConfirmation">
         {{ 'confirm' | translate }}
     </div>
 </form>
-    
-

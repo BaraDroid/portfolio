@@ -11,7 +11,7 @@
                     <br>
                     <p class="vanishable">{{ 'about_me.text2' | translate }}</p>
                     <div class="interactive">
-                        <a href="#contact"><button class="btn fontQuicksand">Let's Talk</button></a>
+                        <a href="#contact"><button class="btn fontQuicksand">{{ 'buttons.section02' | translate }}</button></a>
                         <img class="jumping_icon" (mouseover)="handleMouseOverForSlider()"
                             (mouseleave)="handleMouseLeaveForSlider()" (click)="clickForSlider()"
                             (click)="$event.stopPropagation()" src="./assets/emojis/secret.svg" alt="">
@@ -27,7 +27,7 @@
 
             <div class="info_slide_up" *ngIf="infoSliderVisible" [ngClass]="{'show_info_slider': infoSliderVisible}">
                 <div class="menu_title">
-                    <h5>More about me</h5>
+                    <h5>{{ 'about_me.slide_up_title' | translate }}</h5>
                     <img (click)="closeSlider()" class="x_icon" src="./assets/menu_icons/close_white.svg" alt="x icon">
                 </div>
                 @for (text of 'about_me.slide_up_info' | translate ; track $index) {

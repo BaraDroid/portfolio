@@ -1,8 +1,8 @@
 <div class="portfolio_footer fontQuicksand">
     <div class="gearwheels">
-        <img class="blue_sun rotate_anticlockwise" src="./assets/animation_wheels/animation_wheel_blue.svg"
+        <img *ngIf="isContactSection" class="blue_sun rotate_anticlockwise" src="./assets/animation_wheels/animation_wheel_blue.svg"
             alt="blue rotating wheel">
-        <img class="orange_sun rotating" src="./assets/animation_wheels/animation_wheel_orange.svg"
+        <img *ngIf="isContactSection" class="orange_sun rotating" src="./assets/animation_wheels/animation_wheel_orange.svg"
             alt="orange rotating wheel">
     </div>
 <div class="portfolio_text">

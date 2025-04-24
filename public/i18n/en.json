@@ -16,6 +16,7 @@
       "text1": "I am a motivated Frontend Developer with a creative, interdisciplinary background. After years of working in various fields, I found my calling for IT in 2024. With a foundation in JavaScript, HTML, CSS, and UX/UI design, I strive to create functional and aesthetically pleasing websites that offer an experience for the user.",
       "text2": "What fascinates me most about working as a developer is the creative aspect and the playful element in the code itself.",
       "text3": "Let's connect and create something amazing together!",
+      "slide_up_title": "More about me",
       "slide_up_info": [
           "Teamplayer",
           "Open to learn new skills",
@@ -137,5 +138,10 @@
     "title11": "Contact",
     "text11": "If you have any questions about this privacy policy or the processing of your personal data, you can reach me using the following contact details:"
   },
-  "confirm": "Email has been sent!"
+  "confirm": "Email has been sent!",
+  "buttons": {
+    "section01": "Get in Touch",
+    "section02": "Let's Talk",
+    "section05": "Drop a line"
+  }
 }

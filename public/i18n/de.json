@@ -16,6 +16,7 @@
     "text1": "Ich bin eine motivierte Frontend-Entwicklerin mit kreativem, interdisziplinärem Hintergrund. Nach Jahren der Arbeit in verschiedenen Bereichen habe ich 2024 meine Berufung in der IT gefunden. Mit einem starken Fundament in den Bereichen JavaScript, HTML, CSS und UX/UI Design strebe ich danach, funktionale und ästhetisch ansprechende Websites zu gestalten, die den Nutzern ein Erlebnis bieten.",
     "text2": "Was mich an der Arbeit als Entwickler:in besonders fasziniert, ist die kreative Freiheit und das verspielte Element, das im Code selbst steckt.",
     "text3": "Lass uns verbinden und gemeinsam etwas Erstaunliches erschaffen!",
+    "slide_up_title": "Mehr über mich",
     "slide_up_info": [
       "Genießt Teamarbeit",
       "Entwickelt sich gerne weiter",
@@ -134,5 +135,10 @@
     "title11": "Kontakt",
     "text11": "Falls Sie Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, können Sie mich unter den folgenden Kontaktdaten erreichen:"
   },
-  "confirm": "E-Mail gesendet!"
+  "confirm": "E-Mail gesendet!",
+  "buttons": {
+    "section01": "Schreib mir",
+    "section02": "Kontakt",
+    "section05": "Senden"
+  }
 }

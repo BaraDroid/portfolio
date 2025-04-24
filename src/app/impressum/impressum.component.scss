@@ -8,7 +8,7 @@ section {
 }
 
 .content {
-    min-height: calc(100vh - 173px);
+    min-height: calc(100vh - 116px);
     width: 100%;
     max-width: 1440px;
     padding-left: 112px;
@@ -26,6 +26,8 @@ a {
     font-size: 18px;
     font-weight: 700;
 }
+
+app-footer {width: 100%; max-width: 1440px;}
 
 @media (max-width: 1200px) {
     .content {padding-left: 72px; padding-right: 72px;}

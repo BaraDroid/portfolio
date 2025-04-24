@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './impressum.component.scss'
 })
 export class ImpressumComponent {
+  contactSection: boolean = false;
 
     //menu.service
 constructor(private menuService: MenuService) {}

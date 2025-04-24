@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './data-protection.component.scss'
 })
 export class DataProtectionComponent {
+  contactSection: boolean = false;
 
     //menu.service
     constructor(private menuService: MenuService) {}

@@ -19,6 +19,8 @@ app-main-navbar {
     max-width: 1440px;
 }
 
+app-footer {width: 100%; max-width: 1440px;}
+
 @media (max-width: 1200px) {
     .content {padding-left: 72px; padding-right: 72px;}
 }
