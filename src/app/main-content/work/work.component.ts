@@ -32,7 +32,7 @@ export class WorkComponent {
       imgSrc: '././assets/screenshots/join.png',
       technologies: 'Angular | Firebase | TypeScript | SCSS | HTML',
       iconSrc: './assets/emojis/join.svg',
-      gitHubUrl: 'https://github.com/BaraDroid/join',
+      gitHubUrl: 'https://github.com/BaraDroid/join-for-portfolio',
       liveUrl: 'https://join.barbora-lambeinova.de/',
       descriptionKey: 'work.join.description',
       contributionKey: 'work.join.contribution'
@@ -43,7 +43,7 @@ export class WorkComponent {
       technologies: 'OOP | JavaScript | Collision Detection | CSS | HTML',
       iconSrc: './assets/emojis/pollo_loco.svg',
       gitHubUrl: 'https://github.com/BaraDroid/El-pollo-loco',
-      liveUrl: 'https://i.kym-cdn.com/photos/images/original/000/310/238/0e5.png',
+      liveUrl: 'https://pollo-loco.barbora-lambeinova.de/',
       descriptionKey: 'work.pollo_loco.description',
       contributionKey: 'work.pollo_loco.contribution'
     },
